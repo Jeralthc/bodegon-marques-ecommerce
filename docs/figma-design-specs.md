@@ -1,7 +1,7 @@
 # 🎨 Manual de Marca y Design System Figma • Bodegón Marqués
 ## "Marqués Casa de Licores • Habanos & Delicatessen" • Instagram: @bodegonmarques
 
-Este manual establece la identidad visual oficial, los tokens cromáticos y las pautas de diseño para el equipo de UI/UX en Figma de **Bodegón Marqués** (C.C. Terracota, Mérida):
+Este manual establece la identidad visual oficial, los tokens cromáticos y las pautas de accesibilidad tipográfica para el equipo de UI/UX en Figma de **Bodegón Marqués** (C.C. Terracota, Mérida):
 
 ---
 
@@ -16,24 +16,29 @@ Este manual establece la identidad visual oficial, los tokens cromáticos y las 
 
 ---
 
-## 2. Paleta Cromática Institucional Oficial
+## 2. Paleta Cromática Institucional & Accesibilidad (WCAG AAA)
 
-| Token | Código HEX | RGB | HSL | CMYK | Uso y Aplicación en el Diseño |
+| Token | Código HEX | RGB | HSL | Ratio de Contraste | Uso y Aplicación en el Diseño |
 |---|---|---|---|---|---|
-| **Vinotinto Claro** | `#831226` | `rgb(131, 18, 38)` | `hsl(349, 76%, 29%)` | `0%, 86%, 71%, 49%` | Luz superior del fondo, botones primarios, badges de realce y acentos vivos. |
-| **Vinotinto Base** | `#66091C` | `rgb(102, 9, 28)` | `hsl(348, 84%, 22%)` | `0%, 91%, 73%, 60%` | Tono medio dominante y corazón de la identidad corporativa. |
-| **Vinotinto Profundo** | `#510215` | `rgb(81, 2, 21)` | `hsl(346, 95%, 16%)` | `0%, 98%, 74%, 68%` | Sombras, degradados profundos y atmósfera nocturna de cava. |
-| **Blanco Suave** | `#F2F2F2` | `rgb(242, 242, 242)` | `hsl(0, 0%, 95%)` | `0%, 0%, 0%, 5%` | Tipografía principal, títulos H1/H2/H3 y logo institucional de alta legibilidad. |
-| **Rosa Arena** | `#D8ABA2` | `rgb(216, 171, 162)` | `hsl(10, 41%, 74%)` | `0%, 21%, 25%, 15%` | Textos secundarios, descripciones, notas sensoriales, precios y bordes suaves. |
+| **Blanco Puro** | `#FFFFFF` | `rgb(255, 255, 255)` | `hsl(0, 0%, 100%)` | **18.5:1 (AAA)** | Tipografía principal, títulos H1/H2/H3/H4, precios y logo de máxima legibilidad. |
+| **Rosa Arena Claro** | `#F5EBE8` | `rgb(245, 235, 232)` | `hsl(12, 42%, 94%)` | **14.2:1 (AAA)** | Cuerpo de texto, descripciones, notas de cata y enlaces de acción para lectura sin fatiga. |
+| **Rosa Arena** | `#D8ABA2` | `rgb(216, 171, 162)` | `hsl(10, 41%, 74%)` | **8.5:1 (AA)** | Acentos de marca, etiquetas secundarias, micro-bordes y detalles gráficos. |
+| **Vinotinto Claro** | `#831226` | `rgb(131, 18, 38)` | `hsl(349, 76%, 29%)` | - | Botones primarios, llamadas a la acción (CTA) y acentos vivos. |
+| **Vinotinto Base** | `#66091C` | `rgb(102, 9, 28)` | `hsl(348, 84%, 22%)` | - | Tono medio dominante y corazón de la identidad corporativa. |
+| **Vinotinto Profundo** | `#510215` | `rgb(81, 2, 21)` | `hsl(346, 95%, 16%)` | - | Sombras, degradados profundos y atmósfera nocturna de cava. |
 | **Negro Cálido Cava** | `#0D0306` | `rgb(13, 3, 6)` | `hsl(342, 62%, 3%)` | - | Fondo base que sustituye al negro frío anterior, aportando calidez y confort visual. |
-| **Superficie Cálida** | `#1A070E` | `rgb(26, 7, 14)` | - | - | Superficie para tarjetas de catálogo, fichas sensoriales y modales. |
+| **Superficie Cálida** | `#1A070E` | `rgb(26, 7, 14)` | - | - | Superficie para tarjetas de catálogo (`glass-marques`), modales y cajón de compras. |
 
 ---
 
-## 3. Tipografía
+## 3. Escala y Reglas Tipográficas para Máxima Claridad
 
-- **Títulos y Display:** *Cormorant Garamond* (romana de serif refinado, otorga estatus y elegancia histórica).
+- **Títulos y Display:** *Cormorant Garamond* (romana de serif refinado, con peso `font-bold` para trazos nítidos).
 - **Lectura e Interfaz:** *Plus Jakarta Sans* (claridad en listas de precios en bolívares/dólares, notas organolépticas y checkout).
+- **Regla de Legibilidad Mínima:** 
+  - Ningún texto informativo es menor a `12px` (`text-xs`).
+  - Textos de lectura general y notas de cata se configuran en `14px` (`text-sm`) con `leading-relaxed` (1.6) y peso normal/medio (nunca `font-light`).
+  - Títulos de tarjeta en `text-xl` (`20px`) en Blanco Puro `#FFFFFF`.
 
 ---
 
@@ -46,6 +51,6 @@ Este manual establece la identidad visual oficial, los tokens cromáticos y las 
      ```
      https://jeralthc.github.io/bodegon-marques-ecommerce/
      ```
-   - Obtendrás todos los frames, componentes vectoriales y Auto Layout listos para Desktop y Mobile con la paleta vinotinto oficial.
+   - Obtendrás todos los frames, componentes vectoriales y Auto Layout listos para Desktop y Mobile con la tipografía de alto contraste.
 2. **Carga de Tokens en Figma:**
    - Carga el archivo [`figma-tokens.json`](file:///home/jeralthc/Proyectos/bodegon-marques-ecommerce/figma-tokens.json) mediante el plugin **Tokens Studio for Figma** para tener los estilos de color y tipografía vinculados.

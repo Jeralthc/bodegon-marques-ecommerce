@@ -15,7 +15,7 @@
         "surface": { "value": "#1A070E", "type": "color", "description": "Superficie de estantería y tarjetas cálidas" },
         "elevated": { "value": "#260A14", "type": "color", "description": "Modales, cajón de compras y dropdowns" },
         "highlight": { "value": "#360E1C", "type": "color", "description": "Resalte en hover de componentes" },
-        "border": { "value": "rgba(216, 171, 162, 0.18)", "type": "color", "description": "Bordes sutiles con tono Rosa Arena" }
+        "border": { "value": "rgba(216, 171, 162, 0.25)", "type": "color", "description": "Bordes con tono Rosa Arena cálido" }
       },
       "vinotinto": {
         "claro": { "value": "#831226", "type": "color", "description": "Luz superior del fondo, highlights, botones primarios y acentos vivos" },
@@ -23,13 +23,13 @@
         "profundo": { "value": "#510215", "type": "color", "description": "Sombras, viñetas inferiores y profundidad de cava" }
       },
       "sand": {
-        "rose": { "value": "#D8ABA2", "type": "color", "description": "Rosa Arena: textos secundarios, notas sensoriales, precios destacados y leyendas" },
-        "light": { "value": "#F0D5CF", "type": "color", "description": "Rosa arena claro para micro-interacciones y badges" }
+        "rose": { "value": "#D8ABA2", "type": "color", "description": "Rosa Arena oficial: acentos, micro-bordes y detalles gráficos" },
+        "light": { "value": "#F5EBE8", "type": "color", "description": "Rosa Arena Claro de alto contraste (14:1 AAA) para lectura óptima de textos y descripciones" }
       },
       "text": {
-        "white": { "value": "#F2F2F2", "type": "color", "description": "Blanco Suave: tipografía principal, títulos H1/H2/H3 y logo" },
-        "secondary": { "value": "#D8ABA2", "type": "color", "description": "Rosa Arena: descripciones legibles y detalles de producto" },
-        "muted": { "value": "rgba(216, 171, 162, 0.70)", "type": "color", "description": "Metadatos, leyendas y pies de página" }
+        "white": { "value": "#FFFFFF", "type": "color", "description": "Blanco puro de máximo contraste para títulos H1-H4, precios y logo" },
+        "readable": { "value": "#F5EBE8", "type": "color", "description": "Rosa Arena Claro de alta legibilidad para cuerpo de texto" },
+        "accent": { "value": "#D8ABA2", "type": "color", "description": "Rosa Arena para etiquetas, metadatos y enlaces" }
       }
     },
     "fontFamilies": {

@@ -34,9 +34,9 @@
             },
             sand: {
               rose: '#D8ABA2',        // Rosa Arena: textos secundarios, notas, leyendas
-              light: '#F0D5CF',       // Rosa arena claro
+              light: '#F5EBE8',       // Rosa arena claro
             },
-            softWhite: '#F2F2F2',     // Blanco Suave: Tipografía principal y logo
+            softWhite: '#FFFFFF',     // Blanco Suave: Tipografía principal y logo
           },
           fontFamily: {
             serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
@@ -85,7 +85,7 @@
   </style>
 </head>
 
-<body class="bg-marques-black text-softWhite font-sans antialiased selection:bg-vino-claro selection:text-white min-h-screen flex flex-col relative overflow-x-hidden">
+<body class="bg-marques-black text-white font-sans antialiased selection:bg-vino-claro selection:text-white min-h-screen flex flex-col relative overflow-x-hidden">
 
   <!-- ==================== TOP ANNOUNCEMENT BAR ==================== -->
   <aside aria-label="Información y Servicios Bodegón Marqués" class="bg-gradient-to-r from-marques-black via-marques-surface to-marques-black border-b border-vino-claro/30 text-xs py-2 px-4">
@@ -93,20 +93,20 @@
       <div class="flex items-center gap-2 text-center sm:text-left">
         <span class="inline-block w-2 h-2 rounded-full bg-vino-claro animate-pulse"></span>
         <span>
-          <strong class="text-softWhite font-medium">Cava de Destilados en C.C. Terracota, PB, Local 4:</strong> Rones D.O.C. de Solera • Single Malts • Delivery Mérida
+          <strong class="text-white font-medium">Cava de Destilados en C.C. Terracota, PB, Local 4:</strong> Rones D.O.C. de Solera • Single Malts • Delivery Mérida
         </span>
       </div>
       <div class="flex items-center gap-4 text-xs">
-        <a href="https://www.instagram.com/bodegonmarques" target="_blank" rel="noopener noreferrer" class="hover:text-softWhite transition flex items-center gap-1.5 text-sand-rose font-medium">
+        <a href="https://www.instagram.com/bodegonmarques" target="_blank" rel="noopener noreferrer" class="hover:text-white transition flex items-center gap-1.5 text-sand-rose font-medium">
           <svg class="w-3.5 h-3.5 text-vino-claro" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           <span>@bodegonmarques</span>
         </a>
         <div class="flex items-center gap-1 bg-marques-black/80 px-2 py-0.5 rounded border border-sand-rose/25">
           <span class="text-sand-rose font-medium">Moneda:</span>
-          <select id="currencySelector" onchange="changeCurrency(this.value)" class="bg-transparent text-softWhite font-medium cursor-pointer focus:outline-none">
-            <option value="USD" class="bg-marques-surface text-softWhite">USD ($)</option>
-            <option value="VES" class="bg-marques-surface text-softWhite">VES (Bs.)</option>
-            <option value="EUR" class="bg-marques-surface text-softWhite">EUR (€)</option>
+          <select id="currencySelector" onchange="changeCurrency(this.value)" class="bg-transparent text-white font-medium cursor-pointer focus:outline-none">
+            <option value="USD" class="bg-marques-surface text-white">USD ($)</option>
+            <option value="VES" class="bg-marques-surface text-white">VES (Bs.)</option>
+            <option value="EUR" class="bg-marques-surface text-white">EUR (€)</option>
           </select>
         </div>
       </div>
@@ -129,28 +129,28 @@
           <span class="font-serif text-lg sm:text-2xl tracking-[0.14em] vino-gradient-text font-bold uppercase leading-none whitespace-nowrap">
             BODEGÓN MARQUÉS
           </span>
-          <span class="text-[9px] sm:text-[10px] tracking-[0.2em] text-sand-rose uppercase font-light leading-none mt-1.5 whitespace-nowrap group-hover:text-softWhite transition">
+          <span class="text-xs sm:text-xs tracking-[0.14em] text-sand-light uppercase font-semibold leading-none mt-1.5 whitespace-nowrap group-hover:text-white transition">
             Casa de Licores &bull; C.C. Terracota
           </span>
         </div>
       </a>
 
       <!-- Desktop Navigation Links -->
-      <nav class="hidden lg:flex items-center gap-4 xl:gap-7 text-[11px] xl:text-xs font-semibold tracking-wider text-sand-rose uppercase shrink">
-        <a href="index.html" class="hover:text-softWhite transition py-1 border-b-2 border-transparent hover:border-vino-claro whitespace-nowrap">Inicio</a>
-        <a href="destilados.html" class="text-softWhite font-bold transition py-1 border-b-2 border-vino-claro whitespace-nowrap">Rones & Destilados</a>
-        <a href="habanos.html" class="hover:text-softWhite transition py-1 border-b-2 border-transparent hover:border-vino-claro flex items-center gap-1.5 whitespace-nowrap">
+      <nav class="hidden lg:flex items-center gap-5 xl:gap-8 text-xs xl:text-sm font-bold tracking-wider text-sand-light uppercase shrink">
+        <a href="index.html" class="hover:text-white transition py-1 border-b-2 border-transparent hover:border-vino-claro whitespace-nowrap">Inicio</a>
+        <a href="destilados.html" class="text-white font-bold transition py-1 border-b-2 border-vino-claro whitespace-nowrap">Rones & Destilados</a>
+        <a href="habanos.html" class="hover:text-white transition py-1 border-b-2 border-transparent hover:border-vino-claro flex items-center gap-1.5 whitespace-nowrap">
           <span class="w-1.5 h-1.5 rounded-full bg-vino-claro"></span>
           <span>Habanos Point</span>
         </a>
-        <a href="delicatessen.html" class="hover:text-softWhite transition py-1 border-b-2 border-transparent hover:border-vino-claro whitespace-nowrap">Delicatessen</a>
+        <a href="delicatessen.html" class="hover:text-white transition py-1 border-b-2 border-transparent hover:border-vino-claro whitespace-nowrap">Delicatessen</a>
       </nav>
 
       <!-- Right Header Actions -->
       <div class="flex items-center gap-2 sm:gap-3 shrink-0">
         
         <!-- Sommelier AI Advisor -->
-        <button onclick="openSommelierModal()" class="relative group flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 rounded-full border border-vino-claro/50 bg-vino-claro/20 hover:bg-vino-claro/30 text-sand-rose hover:text-softWhite text-xs font-medium tracking-wide transition shadow-sm hover:shadow-vino-glow shrink-0">
+        <button onclick="openSommelierModal()" class="relative group flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 rounded-full border border-vino-claro/50 bg-vino-claro/20 hover:bg-vino-claro/30 text-sand-rose hover:text-white text-xs font-medium tracking-wide transition shadow-sm hover:shadow-vino-glow shrink-0">
           <svg class="w-4 h-4 text-vino-claro" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/>
           </svg>
@@ -159,7 +159,7 @@
         </button>
 
         <!-- WhatsApp Direct Concierge -->
-        <a href="https://wa.me/584122702505?text=Hola%20Bodeg%C3%B3n%20Marqu%C3%A9s,%20deseo%20consultar%20por%20un%20destilado%20especial" target="_blank" rel="noopener noreferrer" title="WhatsApp Directo C.C. Terracota" class="p-2.5 rounded-full bg-vino-claro/20 hover:bg-vino-claro/35 border border-vino-claro/40 text-sand-rose hover:text-softWhite transition">
+        <a href="https://wa.me/584122702505?text=Hola%20Bodeg%C3%B3n%20Marqu%C3%A9s,%20deseo%20consultar%20por%20un%20destilado%20especial" target="_blank" rel="noopener noreferrer" title="WhatsApp Directo C.C. Terracota" class="p-2.5 rounded-full bg-vino-claro/20 hover:bg-vino-claro/35 border border-vino-claro/40 text-sand-rose hover:text-white transition">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
         </a>
 
@@ -168,7 +168,7 @@
           <svg class="w-5 h-5 text-sand-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
           </svg>
-          <span id="cartCountBadge" class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-vino-claro text-softWhite font-bold text-[10px] flex items-center justify-center border-2 border-marques-black">0</span>
+          <span id="cartCountBadge" class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-vino-claro text-white font-bold text-[10px] flex items-center justify-center border-2 border-marques-black">0</span>
         </button>
 
       </div>
@@ -188,22 +188,22 @@
             D.O.C. Ron de Venezuela & Maltas Escocesas
           </div>
           
-          <h1 class="font-serif text-4xl sm:text-6xl font-bold tracking-tight leading-[1.08] text-softWhite">
+          <h1 class="font-serif text-4xl sm:text-6xl font-bold tracking-tight leading-[1.08] text-white">
             Rones D.O.C. & <br class="hidden sm:block"/>
             <span class="vino-gradient-text italic font-normal">Whiskies de Colección</span>
           </h1>
           
-          <p class="text-base sm:text-lg text-sand-rose font-light max-w-xl mx-auto lg:mx-0 leading-relaxed">
+          <p class="text-base sm:text-lg text-sand-light font-normal max-w-xl mx-auto lg:mx-0 leading-relaxed">
             La más distinguida selección de rones venezolanos de solera, single malts de Speyside e Highlands, blended scotch, champagnes y tequilas añejos disponibles en C.C. Terracota, Mérida.
           </p>
 
           <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-            <a href="#catalogo-destilados" class="w-full sm:w-auto px-8 py-3.5 rounded-full vino-gradient-bg text-softWhite font-bold text-xs tracking-wider uppercase transition transform hover:scale-[1.02] shadow-vino-glow flex items-center justify-center gap-2">
+            <a href="#catalogo-destilados" class="w-full sm:w-auto px-8 py-3.5 rounded-full vino-gradient-bg text-white font-bold text-xs tracking-wider uppercase transition transform hover:scale-[1.02] shadow-vino-glow flex items-center justify-center gap-2">
               <span>Ver Destilados en Stock</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </a>
 
-            <button onclick="openSommelierModal()" class="w-full sm:w-auto px-6 py-3.5 rounded-full border border-sand-rose/30 bg-marques-surface/90 hover:bg-marques-elevated text-sand-rose hover:text-softWhite font-medium text-xs tracking-wide transition flex items-center justify-center gap-2">
+            <button onclick="openSommelierModal()" class="w-full sm:w-auto px-6 py-3.5 rounded-full border border-sand-rose/30 bg-marques-surface/90 hover:bg-marques-elevated text-sand-rose hover:text-white font-medium text-xs tracking-wide transition flex items-center justify-center gap-2">
               <svg class="w-4 h-4 text-vino-claro" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.516 0c.85.493 1.508 1.333 1.508 2.316V18"/></svg>
               <span>Consultar Sommelier</span>
             </button>
@@ -212,16 +212,16 @@
           <!-- Trust Badges -->
           <div class="grid grid-cols-3 gap-4 pt-6 border-t border-vino-claro/20 text-center lg:text-left">
             <div>
-              <span class="block font-serif text-2xl text-softWhite font-bold">100% D.O.C.</span>
-              <span class="text-[11px] text-sand-rose uppercase tracking-wider">Ron de Venezuela</span>
+              <span class="block font-serif text-2xl text-white font-bold">100% D.O.C.</span>
+              <span class="text-xs sm:text-sm text-sand-light uppercase font-medium tracking-wider">Ron de Venezuela</span>
             </div>
             <div>
               <span class="block font-serif text-2xl text-sand-rose font-bold">Single Malts</span>
-              <span class="text-[11px] text-sand-rose/80 uppercase tracking-wider">Roble Envejecido</span>
+              <span class="text-xs sm:text-sm text-sand-light uppercase font-medium tracking-wider">Roble Envejecido</span>
             </div>
             <div>
-              <span class="block font-serif text-2xl text-softWhite font-bold">Delivery</span>
-              <span class="text-[11px] text-sand-rose uppercase tracking-wider">Mérida Inmediato</span>
+              <span class="block font-serif text-2xl text-white font-bold">Delivery</span>
+              <span class="text-xs sm:text-sm text-sand-light uppercase font-medium tracking-wider">Mérida Inmediato</span>
             </div>
           </div>
 
@@ -243,9 +243,9 @@
                 <div class="w-full h-full border border-sand-rose/25 rounded-t-2xl p-2 flex flex-col justify-between items-center text-center">
                   <span class="font-serif text-[10px] tracking-widest text-sand-rose uppercase">La Miel, Lara</span>
                   <div class="my-auto">
-                    <span class="block font-serif text-xs text-softWhite font-bold">DIPLOMÁTICO</span>
+                    <span class="block font-serif text-xs text-white font-bold">DIPLOMÁTICO</span>
                     <span class="block text-[8px] text-sand-rose tracking-widest">AMBASSADOR</span>
-                    <span class="block text-[7px] text-sand-rose/80 mt-1">Acabado Pedro Ximénez</span>
+                    <span class="block text-[7px] text-sand-light mt-1">Acabado Pedro Ximénez</span>
                   </div>
                   <span class="text-[8px] text-sand-rose">47% ABV • Cask Finish</span>
                 </div>
@@ -254,11 +254,11 @@
 
             <div class="relative z-10 bg-marques-surface/95 p-3 rounded-xl border border-sand-rose/20 space-y-1">
               <div class="flex justify-between items-baseline">
-                <h4 class="font-serif text-sm font-bold text-softWhite">Diplomático Ambassador</h4>
+                <h4 class="font-serif text-sm font-bold text-white">Diplomático Ambassador</h4>
                 <span class="text-sand-rose font-semibold text-sm" id="heroSpiritsPrice">$310.00</span>
               </div>
-              <p class="text-[11px] text-sand-rose/90 line-clamp-1">Envejecido 12 años en roble y finalizado 2 años en botas PX.</p>
-              <button onclick="quickAddToCart(202)" class="w-full mt-2 py-2 rounded-lg vino-gradient-bg text-softWhite text-xs font-bold uppercase tracking-wider transition hover:brightness-110">
+              <p class="text-[11px] text-sand-light line-clamp-1">Envejecido 12 años en roble y finalizado 2 años en botas PX.</p>
+              <button onclick="quickAddToCart(202)" class="w-full mt-2 py-2 rounded-lg vino-gradient-bg text-white text-xs font-bold uppercase tracking-wider transition hover:brightness-110">
                 Añadir al Carrito
               </button>
             </div>
@@ -276,25 +276,25 @@
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-vino-claro/20">
       <div>
         <span class="text-sand-rose text-xs font-semibold tracking-widest uppercase block mb-1">Cava Noble Bodegón Marqués</span>
-        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-softWhite">
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
           Rones de Solera, Maltas & Destilados Finos
         </h2>
       </div>
 
       <div class="flex flex-wrap gap-2">
-        <button onclick="filterSpirits('all')" class="spirit-pill active px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition border border-vino-claro bg-vino-claro text-softWhite" data-cat="all">
+        <button onclick="filterSpirits('all')" class="spirit-pill active px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition border border-vino-claro bg-vino-claro text-white" data-cat="all">
           Todos (<span id="countSpiritsAll">12</span>)
         </button>
-        <button onclick="filterSpirits('ron')" class="spirit-pill px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition border border-sand-rose/20 bg-marques-surface text-sand-rose hover:text-softWhite hover:border-sand-rose/50" data-cat="ron">
+        <button onclick="filterSpirits('ron')" class="spirit-pill px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition border border-sand-rose/20 bg-marques-surface text-sand-rose hover:text-white hover:border-sand-rose/50" data-cat="ron">
           Rones D.O.C. Venezuela
         </button>
-        <button onclick="filterSpirits('single-malt')" class="spirit-pill px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition border border-sand-rose/20 bg-marques-surface text-sand-rose hover:text-softWhite hover:border-sand-rose/50" data-cat="single-malt">
+        <button onclick="filterSpirits('single-malt')" class="spirit-pill px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition border border-sand-rose/20 bg-marques-surface text-sand-rose hover:text-white hover:border-sand-rose/50" data-cat="single-malt">
           Whiskies Single Malt
         </button>
-        <button onclick="filterSpirits('blended')" class="spirit-pill px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition border border-sand-rose/20 bg-marques-surface text-sand-rose hover:text-softWhite hover:border-sand-rose/50" data-cat="blended">
+        <button onclick="filterSpirits('blended')" class="spirit-pill px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition border border-sand-rose/20 bg-marques-surface text-sand-rose hover:text-white hover:border-sand-rose/50" data-cat="blended">
           Blended Scotch
         </button>
-        <button onclick="filterSpirits('champagne-otros')" class="spirit-pill px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition border border-sand-rose/20 bg-marques-surface text-sand-rose hover:text-softWhite hover:border-sand-rose/50" data-cat="champagne-otros">
+        <button onclick="filterSpirits('champagne-otros')" class="spirit-pill px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition border border-sand-rose/20 bg-marques-surface text-sand-rose hover:text-white hover:border-sand-rose/50" data-cat="champagne-otros">
           Champagnes & Agaves
         </button>
       </div>
@@ -312,7 +312,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-12">
         <span class="text-sand-rose text-xs font-semibold tracking-widest uppercase">Denominación de Origen Controlada</span>
-        <h3 class="font-serif text-3xl font-bold text-softWhite mt-1">¿Por qué el Ron Venezolano es Único?</h3>
+        <h3 class="font-serif text-3xl font-bold text-white mt-1">¿Por qué el Ron Venezolano es Único?</h3>
         <p class="text-xs sm:text-sm text-sand-rose mt-2">
           La D.O.C. Ron de Venezuela exige los estándares más rigurosos del planeta, reconocidos unánimemente en los certámenes mundiales de San Francisco y Londres.
         </p>
@@ -322,24 +322,24 @@
         
         <div class="glass-marques p-6 rounded-2xl border border-sand-rose/20 space-y-3">
           <div class="w-10 h-10 rounded-full bg-vino-claro/20 text-sand-rose flex items-center justify-center font-serif text-lg font-bold">2+</div>
-          <h4 class="font-serif text-lg font-bold text-softWhite">Mínimo 2 Años en Roble</h4>
-          <p class="text-xs text-sand-rose/90 leading-relaxed">
+          <h4 class="font-serif text-lg font-bold text-white">Mínimo 2 Años en Roble</h4>
+          <p class="text-xs text-sand-light leading-relaxed">
             Ningún ron en Venezuela puede embotellarse con menos de dos años de reposo continuo en barricas de roble blanco. Esto garantiza color natural y complejidad aromática.
           </p>
         </div>
 
         <div class="glass-marques p-6 rounded-2xl border border-sand-rose/20 space-y-3">
           <div class="w-10 h-10 rounded-full bg-vino-claro/20 text-sand-rose flex items-center justify-center font-serif text-lg font-bold">0%</div>
-          <h4 class="font-serif text-lg font-bold text-softWhite">Sin Reposición de Merma</h4>
-          <p class="text-xs text-sand-rose/90 leading-relaxed">
+          <h4 class="font-serif text-lg font-bold text-white">Sin Reposición de Merma</h4>
+          <p class="text-xs text-sand-light leading-relaxed">
             Por ley, el alcohol evaporado por el calor tropical (la 'porción de los ángeles', hasta 8% anual) no puede rellenarse con alcohol fresco. La concentración de solera es 100% auténtica.
           </p>
         </div>
 
         <div class="glass-marques p-6 rounded-2xl border border-sand-rose/20 space-y-3">
           <div class="w-10 h-10 rounded-full bg-vino-claro/20 text-sand-rose flex items-center justify-center font-serif text-lg font-bold">40°</div>
-          <h4 class="font-serif text-lg font-bold text-softWhite">Grado Alcohólico Real</h4>
-          <p class="text-xs text-sand-rose/90 leading-relaxed">
+          <h4 class="font-serif text-lg font-bold text-white">Grado Alcohólico Real</h4>
+          <p class="text-xs text-sand-light leading-relaxed">
             Todos nuestros rones se embotellan entre 40 y 50 grados alcohólicos con agua pura de manantial, brindando densidad glicérica inconfundible al paladar.
           </p>
         </div>
@@ -357,7 +357,7 @@
           <svg class="w-5 h-5 text-sand-rose" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 18h18M3 18l1.5-9 4.5 4.5L12 5l3 8.5 4.5-4.5L21 18M5 9a1 1 0 100-2 1 1 0 000 2zm7-4a1 1 0 100-2 1 1 0 000 2zm7 4a1 1 0 100-2 1 1 0 000 2z"/>
           </svg>
-          <span class="font-serif text-lg tracking-[0.15em] text-softWhite font-bold block">BODEGÓN MARQUÉS</span>
+          <span class="font-serif text-lg tracking-[0.15em] text-white font-bold block">BODEGÓN MARQUÉS</span>
         </div>
         <p class="text-[11px] leading-relaxed text-sand-rose">
           Marqués Casa de Licores. Sede C.C. Terracota, Planta Baja, Local 4, Av. Las Américas, Mérida.
@@ -366,28 +366,28 @@
       </div>
 
       <div>
-        <h4 class="text-softWhite uppercase tracking-wider font-semibold mb-3">Navegación Rápida</h4>
+        <h4 class="text-white uppercase tracking-wider font-semibold mb-3">Navegación Rápida</h4>
         <ul class="space-y-1.5 text-[11px]">
-          <li><a href="index.html" class="hover:text-softWhite transition">• Inicio & Catálogo Principal</a></li>
-          <li><a href="destilados.html" class="text-softWhite font-semibold">• Rones D.O.C. & Destilados</a></li>
-          <li><a href="habanos.html" class="hover:text-softWhite transition">• Humidor Habanos Point</a></li>
-          <li><a href="delicatessen.html" class="hover:text-softWhite transition">• Delicatessen & Snacks</a></li>
+          <li><a href="index.html" class="hover:text-white transition">• Inicio & Catálogo Principal</a></li>
+          <li><a href="destilados.html" class="text-white font-semibold">• Rones D.O.C. & Destilados</a></li>
+          <li><a href="habanos.html" class="hover:text-white transition">• Humidor Habanos Point</a></li>
+          <li><a href="delicatessen.html" class="hover:text-white transition">• Delicatessen & Snacks</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="text-softWhite uppercase tracking-wider font-semibold mb-3">Atención & Pedidos</h4>
+        <h4 class="text-white uppercase tracking-wider font-semibold mb-3">Atención & Pedidos</h4>
         <p class="text-[11px] leading-relaxed text-sand-rose mb-2">
           Delivery express en toda el área metropolitana de Mérida o retiro Pick-Up en C.C. Terracota.
         </p>
-        <p class="text-[10px] text-softWhite font-medium">
+        <p class="text-[10px] text-white font-medium">
           Teléfono / WhatsApp: +58 412-2702505<br>
           Pago Móvil, Zelle y Efectivo.
         </p>
       </div>
 
       <div>
-        <h4 class="text-softWhite uppercase tracking-wider font-semibold mb-3">Aviso Legal</h4>
+        <h4 class="text-white uppercase tracking-wider font-semibold mb-3">Aviso Legal</h4>
         <p class="text-[11px] leading-relaxed mb-2 text-sand-rose">
           El consumo en exceso es nocivo para la salud. Venta autorizada únicamente a mayores de 18 años.
         </p>
@@ -402,7 +402,7 @@
   <!-- ==================== TASTING MODAL ==================== -->
   <div id="tastingModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
     <div class="relative w-full max-w-3xl glass-marques rounded-3xl p-6 sm:p-8 border border-vino-claro/50 shadow-vino-card max-h-[90vh] overflow-y-auto">
-      <button onclick="closeTastingModal()" class="absolute top-5 right-5 text-sand-rose hover:text-softWhite p-2">
+      <button onclick="closeTastingModal()" class="absolute top-5 right-5 text-sand-rose hover:text-white p-2">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center" id="tastingModalContent"></div>
@@ -412,7 +412,7 @@
   <!-- ==================== SOMMELIER MODAL ==================== -->
   <div id="sommelierModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md transition-opacity">
     <div class="relative w-full max-w-xl glass-marques rounded-3xl p-6 sm:p-8 border border-vino-claro/50 shadow-vino-card animate-fade-in">
-      <button onclick="closeSommelierModal()" class="absolute top-5 right-5 text-sand-rose hover:text-softWhite p-2">
+      <button onclick="closeSommelierModal()" class="absolute top-5 right-5 text-sand-rose hover:text-white p-2">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
 
@@ -421,7 +421,7 @@
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>
         </div>
         <div>
-          <h3 class="font-serif text-xl font-bold text-softWhite">Sommelier Marqués</h3>
+          <h3 class="font-serif text-xl font-bold text-white">Sommelier Marqués</h3>
           <span class="text-xs text-sand-rose">Recomendación para degustar o regalar en Mérida</span>
         </div>
       </div>
@@ -430,19 +430,19 @@
         <p class="text-xs text-sand-rose">¿Cuál es el motivo u ocasión de tu compra hoy?</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <button onclick="recommendSpirit('prestigio')" class="p-3.5 rounded-xl border border-sand-rose/20 hover:border-vino-claro bg-marques-black hover:bg-marques-surface text-left transition space-y-1">
-            <span class="block text-xs font-semibold text-softWhite">Regalo Corporativo / Élite</span>
+            <span class="block text-xs font-semibold text-white">Regalo Corporativo / Élite</span>
             <span class="block text-[11px] text-sand-rose">Ediciones limitadas de solera (Carúpano / Macallan)</span>
           </button>
           <button onclick="recommendSpirit('sobremesa')" class="p-3.5 rounded-xl border border-sand-rose/20 hover:border-vino-claro bg-marques-black hover:bg-marques-surface text-left transition space-y-1">
-            <span class="block text-xs font-semibold text-softWhite">Sobremesa & Puro</span>
+            <span class="block text-xs font-semibold text-white">Sobremesa & Puro</span>
             <span class="block text-[11px] text-sand-rose">Rones de solera y habano (Santa Teresa 1796)</span>
           </button>
           <button onclick="recommendSpirit('celebracion')" class="p-3.5 rounded-xl border border-sand-rose/20 hover:border-vino-claro bg-marques-black hover:bg-marques-surface text-left transition space-y-1">
-            <span class="block text-xs font-semibold text-softWhite">Brindis & Celebración</span>
+            <span class="block text-xs font-semibold text-white">Brindis & Celebración</span>
             <span class="block text-[11px] text-sand-rose">Champagne Brut o Tequila Don Julio 1942</span>
           </button>
           <button onclick="recommendSpirit('amigos')" class="p-3.5 rounded-xl border border-sand-rose/20 hover:border-vino-claro bg-marques-black hover:bg-marques-surface text-left transition space-y-1">
-            <span class="block text-xs font-semibold text-softWhite">Reunión de Amigos</span>
+            <span class="block text-xs font-semibold text-white">Reunión de Amigos</span>
             <span class="block text-[11px] text-sand-rose">Carúpano 21 o Diplomático Reserva Exclusiva</span>
           </button>
         </div>
@@ -459,16 +459,16 @@
   <div id="cartDrawer" class="fixed top-0 right-0 h-full w-full sm:w-[440px] z-50 bg-[#130409] border-l border-vino-claro/40 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300">
     <div class="flex items-center justify-between pb-4 border-b border-vino-claro/20">
       <div class="flex items-center gap-2">
-        <h3 class="font-serif text-xl font-bold text-softWhite">Su Pedido Marqués</h3>
+        <h3 class="font-serif text-xl font-bold text-white">Su Pedido Marqués</h3>
         <span id="drawerCount" class="text-xs px-2.5 py-0.5 rounded-full bg-vino-claro/25 text-sand-rose border border-vino-claro/40 font-mono">0 ítems</span>
       </div>
-      <button onclick="toggleCartDrawer()" class="p-1.5 text-sand-rose hover:text-softWhite">
+      <button onclick="toggleCartDrawer()" class="p-1.5 text-sand-rose hover:text-white">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
     </div>
 
     <div id="cartItemsList" class="flex-1 overflow-y-auto py-4 space-y-4">
-      <div class="text-center py-12 text-sand-rose/70 space-y-2">
+      <div class="text-center py-12 text-sand-light/75 space-y-2">
         <p class="text-sm">Su cesta se encuentra vacía.</p>
         <p class="text-xs text-sand-rose/60">Seleccione botellas de nuestra cava.</p>
       </div>
@@ -480,11 +480,11 @@
         <div class="grid grid-cols-2 gap-2 text-xs">
           <label class="flex items-center gap-2 p-2 rounded-lg bg-[#19060E] border border-sand-rose/20 cursor-pointer hover:border-vino-claro">
             <input type="radio" name="deliveryMethod" value="valet" checked onchange="updateCartTotals()" class="accent-[#831226]">
-            <span class="text-softWhite">Delivery Mérida ($3)</span>
+            <span class="text-white">Delivery Mérida ($3)</span>
           </label>
           <label class="flex items-center gap-2 p-2 rounded-lg bg-[#19060E] border border-sand-rose/20 cursor-pointer hover:border-vino-claro">
             <input type="radio" name="deliveryMethod" value="pickup" onchange="updateCartTotals()" class="accent-[#831226]">
-            <span class="text-softWhite">Retiro Terracota ($0)</span>
+            <span class="text-white">Retiro Terracota ($0)</span>
           </label>
         </div>
       </div>
@@ -492,19 +492,19 @@
       <div class="space-y-1 text-xs">
         <div class="flex justify-between text-sand-rose">
           <span>Subtotal:</span>
-          <span id="cartSubtotal" class="font-mono text-softWhite">$0.00</span>
+          <span id="cartSubtotal" class="font-mono text-white">$0.00</span>
         </div>
         <div class="flex justify-between text-sand-rose">
           <span>Despacho:</span>
-          <span id="cartShipping" class="font-mono text-softWhite">$3.00</span>
+          <span id="cartShipping" class="font-mono text-white">$3.00</span>
         </div>
-        <div class="flex justify-between text-base font-bold text-softWhite pt-2 border-t border-vino-claro/20">
+        <div class="flex justify-between text-base font-bold text-white pt-2 border-t border-vino-claro/20">
           <span>Total a Pagar:</span>
-          <span id="cartTotal" class="font-mono text-softWhite font-bold">$3.00</span>
+          <span id="cartTotal" class="font-mono text-white font-bold">$3.00</span>
         </div>
       </div>
 
-      <button onclick="processCheckout()" class="w-full py-3.5 rounded-full vino-gradient-bg text-softWhite font-bold text-xs tracking-widest uppercase hover:brightness-110 transition shadow-vino-glow flex items-center justify-center gap-2">
+      <button onclick="processCheckout()" class="w-full py-3.5 rounded-full vino-gradient-bg text-white font-bold text-xs tracking-widest uppercase hover:brightness-110 transition shadow-vino-glow flex items-center justify-center gap-2">
         <svg class="w-4 h-4 text-sand-rose" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
         <span>Confirmar Pedido vía WhatsApp</span>
       </button>
@@ -514,7 +514,7 @@
   <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
     <div class="glass-marques border border-vino-claro/50 px-4 py-3 rounded-2xl shadow-vino-glow flex items-center gap-3">
       <span class="w-2 h-2 rounded-full bg-vino-claro"></span>
-      <span id="toastMsg" class="text-xs text-softWhite font-medium">Botella añadida</span>
+      <span id="toastMsg" class="text-xs text-white font-medium">Botella añadida</span>
     </div>
   </div>
 
@@ -778,34 +778,34 @@
         card.innerHTML = `
           <div class="relative z-10 space-y-3">
             <div class="flex justify-between items-start">
-              <span class="text-[10px] tracking-widest uppercase px-2 py-0.5 rounded bg-black/70 border border-vino-claro/40 text-sand-rose font-semibold">${p.badge}</span>
-              <span class="text-[11px] text-sand-rose font-medium">${p.abv} ABV</span>
+              <span class="text-xs font-bold px-2.5 py-1 rounded bg-black/80 border border-vino-claro/50 text-sand-light">${p.badge}</span>
+              <span class="text-xs text-sand-light font-medium">${p.abv} ABV</span>
             </div>
 
             <div class="h-44 rounded-xl bg-gradient-to-b ${p.imageGrad} border border-sand-rose/20 flex items-center justify-center p-3 relative overflow-hidden group-hover:border-vino-claro/40 transition">
               <div class="text-center space-y-1">
-                <span class="font-serif text-sm text-softWhite font-bold block">${p.title}</span>
+                <span class="font-serif text-sm text-white font-bold block">${p.title}</span>
                 <span class="text-[10px] text-sand-rose font-mono block">${p.origin}</span>
               </div>
             </div>
 
             <div>
-              <h4 class="font-serif text-lg font-bold text-softWhite group-hover:text-sand-rose transition">${p.title}</h4>
-              <p class="text-xs text-sand-rose line-clamp-1 mt-0.5">${p.subtitle}</p>
+              <h4 class="font-serif text-xl font-bold text-white group-hover:text-sand-light transition">${p.title}</h4>
+              <p class="text-xs text-sand-light leading-relaxed font-normal mt-0.5">${p.subtitle}</p>
             </div>
           </div>
 
           <div class="relative z-10 pt-4 mt-4 border-t border-sand-rose/15 space-y-3">
             <div class="flex items-baseline justify-between">
               <span class="text-xs text-sand-rose uppercase">Precio:</span>
-              <span class="font-mono text-base font-bold text-softWhite">${formatMoney(p.priceUSD)}</span>
+              <span class="font-mono text-lg font-bold text-white">${formatMoney(p.priceUSD)}</span>
             </div>
 
             <div class="grid grid-cols-2 gap-2">
-              <button onclick="openTastingModal(${p.id})" class="w-full py-2 rounded-lg border border-sand-rose/30 bg-marques-surface hover:bg-marques-elevated text-[11px] text-sand-rose hover:text-softWhite font-medium transition text-center">
+              <button onclick="openTastingModal(${p.id})" class="w-full py-2 rounded-lg border border-sand-rose/30 bg-marques-surface hover:bg-marques-elevated text-xs text-white font-semibold transition text-center">
                 Cata & Notas
               </button>
-              <button onclick="quickAddToCart(${p.id})" class="w-full py-2 rounded-lg vino-gradient-bg text-softWhite text-[11px] font-bold uppercase tracking-wider transition hover:brightness-110 text-center">
+              <button onclick="quickAddToCart(${p.id})" class="w-full py-2 rounded-lg vino-gradient-bg text-white text-xs font-bold uppercase tracking-wider transition hover:brightness-110 text-center">
                 + Añadir
               </button>
             </div>
@@ -818,10 +818,10 @@
     function filterSpirits(category) {
       document.querySelectorAll('.spirit-pill').forEach(btn => {
         if (btn.getAttribute('data-cat') === category) {
-          btn.classList.add('border-vino-claro', 'bg-vino-claro', 'text-softWhite');
+          btn.classList.add('border-vino-claro', 'bg-vino-claro', 'text-white');
           btn.classList.remove('border-sand-rose/20', 'bg-marques-surface', 'text-sand-rose');
         } else {
-          btn.classList.remove('border-vino-claro', 'bg-vino-claro', 'text-softWhite');
+          btn.classList.remove('border-vino-claro', 'bg-vino-claro', 'text-white');
           btn.classList.add('border-sand-rose/20', 'bg-marques-surface', 'text-sand-rose');
         }
       });
@@ -842,29 +842,29 @@
       container.innerHTML = `
         <div class="md:col-span-5 h-64 md:h-full rounded-2xl bg-gradient-to-b ${p.imageGrad} border border-vino-claro/40 flex flex-col justify-center items-center p-6 text-center space-y-3">
           <span class="text-xs uppercase tracking-widest text-sand-rose font-mono">${p.origin}</span>
-          <h3 class="font-serif text-2xl font-bold text-softWhite">${p.title}</h3>
-          <span class="px-3 py-1 rounded-full bg-black/70 border border-vino-claro/40 text-xs text-softWhite">Graduación: ${p.abv}</span>
-          <span class="text-xl font-mono text-softWhite font-bold mt-4">${formatMoney(p.priceUSD)}</span>
+          <h3 class="font-serif text-2xl font-bold text-white">${p.title}</h3>
+          <span class="px-3 py-1 rounded-full bg-black/70 border border-vino-claro/40 text-xs text-white">Graduación: ${p.abv}</span>
+          <span class="text-xl font-mono text-white font-bold mt-4">${formatMoney(p.priceUSD)}</span>
         </div>
 
         <div class="md:col-span-7 space-y-4">
           <div>
-            <h4 class="font-serif text-xl font-bold text-softWhite">${p.title}</h4>
+            <h4 class="font-serif text-xl font-bold text-white">${p.title}</h4>
             <p class="text-xs text-sand-rose">${p.subtitle}</p>
           </div>
 
           <div class="space-y-2 text-xs border-y border-sand-rose/20 py-3">
-            <div><strong class="text-sand-rose">Nariz / Aromas:</strong> <span class="text-sand-rose/90">${p.notes.nose}</span></div>
-            <div><strong class="text-sand-rose">Boca / Paladar:</strong> <span class="text-sand-rose/90">${p.notes.palate}</span></div>
-            <div><strong class="text-sand-rose">Final / Retrogusto:</strong> <span class="text-sand-rose/90">${p.notes.finish}</span></div>
-            <div><strong class="text-sand-rose font-bold">Maridaje Recomendado:</strong> <span class="text-softWhite">${p.notes.pairing}</span></div>
+            <div><strong class="text-sand-rose">Nariz / Aromas:</strong> <span class="text-sand-light">${p.notes.nose}</span></div>
+            <div><strong class="text-sand-rose">Boca / Paladar:</strong> <span class="text-sand-light">${p.notes.palate}</span></div>
+            <div><strong class="text-sand-rose">Final / Retrogusto:</strong> <span class="text-sand-light">${p.notes.finish}</span></div>
+            <div><strong class="text-sand-rose font-bold">Maridaje Recomendado:</strong> <span class="text-white">${p.notes.pairing}</span></div>
           </div>
 
           <div class="flex gap-3 pt-2">
-            <button onclick="quickAddToCart(${p.id}); closeTastingModal();" class="flex-1 py-3 rounded-full vino-gradient-bg text-softWhite font-bold text-xs uppercase tracking-wider">
+            <button onclick="quickAddToCart(${p.id}); closeTastingModal();" class="flex-1 py-3 rounded-full vino-gradient-bg text-white font-bold text-xs uppercase tracking-wider">
               Añadir al Carrito
             </button>
-            <a href="https://wa.me/584122702505?text=Hola%20Bodeg%C3%B3n%20Marqu%C3%A9s,%20deseo%20consultar%20disponibilidad%20de%20${encodeURIComponent(p.title)}" target="_blank" class="px-5 py-3 rounded-full border border-sand-rose/40 hover:bg-vino-claro/20 text-sand-rose hover:text-softWhite text-xs font-semibold flex items-center justify-center">
+            <a href="https://wa.me/584122702505?text=Hola%20Bodeg%C3%B3n%20Marqu%C3%A9s,%20deseo%20consultar%20disponibilidad%20de%20${encodeURIComponent(p.title)}" target="_blank" class="px-5 py-3 rounded-full border border-sand-rose/40 hover:bg-vino-claro/20 text-sand-rose hover:text-white text-xs font-semibold flex items-center justify-center">
               Consultar por WhatsApp
             </a>
           </div>
@@ -898,10 +898,10 @@
         <div class="p-3.5 rounded-xl bg-marques-surface border border-vino-claro/40 flex items-center justify-between gap-3">
           <div>
             <span class="text-[10px] text-sand-rose font-bold uppercase tracking-wider block">Recomendación Sommelier:</span>
-            <h5 class="font-serif text-sm font-bold text-softWhite">${target.title}</h5>
-            <span class="text-xs text-softWhite font-mono">${formatMoney(target.priceUSD)}</span>
+            <h5 class="font-serif text-sm font-bold text-white">${target.title}</h5>
+            <span class="text-xs text-white font-mono">${formatMoney(target.priceUSD)}</span>
           </div>
-          <button onclick="quickAddToCart(${target.id}); closeSommelierModal();" class="px-4 py-2 rounded-lg vino-gradient-bg text-softWhite text-xs font-bold uppercase">
+          <button onclick="quickAddToCart(${target.id}); closeSommelierModal();" class="px-4 py-2 rounded-lg vino-gradient-bg text-white text-xs font-bold uppercase">
             Añadir
           </button>
         </div>
@@ -955,7 +955,7 @@
       const list = document.getElementById('cartItemsList');
       if (cart.length === 0) {
         list.innerHTML = `
-          <div class="text-center py-12 text-sand-rose/70 space-y-2">
+          <div class="text-center py-12 text-sand-light/75 space-y-2">
             <p class="text-sm">Su cesta se encuentra vacía.</p>
             <p class="text-xs text-sand-rose/60">Seleccione botellas de nuestra cava.</p>
           </div>
@@ -970,15 +970,15 @@
         row.className = "flex items-center justify-between p-3 rounded-xl bg-[#1E0812] border border-sand-rose/15 gap-3";
         row.innerHTML = `
           <div class="flex-1 space-y-0.5">
-            <h5 class="font-serif text-sm font-semibold text-softWhite">${item.title}</h5>
+            <h5 class="font-serif text-sm font-semibold text-white">${item.title}</h5>
             <span class="text-[11px] text-sand-rose font-mono">${formatMoney(item.priceUSD)} c/u</span>
           </div>
           <div class="flex items-center gap-2">
-            <button onclick="changeQty(${item.id}, -1)" class="w-6 h-6 rounded bg-marques-surface border border-sand-rose/25 text-softWhite flex items-center justify-center hover:border-vino-claro">-</button>
-            <span class="font-mono text-xs text-softWhite">${item.qty}</span>
-            <button onclick="changeQty(${item.id}, 1)" class="w-6 h-6 rounded bg-marques-surface border border-sand-rose/25 text-softWhite flex items-center justify-center hover:border-vino-claro">+</button>
+            <button onclick="changeQty(${item.id}, -1)" class="w-6 h-6 rounded bg-marques-surface border border-sand-rose/25 text-white flex items-center justify-center hover:border-vino-claro">-</button>
+            <span class="font-mono text-xs text-white">${item.qty}</span>
+            <button onclick="changeQty(${item.id}, 1)" class="w-6 h-6 rounded bg-marques-surface border border-sand-rose/25 text-white flex items-center justify-center hover:border-vino-claro">+</button>
           </div>
-          <button onclick="removeFromCart(${item.id})" class="text-sand-rose/70 hover:text-red-400 p-1">
+          <button onclick="removeFromCart(${item.id})" class="text-sand-light/75 hover:text-red-400 p-1">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"/></svg>
           </button>
         `;
