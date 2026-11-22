@@ -1,49 +1,48 @@
-# 🎨 Licores Mundiales • Manual de Identidad y Sistema de Diseño Figma
-## "El Arte de Celebrar • Desde 1973"
+# 🎨 Bodegón Marqués • Design System & Manual Figma
+## "Licores Selectos, Habanos & Delicatessen" • Instagram: @bodegonmarques
 
-Este documento resume los pilares de identidad extraídos de la comunicación oficial de **Licores Mundiales** (Instagram `@licoresmundiales`, sede Las Mercedes y plataforma de comercio digital) y proporciona las especificaciones para los diseñadores en Figma.
-
----
-
-## 1. Síntesis de Identidad de Marca (Brand Core)
-
-| Dimensión | Detalle Oficial de Licores Mundiales |
-|-----------|--------------------------------------|
-| **Marca:** | **Licores Mundiales** |
-| **Slogan Central:** | *"El arte de celebrar"* |
-| **Concepto Cultural:** | *"Un lugar construido con visión, conocimiento y el deseo de llevar cada vez más lejos el arte de celebrar"* / *"Caracas no se explica, se vive… y ahora, se bebe"* |
-| **Trayectoria:** | **Desde 1973** (+50 años de liderazgo licorero en Venezuela). |
-| **Sede Insignia:** | **Av. Río de Janeiro con Calle Trinidad, Las Mercedes, Caracas**. La tienda especializada más grande del país. |
-| **Instagram Oficial:** | **[@licoresmundiales](https://www.instagram.com/licoresmundiales)** |
-| **Espacios de Experiencia:** | Cava de vinos internacionales, salones de cata magistral, **Habanos Point oficial**, barra de mixología y coctelería de autor. |
-| **Compromiso Logístico:** | **Delivery en Caracas en el mismo día** (órdenes antes de las 6:00 PM) y **Pick-up en Las Mercedes en &lt; 45 minutos**. |
-| **Orgullo Nacional:** | Embajadores del **Ron de Venezuela con D.O.C.** (Carúpano, Diplomático, Santa Teresa, Cacique Antiguo). |
+Este manual contiene las especificaciones de diseño visual para el equipo de UI/UX en Figma, extrayendo la identidad de **Bodegón Marqués** (*Marqués Casa de Licores*):
 
 ---
 
-## 2. Paleta Cromática Institucional
+## 1. Identidad de Marca y Concepto
 
-- **Negro Cava / Obsidiana (`#09090C`):** Fondo elegante que evoca la penumbra de guarda y la alta exclusividad.
-- **Rojo Borgoña / Tinto Noble (`#6B1728` / `#8E1D36`):** El matiz del vino tinto de guarda, uvas nobles y pasión vinícola presente en sus publicaciones de Instagram.
-- **Oro Líquido / Ámbar (`#D4AF37` / `#EED9A4`):** El reflejo de los grandes destilados en copa (whiskies, rones solera, coñac).
-- **Blanco y Cristal Templado (`#FFFFFF` y `rgba(255,255,255,0.08)`):** Pureza tipográfica y transparencias glassmorphic.
+| Parámetro | Detalle Institucional |
+|-----------|----------------------|
+| **Marca:** | **Bodegón Marqués** (Marqués Casa de Licores) |
+| **Cuenta de Instagram:** | **[@bodegonmarques](https://www.instagram.com/bodegonmarques)** |
+| **Sede Principal:** | **C.C. Terracota, Av. Las Américas, Mérida, Venezuela** |
+| **Sucursales & Cobertura:** | Presencia en zonas clave de Mérida (Terracota, Alto Prado, Ejido) |
+| **Distinción Especial:** | Punto oficial **Habanos Point** autorizado (tabacos y puros de colección) |
+| **Propuesta de Valor:** | Curaduría de destilados de alta gama, rones premium venezolanos, whiskies de malta, vinos internacionales, delicatessen y delivery express |
 
 ---
 
-## 3. Tipografía & Jerarquías en Figma
+## 2. Paleta Cromática (Tokens de Color)
 
-- **Display & Títulos:** *Cormorant Garamond* (romana clásica de alto impacto editorial).
-- **Lectura & UI:** *Plus Jakarta Sans* (legibilidad técnica y números limpios para precios y notas de cata).
+- **Fondo Pizarra Nocturna (`#0A0A0D`):** Atmósfera íntima y refinada de bodega de licores selectos.
+- **Oro Imperial Marqués (`#C5A059` y `#E2C889`):** Tono dorado refinado y heráldico que transmite exclusividad sin estridencias.
+- **Ámbar Roble (`#D97706`):** Evoca la maduración de los rones de solera y whiskies añejos.
+- **Blanco Puro y Cristal Templado (`#FFFFFF` y `rgba(255,255,255,0.08)`):** Máxima nitidez y contraste en fichas técnicas.
+
+---
+
+## 3. Tipografía
+
+- **Display & Títulos:** *Cormorant Garamond* (elegancia señorial, ideal para la categoría "Marqués").
+- **UI & Lectura:** *Plus Jakarta Sans* (claridad en precios multimoneda, notas organolépticas y checkout).
 
 ---
 
 ## 4. Instrucciones para Importar a Figma
 
-1. **Vía Plugin "html.to.design":**
-   - Abre un canvas en blanco en Figma.
-   - Ejecuta el plugin **html.to.design**.
-   - Ingresa la URL de la demo: `https://jeralthc.github.io/licores-mundiales-redesign/`
-   - Obtendrás todos los frames, componentes vectoriales y Auto Layout 100% listos para editar y presentar a la junta directiva de Licores Mundiales.
+1. **Importación Directa con Plugin "html.to.design":**
+   - En Figma, abre un archivo nuevo y ejecuta el plugin **html.to.design**.
+   - Coloca la URL de la web en vivo:
+     ```
+     https://jeralthc.github.io/bodegon-marques-ecommerce/
+     ```
+   - Se crearán instantáneamente todos los frames vectoriales con Auto Layout para Desktop y Mobile.
 
-2. **Vía Tokens Studio for Figma:**
-   - Carga el archivo [`figma-tokens.json`](file:///home/jeralthc/.gemini/antigravity/scratch/licores-mundiales-redesign/figma-tokens.json) para disponer de las variables de color, tipografía y bordes automáticamente vinculadas.
+2. **Sincronización de Tokens de Estilos:**
+   - Carga el archivo [`figma-tokens.json`](file:///home/jeralthc/.gemini/antigravity/scratch/bodegon-marques-ecommerce/figma-tokens.json) mediante el plugin **Tokens Studio for Figma** para vincular las variables oficiales del Bodegón Marqués.

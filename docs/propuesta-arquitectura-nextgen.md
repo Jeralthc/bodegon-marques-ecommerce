@@ -1,65 +1,62 @@
-# 🏛️ Licores Mundiales • Propuesta de Rediseño y Arquitectura Next-Gen
-## "El Arte de Celebrar": Del Monolito a la Experiencia Digital Omnicanal
+# 🏛️ Propuesta Arquitectónica E-Commerce: Bodegón Marqués (@bodegonmarques)
+## Cómo Superar a los Grandes Competidores Nacionales con una Plataforma Headless de Alta Gama
 **Por: Desarrollador Full-Stack & Arquitecto de Software (+25 años de experiencia)**
 
 ---
 
-## 1. El Cliente: Licores Mundiales (Caracas, Venezuela)
+## 1. El Cliente: Bodegón Marqués (@bodegonmarques)
 
-**Licores Mundiales** no es un bodegón común; es **la institución de vinos y licores más prestigiosa de Venezuela**, fundada en **1973** y con sede icónica en la **Av. Río de Janeiro de Las Mercedes (Caracas)**. 
+**Bodegón Marqués** (*Marqués Casa de Licores*), ubicado en el **C.C. Terracota, Av. Las Américas, Mérida**, se ha consolidado como un referente regional indiscutible en la venta de licores importados, rones de alta guarda, vinos de autor, delicatessen y como distribuidor autorizado **Habanos Point**.
 
-Con un catálogo de más de **2,000 referencias**, salones de cata, **Habanos Point oficial** y una comunidad fiel en Instagram (**[@licoresmundiales](https://www.instagram.com/licoresmundiales)**), la empresa necesita que su tienda online transmita la misma calidez, estatus y asesoría experta que se vive al entrar a su sede física.
-
----
-
-## 2. Por Qué Rediseñar el E-Commerce Actual (Diagnóstico Técnico)
-
-La web actual sobre **Magento (Adobe Commerce)** construida por LogosCorp cumplió una etapa inicial, pero presenta limitaciones clave para el cliente de hoy:
-
-1. **Rendimiento Lento en Móvil:** Los clientes compran desde Instagram o WhatsApp en sus teléfonos. La arquitectura tradicional de Magento tarda entre 1.5 y 2.5 segundos en cargar las páginas de catálogo, perdiendo conversiones inmediatas.
-2. **Falta de Asesoría Interactiva:** En la tienda de Las Mercedes siempre hay sommeliers orientando la compra. La web actual es un buscador plano. Se requiere un **Sommelier Virtual LM** que recomiende maridajes por ocasión y presupuesto.
-3. **Checkout y Pagos Fragmentados:** La economía multimoneda de Caracas requiere una experiencia sin fricciones donde el usuario elija **Pago Móvil (C2P automático)**, **Zelle con validación instantánea**, **Tarjetas Internacionales** o **Efectivo contra entrega**, en menos de 2 pasos.
-4. **Identidad Visual Desactualizada:** El e-commerce actual parece una plantilla genérica. La propuesta Next-Gen eleva la marca con los códigos de las grandes cavas mundiales: **Rojo Borgoña, Negro Cava, Oro Líquido y Tipografía Editorial**.
+A través de su comunidad en Instagram (**[@bodegonmarques](https://www.instagram.com/bodegonmarques)**), el cliente mantiene una comunicación activa, pero requiere un canal transaccional digital propio que:
+1. No dependa exclusivamente de WhatsApp o mensajes directos para cerrar ventas.
+2. Permita consultar el inventario real de botellas, tabacos y promociones 24/7.
+3. Ofrezca una experiencia visual y tecnológica superior a la de los e-commerce tradicionales de Caracas (como el monolito tradicional de Licores Mundiales).
 
 ---
 
-## 3. Arquitectura Composable Propuesta
+## 2. Benchmark Técnico: ¿Qué Hizo Licores Mundiales y Cómo lo Superamos?
+
+En nuestro análisis a `licoresmundiales.com`, identificamos que opera sobre **Magento (Adobe Commerce)** desarrollado por LogosCorp:
+- **Puntos Débiles del Competidor:** Arquitectura monolítica pesada en PHP, tiempos de carga elevados en móvil (1.8s+), catálogo visual plano tipo supermercado y dependencia de apps híbridas separadas.
+- **La Ventaja para Bodegón Marqués:** Implementar una arquitectura **Composable & Headless Commerce** ultra-rápida, con diseño boutique exclusivo y asistente interactivo de maridaje.
 
 ```mermaid
 flowchart TD
     subgraph "Perímetro Edge"
-        CDN["Cloudflare Edge Network"]
-        CACHE["Edge Caching Global (<60ms)"]
+        CDN["Cloudflare Edge Global (<50ms TTFB)"]
     end
 
-    subgraph "Frontend Next.js 15 (Licores Mundiales Storefront)"
-        NEXT["Next.js 15 App Router (React 19)"]
-        UI["Diseño 'El Arte de Celebrar' (Tailwind + Glassmorphism)"]
-        SOM["Sommelier Virtual LM (Recomendador en Vivo)"]
-        WHATSAPP["Integración Concierge WhatsApp 1-Click"]
+    subgraph "Frontend Bodegón Marqués (Headless Storefront)"
+        NEXT["Next.js 15 App Router / React 19"]
+        UI["Diseño Boutique 'Marqués Casa de Licores'"]
+        SOM["Sommelier Marqués Virtual (IA de Maridaje)"]
+        WAPP["Botón Concierge WhatsApp Directo"]
     end
 
-    subgraph "Capa Transaccional & Datos"
-        HEADLESS["MedusaJS v2 / Shopify Storefront API"]
-        SEARCH["Meilisearch (Búsqueda instantánea de añadas y D.O.C.)"]
-        ERP["Conector ERP Las Mercedes (Sincronización de Stock)"]
-        PAY["Orquestador de Pagos (Pago Móvil C2P, Zelle, Stripe)"]
+    subgraph "Servicios Transaccionales Desacoplados"
+        BACK["MedusaJS v2 (Motor E-Commerce Open Source)"]
+        SEARCH["Meilisearch (Búsqueda por notas de cata y añada)"]
+        INVENTORY["Sincronización con Tienda C.C. Terracota"]
+        PAY["Orquestador de Pagos (Pago Móvil C2P, Zelle, Tarjetas)"]
     end
 
     CDN --> NEXT
     NEXT --> UI
     NEXT --> SOM
-    NEXT --> WHATSAPP
-    NEXT --> HEADLESS
-    HEADLESS --> SEARCH
-    HEADLESS --> ERP
-    HEADLESS --> PAY
+    NEXT --> WAPP
+    NEXT --> BACK
+    BACK --> SEARCH
+    BACK --> INVENTORY
+    BACK --> PAY
 ```
 
 ---
 
-## 4. Beneficios Tangibles para Licores Mundiales
+## 3. Características Clave del E-Commerce para Bodegón Marqués
 
-- **Carga en &lt; 65 milisegundos:** Aceleración brutal que duplica la tasa de conversión en clientes provenientes de Instagram Ads.
-- **Omnicanalidad Real con Las Mercedes:** Sincronización exacta de botellas en cava para entrega *Same-Day* antes de las 18:00 hrs o *Pick-up* en 45 minutos.
-- **Venta de Experiencias:** Integración no solo de botellas, sino de reservas para **catas privadas**, **Habanos & Maridaje** y asesoría para eventos corporativos.
+1. **Velocidad Extrema en Móvil:** Diseñado para usuarios que hacen clic desde las historias de Instagram de `@bodegonmarques`, cargando en menos de 65 milisegundos.
+2. **Asesor Sommelier Marqués:** Un recomendador interactivo que guía al cliente según su ocasión (Cena romántica, Regalo empresarial, Tarde de Habanos y Ron, Brindis familiar).
+3. **Fichas de Cata Completas:** Cada destilado cuenta con su pirámide organoléptica (**Nariz, Boca, Final y Armonía Sugerida**).
+4. **Espacio Habanos Point:** Categoría especializada para puros certificados y accesorios de corte/humidor.
+5. **Orquestación de Pagos Nacionales e Internacionales:** Pago Móvil C2P, Zelle, Tarjeta de Crédito Internacional, Transferencia y Efectivo contra entrega en C.C. Terracota o Delivery en Mérida.

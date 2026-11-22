@@ -1,38 +1,32 @@
 {
   "global": {
     "brand": {
-      "name": { "value": "Licores Mundiales", "type": "string" },
-      "slogan": { "value": "El Arte de Celebrar", "type": "string" },
-      "foundation": { "value": "1973", "type": "string" },
-      "flagship": { "value": "Las Mercedes, Av. Río de Janeiro, Caracas", "type": "string" },
-      "instagram": { "value": "@licoresmundiales", "type": "string" }
+      "name": { "value": "Bodegón Marqués", "type": "string" },
+      "alternateName": { "value": "Marqués Casa de Licores", "type": "string" },
+      "slogan": { "value": "Licores Selectos, Habanos & Delicatessen", "type": "string" },
+      "instagram": { "value": "@bodegonmarques", "type": "string" },
+      "flagship": { "value": "C.C. Terracota, Av. Las Américas, Mérida", "type": "string" }
     },
     "color": {
-      "charcoal": {
-        "deep": { "value": "#09090C", "type": "color", "description": "Fondo principal de cava nocturna" },
-        "surface": { "value": "#14141A", "type": "color", "description": "Superficie de tarjetas y estanterías" },
-        "elevated": { "value": "#1D1D26", "type": "color", "description": "Modales y menú desplegable" }
-      },
-      "burgundy": {
-        "primary": { "value": "#6B1728", "type": "color", "description": "Rojo tinto / Borgoña institucional de alta gama" },
-        "vibrant": { "value": "#8E1D36", "type": "color", "description": "Acento de vino para botones y badges" },
-        "dark": { "value": "#3D0C16", "type": "color", "description": "Sombra y fondos de contraste" }
+      "marques": {
+        "black": { "value": "#0A0A0D", "type": "color", "description": "Fondo principal de cava nocturna" },
+        "surface": { "value": "#131318", "type": "color", "description": "Superficies de estantería y tarjetas" },
+        "elevated": { "value": "#1C1C24", "type": "color", "description": "Modales y drawer del carrito" }
       },
       "gold": {
-        "liquid": { "value": "#D4AF37", "type": "color", "description": "Dorado noble para destilados y detalles" },
-        "champagne": { "value": "#EED9A4", "type": "color", "description": "Dorado claro para acentos y textos" },
-        "antique": { "value": "#997D29", "type": "color", "description": "Dorado envejecido para estados hover" },
-        "glow": { "value": "rgba(212, 175, 55, 0.2)", "type": "color", "description": "Resplandor cálido de cava" }
+        "imperial": { "value": "#C5A059", "type": "color", "description": "Dorado heráldico noble de Bodegón Marqués" },
+        "light": { "value": "#E2C889", "type": "color", "description": "Dorado claro para acentos y textos" },
+        "amber": { "value": "#D97706", "type": "color", "description": "Tono ámbar de destilados de barrica" },
+        "glow": { "value": "rgba(197, 160, 89, 0.22)", "type": "color", "description": "Resplandor cálido de cava" }
       },
       "text": {
-        "highest": { "value": "#FFFFFF", "type": "color", "description": "Títulos principales y logos" },
-        "medium": { "value": "#B2B2C2", "type": "color", "description": "Párrafos y notas de cata" },
-        "muted": { "value": "#727284", "type": "color", "description": "Metadatos y leyendas" }
+        "highest": { "value": "#FFFFFF", "type": "color", "description": "Títulos y titulares" },
+        "medium": { "value": "#B4B4C4", "type": "color", "description": "Textos de cuerpo y notas de cata" },
+        "muted": { "value": "#717182", "type": "color", "description": "Metadatos y leyendas" }
       },
       "border": {
         "glass": { "value": "rgba(255, 255, 255, 0.08)", "type": "color" },
-        "gold": { "value": "rgba(212, 175, 55, 0.35)", "type": "color" },
-        "burgundy": { "value": "rgba(142, 29, 54, 0.4)", "type": "color" }
+        "gold": { "value": "rgba(197, 160, 89, 0.35)", "type": "color" }
       }
     },
     "fontFamilies": {
