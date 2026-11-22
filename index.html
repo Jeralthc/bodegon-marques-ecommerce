@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUREUM • Haute Cave & Fine Spirits</title>
+  
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: {
+              deep: '#070709',
+              base: '#0D0D11',
+              surface: '#15151B',
+              elevated: '#1E1E26',
+              highlight: '#282833'
+            },
+            gold: {
+              liquid: '#D4AF37',
+              champagne: '#EED9A4',
+              antique: '#9E8027',
+              amber: '#E5A93C',
+              dark: '#594411'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'gold-glow': '0 0 35px -5px rgba(212, 175, 55, 0.25)',
+            'gold-card': '0 20px 40px -15px rgba(0,0,0,0.8), 0 0 25px -8px rgba(212, 175, 55, 0.15)',
+            'inner-glow': 'inset 0 0 20px 0 rgba(212, 175, 55, 0.08)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #070709; }
+    ::-webkit-scrollbar-thumb { background: #282833; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
+
+    /* Metallic Shimmer */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFF0D0 0%, #D4AF37 50%, #AA8010 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .gold-border-gradient {
+      border-image: linear-gradient(to right, rgba(212,175,55,0.4), rgba(212,175,55,0.05), rgba(212,175,55,0.4)) 1;
+    }
+
+    .ambient-bg {
+      background: radial-gradient(circle at 50% 10%, rgba(212, 175, 55, 0.08) 0%, rgba(13, 13, 17, 1) 60%);
+    }
+
+    .glass-panel {
+      background: rgba(21, 21, 27, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(212, 175, 55, 0.15);
+    }
+  </style>
+</head>
+
+<body class="bg-obsidian-deep text-[#FBFBFC] font-sans antialiased selection:bg-gold-liquid selection:text-black min-h-screen flex flex-col relative overflow-x-hidden">
+
+  <!-- ==================== TOP ANNOUNCEMENT BAR ==================== -->
+  <aside aria-label="Anuncios y servicios" class="bg-gradient-to-r from-obsidian-base via-obsidian-surface to-obsidian-base border-b border-gold-liquid/20 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-[#A3A3B2]">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span><strong class="text-gold-champagne font-medium">Servicio Valet Caracas:</strong> Entregas el mismo día antes de las 18:00 hrs • Retiro Bóveda Las Mercedes en 45 min</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <span class="hidden md:inline">Atención Privada B2B: +58 (212) 999-AURE</span>
+        <div class="flex items-center gap-1 bg-obsidian-deep/80 px-2 py-0.5 rounded border border-white/10">
+          <span class="text-gold-champagne">Moneda:</span>
+          <select id="currencySelector" onchange="changeCurrency(this.value)" class="bg-transparent text-white font-medium cursor-pointer focus:outline-none">
+            <option value="USD" class="bg-obsidian-surface text-white">USD ($)</option>
+            <option value="VES" class="bg-obsidian-surface text-white">VES (Bs.)</option>
+            <option value="EUR" class="bg-obsidian-surface text-white">EUR (€)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==================== MAIN STICKY HEADER ==================== -->
+  <header class="sticky top-0 z-40 glass-panel border-b border-gold-liquid/20 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex flex-col group">
+        <span class="font-serif text-2xl sm:text-3xl tracking-[0.25em] gold-gradient-text font-bold uppercase transition group-hover:opacity-90">
+          AUREUM
+        </span>
+        <span class="text-[9px] tracking-[0.35em] text-[#A3A3B2] uppercase font-light -mt-1 group-hover:text-gold-champagne transition">
+          Haute Cave & Fine Spirits
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium tracking-wider text-[#A3A3B2]">
+        <button onclick="filterCategory('all')" class="hover:text-gold-champagne transition py-1 border-b-2 border-transparent hover:border-gold-liquid">Colección</button>
+        <button onclick="filterCategory('whisky')" class="hover:text-gold-champagne transition py-1 border-b-2 border-transparent hover:border-gold-liquid">Whiskies de Añada</button>
+        <button onclick="filterCategory('ron')" class="hover:text-gold-champagne transition py-1 border-b-2 border-transparent hover:border-gold-liquid">Rones de Solera</button>
+        <button onclick="filterCategory('champagne')" class="hover:text-gold-champagne transition py-1 border-b-2 border-transparent hover:border-gold-liquid">Champagne & Vinos</button>
+        <button onclick="filterCategory('agave')" class="hover:text-gold-champagne transition py-1 border-b-2 border-transparent hover:border-gold-liquid">Agave & Destilados</button>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="flex items-center gap-3 sm:gap-4">
+        
+        <!-- Sommelier AI Trigger Button -->
+        <button onclick="openSommelierModal()" class="relative group flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full border border-gold-liquid/40 bg-gold-liquid/10 hover:bg-gold-liquid/20 text-gold-champagne text-xs sm:text-sm font-medium tracking-wide transition shadow-sm hover:shadow-gold-glow">
+          <svg class="w-4 h-4 text-gold-liquid animate-spin-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z"/>
+          </svg>
+          <span class="hidden sm:inline">Sommelier AI</span>
+          <span class="sm:hidden">Maître AI</span>
+          <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-gold-liquid rounded-full animate-ping"></span>
+        </button>
+
+        <!-- Search Input Modal Trigger / Quick Search -->
+        <div class="relative hidden md:block">
+          <input 
+            type="text" 
+            id="searchInput" 
+            onkeyup="handleSearch(this.value)"
+            placeholder="Buscar etiqueta, cosecha, añada..." 
+            class="w-48 lg:w-64 bg-obsidian-surface border border-white/10 rounded-full px-4 py-1.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-gold-liquid/60 transition pl-8"
+          />
+          <svg class="w-3.5 h-3.5 text-gray-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+        </div>
+
+        <!-- Shopping Cart Trigger -->
+        <button onclick="toggleCartDrawer()" class="relative p-2.5 rounded-full bg-obsidian-surface hover:bg-obsidian-highlight border border-white/10 hover:border-gold-liquid/40 transition">
+          <svg class="w-5 h-5 text-gold-champagne" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
+          </svg>
+          <span id="cartCountBadge" class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-gold-liquid text-black font-bold text-[10px] flex items-center justify-center border-2 border-obsidian-deep">0</span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION (HAUTE CAVE) ==================== -->
+  <section class="relative pt-12 pb-20 ambient-bg border-b border-white/5 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gold-liquid/30 bg-gold-liquid/5 text-xs text-gold-champagne tracking-widest uppercase">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-liquid"></span>
+            Curaduría de Alta Cava • Edición 2026
+          </div>
+          
+          <h1 class="font-serif text-4xl sm:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.08]">
+            El Arte Secreto de los <br class="hidden sm:block"/>
+            <span class="gold-gradient-text italic font-normal">Grandes Destilados</span>
+          </h1>
+          
+          <p class="text-base sm:text-lg text-[#A3A3B2] font-light max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            Una plataforma nacida para superar el e-commerce masivo convencional. Acceso exclusivo a lotes de barrica única, añadas legendarias y botellas de inversión custodiadas bajo atmósfera climatizada con entrega en guante blanco.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#catalogo" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-gold-liquid via-gold-amber to-gold-antique text-black font-semibold text-sm tracking-wider uppercase transition transform hover:scale-[1.02] shadow-gold-glow flex items-center justify-center gap-2">
+              <span>Explorar Bóveda Privada</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+
+            <button onclick="openSommelierModal()" class="w-full sm:w-auto px-6 py-3.5 rounded-full border border-gold-liquid/40 bg-obsidian-surface/60 hover:bg-obsidian-elevated text-gold-champagne font-medium text-sm tracking-wide transition flex items-center justify-center gap-2">
+              <svg class="w-4 h-4 text-gold-liquid" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.516 0c.85.493 1.508 1.333 1.508 2.316V18"/></svg>
+              <span>Consultar Maître Virtual</span>
+            </button>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="grid grid-cols-3 gap-4 pt-8 border-t border-white/5 text-center lg:text-left">
+            <div>
+              <span class="block font-serif text-2xl text-gold-champagne font-bold">100%</span>
+              <span class="text-xs text-[#6B6B7B] uppercase tracking-wider">Trazabilidad de Bodega</span>
+            </div>
+            <div>
+              <span class="block font-serif text-2xl text-gold-champagne font-bold">&lt; 60 min</span>
+              <span class="text-xs text-[#6B6B7B] uppercase tracking-wider">Protocolo Same-Day</span>
+            </div>
+            <div>
+              <span class="block font-serif text-2xl text-gold-champagne font-bold">14°C</span>
+              <span class="text-xs text-[#6B6B7B] uppercase tracking-wider">Cava Climatizada 24/7</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual Showpiece -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="relative w-72 sm:w-80 h-[450px] rounded-2xl glass-panel p-6 shadow-gold-card flex flex-col justify-between overflow-hidden border border-gold-liquid/30 group">
+            
+            <!-- Ambient spotlight behind bottle -->
+            <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-48 h-48 bg-gold-liquid/20 rounded-full blur-3xl group-hover:bg-gold-liquid/30 transition duration-700"></div>
+            
+            <div class="relative z-10 flex justify-between items-start">
+              <span class="px-2.5 py-1 rounded bg-black/60 border border-gold-liquid/30 text-[10px] tracking-widest uppercase text-gold-champagne font-semibold">Pieza del Mes</span>
+              <span class="text-xs text-emerald-400 font-mono">En Cava (1 de 3)</span>
+            </div>
+
+            <!-- Bottle Representation -->
+            <div class="relative z-10 flex flex-col items-center my-auto transition duration-500 group-hover:scale-105">
+              <div class="w-32 h-64 bg-gradient-to-b from-amber-600/40 via-yellow-700/60 to-amber-950/80 rounded-t-3xl rounded-b-xl border border-gold-liquid/40 shadow-2xl relative flex items-center justify-center p-3">
+                <div class="w-full h-full border border-gold-liquid/20 rounded-t-2xl p-2 flex flex-col justify-between items-center text-center">
+                  <span class="font-serif text-[10px] tracking-widest text-gold-champagne uppercase">Speyside, Scotland</span>
+                  <div class="my-auto">
+                    <span class="block font-serif text-xs text-white font-bold">THE MACALLAN</span>
+                    <span class="block text-[8px] text-gold-liquid tracking-widest">25 YEARS OLD</span>
+                    <span class="block text-[7px] text-gray-400 mt-1">Sherry Oak Casks</span>
+                  </div>
+                  <span class="text-[8px] text-gray-500">43% ALC. VOL. • 700ML</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative z-10 bg-obsidian-deep/80 p-3 rounded-xl border border-white/5 space-y-1">
+              <div class="flex justify-between items-baseline">
+                <h4 class="font-serif text-sm font-bold text-white">The Macallan 25 Sherry Oak</h4>
+                <span class="text-gold-champagne font-semibold text-sm" id="heroPrice">$2,450</span>
+              </div>
+              <p class="text-[11px] text-[#A3A3B2] line-clamp-1">Notas de jerez oloroso, dátiles, humo suave y canela de Ceilán.</p>
+              <button onclick="quickAddToCart(1)" class="w-full mt-2 py-1.5 rounded-lg bg-gold-liquid/20 hover:bg-gold-liquid text-gold-champagne hover:text-black text-xs font-semibold uppercase tracking-wider transition">
+                Añadir a la Cava Personal
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INTERACTIVE FILTER & SEARCH SECTION ==================== -->
+  <section id="catalogo" class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    
+    <!-- Section Title & Filters -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-white/5">
+      <div>
+        <span class="text-gold-champagne text-xs font-semibold tracking-widest uppercase block mb-1">Inventario Seleccionado</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
+          La Bóveda de Licores & Vinos
+        </h2>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="flex flex-wrap gap-2">
+        <button onclick="filterCategory('all')" class="cat-pill active px-4 py-1.5 rounded-full text-xs font-medium tracking-wide transition border border-gold-liquid bg-gold-liquid text-black" data-cat="all">
+          Todos (<span id="countAll">8</span>)
+        </button>
+        <button onclick="filterCategory('whisky')" class="cat-pill px-4 py-1.5 rounded-full text-xs font-medium tracking-wide transition border border-white/10 bg-obsidian-surface text-[#A3A3B2] hover:text-white" data-cat="whisky">
+          Single Malts & Whiskies
+        </button>
+        <button onclick="filterCategory('ron')" class="cat-pill px-4 py-1.5 rounded-full text-xs font-medium tracking-wide transition border border-white/10 bg-obsidian-surface text-[#A3A3B2] hover:text-white" data-cat="ron">
+          Rones de Solera D.O.C.
+        </button>
+        <button onclick="filterCategory('champagne')" class="cat-pill px-4 py-1.5 rounded-full text-xs font-medium tracking-wide transition border border-white/10 bg-obsidian-surface text-[#A3A3B2] hover:text-white" data-cat="champagne">
+          Champagne & Cognac
+        </button>
+        <button onclick="filterCategory('agave')" class="cat-pill px-4 py-1.5 rounded-full text-xs font-medium tracking-wide transition border border-white/10 bg-obsidian-surface text-[#A3A3B2] hover:text-white" data-cat="agave">
+          Agave & Destilados Finos
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Grid Container -->
+    <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-8">
+      <!-- Injected by JavaScript dynamically with high-end card templates -->
+    </div>
+
+  </section>
+
+  <!-- ==================== PRIVATE CELLAR & VIP MEMBERSHIP TEASER ==================== -->
+  <section class="my-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div class="rounded-3xl p-8 sm:p-12 relative overflow-hidden glass-panel border border-gold-liquid/30 shadow-gold-glow">
+      <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-gold-liquid/10 rounded-full blur-3xl"></div>
+      
+      <div class="max-w-2xl relative z-10 space-y-4">
+        <span class="px-3 py-1 rounded-full bg-gold-liquid/10 text-gold-champagne text-xs font-medium tracking-widest uppercase border border-gold-liquid/30">
+          Servicio Privado de Custodia
+        </span>
+        <h3 class="font-serif text-3xl sm:text-4xl font-bold text-white leading-tight">
+          ¿Posee botellas de inversión o requiere maridaje para eventos de alto nivel?
+        </h3>
+        <p class="text-sm sm:text-base text-[#A3A3B2] leading-relaxed">
+          Nuestro equipo de sommeliers certificados ofrece auditoría de bodegas privadas, catas guiadas en residencias o sedes corporativas, y asignación prioritaria de barricas únicas importadas bajo demanda.
+        </p>
+        <div class="pt-4 flex flex-wrap gap-4">
+          <button onclick="showToast('Solicitud de membresía VIP abierta. Un Maître se comunicará en breve.')" class="px-6 py-3 rounded-full bg-gold-liquid text-black font-semibold text-xs tracking-wider uppercase hover:bg-gold-champagne transition shadow-md">
+            Solicitar Invitación Bóveda VIP
+          </button>
+          <button onclick="openSommelierModal()" class="px-6 py-3 rounded-full border border-white/20 hover:border-gold-liquid text-white text-xs tracking-wider uppercase transition">
+            Iniciar Test de Maridaje
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="mt-auto border-t border-white/5 bg-obsidian-deep py-12 text-[#6B6B7B] text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+      
+      <div class="space-y-3">
+        <span class="font-serif text-xl tracking-[0.2em] gold-gradient-text font-bold block">AUREUM</span>
+        <p class="text-[11px] leading-relaxed text-[#A3A3B2]">
+          Plataforma de alta cava digital inspirada en los 50 años de tradición licorera en Venezuela, redefinida con estándares contemporáneos de lujo silencioso, arquitectura Composable y entrega ceremonial.
+        </p>
+        <p class="text-[10px] text-gray-500">© 2026 AUREUM Haute Cave. Todos los derechos reservados.</p>
+      </div>
+
+      <div>
+        <h4 class="text-white uppercase tracking-wider font-semibold mb-3">Protocolos de Servicio</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-gold-champagne transition">Valet Express Caracas (Same-day)</a></li>
+          <li><a href="#" class="hover:text-gold-champagne transition">Retiro en Bóveda Las Mercedes</a></li>
+          <li><a href="#" class="hover:text-gold-champagne transition">Certificación de Cava Climatizada</a></li>
+          <li><a href="#" class="hover:text-gold-champagne transition">Envíos Especiales Nacionales</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white uppercase tracking-wider font-semibold mb-3">Pasarelas & Conciliación</h4>
+        <ul class="space-y-2">
+          <li><span class="text-gray-400">Pago Móvil Instantáneo (C2P/P2P)</span></li>
+          <li><span class="text-gray-400">Zelle Conciliado Automáticamente</span></li>
+          <li><span class="text-gray-400">Tarjetas Internacionales (Stripe)</span></li>
+          <li><span class="text-gray-400">Activos Cripto (USDT, BTC)</span></li>
+          <li><span class="text-gray-400">Efectivo en Bóveda / Custodia</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white uppercase tracking-wider font-semibold mb-3">Responsabilidad Legal</h4>
+        <p class="text-[11px] leading-relaxed mb-2">
+          El consumo de bebidas alcohólicas es exclusivo para mayores de edad (18+ en Venezuela / 21+ según jurisdicción). El consumo en exceso es perjudicial para la salud.
+        </p>
+        <div class="inline-block px-2 py-1 rounded border border-white/10 text-[10px] text-gold-champagne">
+          Licencia y Cumplimiento Fiscal SENIAT Activo
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== SOMMELIER AI CONCIERGE MODAL ==================== -->
+  <div id="sommelierModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md transition-opacity">
+    <div class="relative w-full max-w-xl glass-panel rounded-3xl p-6 sm:p-8 border border-gold-liquid/40 shadow-gold-glow animate-fade-in">
+      
+      <button onclick="closeSommelierModal()" class="absolute top-5 right-5 text-gray-400 hover:text-white p-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-full bg-gold-liquid/20 border border-gold-liquid/40 flex items-center justify-center text-gold-champagne">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>
+        </div>
+        <div>
+          <h3 class="font-serif text-xl font-bold text-white">Maître Sommelier Virtual</h3>
+          <span class="text-xs text-gold-champagne">Asistente Inteligente de Maridaje & Curaduría</span>
+        </div>
+      </div>
+
+      <div id="sommelierStep1" class="space-y-4">
+        <p class="text-xs sm:text-sm text-[#A3A3B2]">
+          Para ofrecerle una recomendación precisa de nuestra cava, seleccione la ocasión de su descorche:
+        </p>
+
+        <div class="grid grid-cols-2 gap-3">
+          <button onclick="runSommelier('gala')" class="p-3.5 rounded-xl border border-white/10 hover:border-gold-liquid bg-obsidian-deep hover:bg-obsidian-surface text-left transition space-y-1">
+            <span class="block text-xs font-semibold text-white">Cena de Gala / Ocasión Cumbre</span>
+            <span class="block text-[11px] text-[#A3A3B2]">Maridajes con carnes nobles o postres finos</span>
+          </button>
+
+          <button onclick="runSommelier('gift')" class="p-3.5 rounded-xl border border-white/10 hover:border-gold-liquid bg-obsidian-deep hover:bg-obsidian-surface text-left transition space-y-1">
+            <span class="block text-xs font-semibold text-white">Regalo Corporativo / VIP</span>
+            <span class="block text-[11px] text-[#A3A3B2]">Empaque de estuche y máxima distinción</span>
+          </button>
+
+          <button onclick="runSommelier('cask')" class="p-3.5 rounded-xl border border-white/10 hover:border-gold-liquid bg-obsidian-deep hover:bg-obsidian-surface text-left transition space-y-1">
+            <span class="block text-xs font-semibold text-white">Cata de Coleccionista</span>
+            <span class="block text-[11px] text-[#A3A3B2]">Barricas únicas y añadas limitadas</span>
+          </button>
+
+          <button onclick="runSommelier('toast')" class="p-3.5 rounded-xl border border-white/10 hover:border-gold-liquid bg-obsidian-deep hover:bg-obsidian-surface text-left transition space-y-1">
+            <span class="block text-xs font-semibold text-white">Brindis & Celebración</span>
+            <span class="block text-[11px] text-[#A3A3B2]">Efervescencia Grand Cru y frescura</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Recommendation Result State -->
+      <div id="sommelierResult" class="hidden mt-4 pt-4 border-t border-white/10 space-y-4">
+        <div class="flex items-center gap-2 text-xs text-gold-champagne font-semibold uppercase tracking-wider">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          <span>Recomendación Personalizada del Maître:</span>
+        </div>
+
+        <div id="recommendedCard" class="p-4 rounded-2xl bg-obsidian-deep border border-gold-liquid/40 flex items-center justify-between gap-4">
+          <!-- Dynamic injected product -->
+        </div>
+
+        <button onclick="resetSommelier()" class="w-full py-2 text-center text-xs text-[#A3A3B2] hover:text-white transition">
+          ← Probar otra ocasión
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== PRODUCT TASTING NOTES MODAL ==================== -->
+  <div id="tastingModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+    <div class="relative w-full max-w-3xl glass-panel rounded-3xl p-6 sm:p-8 border border-gold-liquid/40 shadow-gold-glow max-h-[90vh] overflow-y-auto">
+      
+      <button onclick="closeTastingModal()" class="absolute top-5 right-5 text-gray-400 hover:text-white p-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center" id="tastingModalContent">
+        <!-- Injected dynamically -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== SHOPPING CART DRAWER ==================== -->
+  <div id="cartDrawerBackdrop" onclick="toggleCartDrawer()" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden transition-opacity"></div>
+  
+  <div id="cartDrawer" class="fixed top-0 right-0 h-full w-full sm:w-[440px] z-50 glass-panel border-l border-gold-liquid/30 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300">
+    
+    <!-- Drawer Header -->
+    <div class="flex items-center justify-between pb-4 border-b border-white/10">
+      <div class="flex items-center gap-2">
+        <h3 class="font-serif text-xl font-bold text-white">Su Cava Personal</h3>
+        <span id="drawerCount" class="text-xs px-2 py-0.5 rounded-full bg-gold-liquid/20 text-gold-champagne font-mono">0 ítems</span>
+      </div>
+      <button onclick="toggleCartDrawer()" class="p-1.5 text-gray-400 hover:text-white">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Items List Container -->
+    <div id="cartItemsList" class="flex-1 overflow-y-auto py-4 space-y-4">
+      <div class="text-center py-12 text-[#6B6B7B] space-y-2">
+        <svg class="w-12 h-12 mx-auto text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m6 4.125l2.25 2.25m0 0l2.25 2.25M12 13.875l2.25-2.25M12 13.875l-2.25 2.25M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+        <p class="text-sm">Su cesta de alta cava se encuentra vacía.</p>
+        <p class="text-xs text-gray-500">Explore nuestras etiquetas y añada sus botellas predilectas.</p>
+      </div>
+    </div>
+
+    <!-- Drawer Footer / Checkout -->
+    <div class="pt-4 border-t border-white/10 space-y-3">
+      
+      <!-- Logistics Mode Selector -->
+      <div class="space-y-1">
+        <label class="text-[11px] text-[#A3A3B2] uppercase tracking-wider block">Método de Despacho:</label>
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <label class="flex items-center gap-2 p-2 rounded-lg bg-obsidian-deep border border-white/10 cursor-pointer hover:border-gold-liquid">
+            <input type="radio" name="deliveryMethod" value="valet" checked onchange="updateCartTotals()" class="accent-gold-liquid">
+            <span>Valet Caracas ($5)</span>
+          </label>
+          <label class="flex items-center gap-2 p-2 rounded-lg bg-obsidian-deep border border-white/10 cursor-pointer hover:border-gold-liquid">
+            <input type="radio" name="deliveryMethod" value="pickup" onchange="updateCartTotals()" class="accent-gold-liquid">
+            <span>Retiro Las Mercedes ($0)</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Totals -->
+      <div class="space-y-1 text-xs">
+        <div class="flex justify-between text-[#A3A3B2]">
+          <span>Subtotal:</span>
+          <span id="cartSubtotal" class="font-mono text-white">$0.00</span>
+        </div>
+        <div class="flex justify-between text-[#A3A3B2]">
+          <span>Logística:</span>
+          <span id="cartShipping" class="font-mono text-white">$5.00</span>
+        </div>
+        <div class="flex justify-between text-base font-bold text-white pt-2 border-t border-white/5">
+          <span>Inversión Total:</span>
+          <span id="cartTotal" class="font-mono text-gold-champagne">$5.00</span>
+        </div>
+      </div>
+
+      <!-- Payment Method Badges -->
+      <div class="flex items-center justify-between text-[10px] text-gray-400 py-1">
+        <span>Aceptamos:</span>
+        <div class="flex gap-1.5 font-mono text-[9px]">
+          <span class="px-1.5 py-0.5 rounded bg-black/60 border border-white/10">ZELLE</span>
+          <span class="px-1.5 py-0.5 rounded bg-black/60 border border-white/10">PAGO MÓVIL</span>
+          <span class="px-1.5 py-0.5 rounded bg-black/60 border border-white/10">STRIPE</span>
+          <span class="px-1.5 py-0.5 rounded bg-black/60 border border-white/10">USDT</span>
+        </div>
+      </div>
+
+      <button onclick="processCheckout()" class="w-full py-3.5 rounded-full bg-gradient-to-r from-gold-liquid to-gold-antique text-black font-semibold text-xs tracking-widest uppercase hover:brightness-110 transition shadow-gold-glow">
+        Confirmar Reserva & Pago Seguro
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- ==================== TOAST NOTIFICATION CONTAINER ==================== -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="glass-panel border border-gold-liquid/40 px-4 py-3 rounded-2xl shadow-gold-glow flex items-center gap-3">
+      <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+      <span id="toastMsg" class="text-xs text-white font-medium">Acción completada</span>
+    </div>
+  </div>
+
+  <!-- ==================== JAVASCRIPT LOGIC & STATE ENGINE ==================== -->
+  <script>
+    // State
+    let currentCurrency = 'USD';
+    const exchangeRates = {
+      USD: 1.0,
+      VES: 54.50, // Realistic reference conversion
+      EUR: 0.92
+    };
+
+    // Authentic curated products database
+    const products = [
+      {
+        id: 1,
+        title: "The Macallan 25 Años",
+        subtitle: "Sherry Oak Casks • Speyside Single Malt",
+        category: "whisky",
+        country: "Escocia 🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+        abv: "43%",
+        priceUSD: 2450.00,
+        badge: "Pieza de Colección",
+        imageGrad: "from-amber-700/80 to-amber-950",
+        notes: {
+          nose: "Cítricos secos, canela, jerez oloroso profundo y madera ahumada.",
+          palate: "Con cuerpo pleno, frutos secos, dátiles caramelizados y especias cálidas.",
+          finish: "Interminable, roble persistente y cacao negro 85%.",
+          pairing: "Habanos Cohiba Siglo VI o chocolates trufados con sal marina."
+        }
+      },
+      {
+        id: 2,
+        title: "Ron Diplomático Ambassador",
+        subtitle: "Cask Strength • Acabado Pedro Ximénez • D.O.C.",
+        category: "ron",
+        country: "Venezuela 🇻🇪",
+        abv: "47%",
+        priceUSD: 310.00,
+        badge: "D.O.C. Venezuela",
+        imageGrad: "from-amber-600/80 to-stone-900",
+        notes: {
+          nose: "Vainilla tostada, tabaco rubio, pasas rubias y notas ahumadas de barrica.",
+          palate: "Entrada untuosa, caramelo quemado, nuez moscada y chocolate amargo.",
+          finish: "Sedoso y cálido, con regusto a vino dulce español.",
+          pairing: "Carnes maduradas a la brasa o postres de café tostado."
+        }
+      },
+      {
+        id: 3,
+        title: "Dom Pérignon Vintage Plénitude 2",
+        subtitle: "Segunda Vida de Maduración • Cosecha 2004",
+        category: "champagne",
+        country: "Francia 🇫🇷",
+        abv: "12.5%",
+        priceUSD: 520.00,
+        badge: "Grand Cru Exclusivo",
+        imageGrad: "from-yellow-500/70 to-emerald-950",
+        notes: {
+          nose: "Brioche tostado, avellana tostada, pomelo rosado y mineralidad de tiza.",
+          palate: "Efervescencia microscópica, ataque tenso, cremosidad envolvente.",
+          finish: "Salino, de una longitud etérea insuperable.",
+          pairing: "Caviar Beluga, ostras francesas o carpaccio de vieiras."
+        }
+      },
+      {
+        id: 4,
+        title: "Clase Azul Tequila Reposado",
+        subtitle: "Licorera Artesanal Pintada a Mano • Agave Tequilana",
+        category: "agave",
+        country: "México 🇲🇽",
+        abv: "40%",
+        priceUSD: 240.00,
+        badge: "Artesanal Decanter",
+        imageGrad: "from-blue-700/80 to-slate-950",
+        notes: {
+          nose: "Agave cocido dulce, miel de azahar, canela y madera tierna.",
+          palate: "Extremadamente suave, toques de vainilla de Papantla y toffee.",
+          finish: "Aterciopelado con notas de cáscara de naranja confitada.",
+          pairing: "Ceviches de lubina o costillas glaseadas al agave."
+        }
+      },
+      {
+        id: 5,
+        title: "The Yamazaki 18 Años",
+        subtitle: "Mizunara Japanese Oak • Suntory Whisky",
+        category: "whisky",
+        country: "Japón 🇯🇵",
+        abv: "43%",
+        priceUSD: 980.00,
+        badge: "Rare Allocation",
+        imageGrad: "from-red-800/80 to-neutral-950",
+        notes: {
+          nose: "Incienso sándalo (Mizunara), frutos rojos maduros y mermelada de higos.",
+          palate: "Ciruela negra, jengibre fresco, chocolate amargo y cedro.",
+          finish: "Largo, ligeramente seco, con ecos de té matcha.",
+          pairing: "Sashimi de atún toro o cortes de Wagyu A5."
+        }
+      },
+      {
+        id: 6,
+        title: "Ron Carúpano Legendario",
+        subtitle: "25 Años Solera • Botella Numerada • D.O.C.",
+        category: "ron",
+        country: "Venezuela 🇻🇪",
+        abv: "40%",
+        priceUSD: 490.00,
+        badge: "Edición Limitada 500 uds",
+        imageGrad: "from-yellow-700/80 to-stone-950",
+        notes: {
+          nose: "Almendra tostada, toques de cuero curtido, miel de caña y ciruela pasa.",
+          palate: "Gran densidad glicérica, equilibrio perfecto entre madera y melaza.",
+          finish: "Retrogusto prolongado que evoca el clima del oriente venezolano.",
+          pairing: "Quesos azules madurados o cata pura en copa tulipán."
+        }
+      },
+      {
+        id: 7,
+        title: "Louis XIII de Rémy Martin",
+        subtitle: "Grande Champagne Cognac • Hasta 1,200 Aguardientes",
+        category: "champagne",
+        country: "Francia 🇫🇷",
+        abv: "40%",
+        priceUSD: 4100.00,
+        badge: "Baccarat Crystal Decanter",
+        imageGrad: "from-amber-600/90 to-red-950",
+        notes: {
+          nose: "Mirra, miel de rosas, jazmín, azafrán, cuero y humo de corteza de roble.",
+          palate: "Explosión floral, higos secos, frutas de la pasión y ciruelas milenarias.",
+          finish: "Persiste en boca por más de una hora continua.",
+          pairing: "Degustación solitaria ceremonial a temperatura de cava."
+        }
+      },
+      {
+        id: 8,
+        title: "Monkey 47 Distiller's Cut",
+        subtitle: "Black Forest Dry Gin • 47 Botánicos Selva Negra",
+        category: "agave",
+        country: "Alemania 🇩🇪",
+        abv: "47%",
+        priceUSD: 145.00,
+        badge: "Boutique Gin",
+        imageGrad: "from-emerald-700/80 to-stone-950",
+        notes: {
+          nose: "Enebro silvestre, bayas rojas de la Selva Negra, cardamomo y cítricos.",
+          palate: "Complejo, fresco, floral con notas de pimienta cubeba y pino.",
+          finish: "Puro, mineral y vigorizante.",
+          pairing: "Tónica premium seca, piel de pomelo y flor de saúco."
+        }
+      }
+    ];
+
+    // Cart Store
+    let cart = [];
+
+    // Currency Formatter
+    function formatMoney(amountUSD) {
+      const converted = amountUSD * exchangeRates[currentCurrency];
+      if (currentCurrency === 'USD') return `$${converted.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+      if (currentCurrency === 'EUR') return `€${converted.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+      if (currentCurrency === 'VES') return `Bs. ${converted.toLocaleString('es-VE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+      return `$${amountUSD.toFixed(2)}`;
+    }
+
+    function changeCurrency(newCurr) {
+      currentCurrency = newCurr;
+      renderProducts(products);
+      document.getElementById('heroPrice').innerText = formatMoney(2450.00);
+      updateCartTotals();
+      showToast(`Moneda cambiada a ${newCurr}`);
+    }
+
+    // Render Product Cards
+    function renderProducts(items) {
+      const grid = document.getElementById('productGrid');
+      grid.innerHTML = '';
+
+      if (items.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full text-center py-12 text-[#6B6B7B]">
+            <p class="text-sm">No se encontraron etiquetas que coincidan con su criterio de búsqueda.</p>
+          </div>
+        `;
+        return;
+      }
+
+      items.forEach(p => {
+        const card = document.createElement('div');
+        card.className = "group glass-panel rounded-2xl p-5 border border-white/10 hover:border-gold-liquid/40 transition duration-300 flex flex-col justify-between hover:shadow-gold-card relative overflow-hidden";
+        
+        card.innerHTML = `
+          <!-- Top Badge & Origin -->
+          <div class="flex justify-between items-center text-[10px] tracking-wider uppercase mb-3">
+            <span class="px-2 py-0.5 rounded bg-black/60 border border-gold-liquid/30 text-gold-champagne font-medium">${p.badge}</span>
+            <span class="text-gray-400 font-sans">${p.country}</span>
+          </div>
+
+          <!-- Bottle Graphic Centerpiece -->
+          <div class="relative py-6 flex items-center justify-center">
+            <div class="w-20 h-44 rounded-t-2xl rounded-b-lg bg-gradient-to-b ${p.imageGrad} border border-gold-liquid/30 shadow-xl flex items-center justify-center p-2 text-center group-hover:scale-105 transition duration-300">
+              <div class="w-full h-full border border-gold-liquid/20 rounded p-1 flex flex-col justify-between items-center">
+                <span class="text-[7px] text-gold-champagne font-serif uppercase tracking-widest">${p.abv}</span>
+                <span class="font-serif text-[9px] text-white font-bold leading-tight line-clamp-2">${p.title}</span>
+                <span class="text-[7px] text-gray-400">700ml</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Info -->
+          <div class="space-y-1.5 pt-2">
+            <h4 class="font-serif text-lg font-bold text-white group-hover:text-gold-champagne transition">${p.title}</h4>
+            <p class="text-[11px] text-[#A3A3B2] line-clamp-1">${p.subtitle}</p>
+            
+            <div class="flex items-baseline justify-between pt-2">
+              <span class="font-mono text-base font-bold text-gold-champagne">${formatMoney(p.priceUSD)}</span>
+              <span class="text-[10px] text-emerald-400 font-mono">Stock Garantizado</span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="grid grid-cols-2 gap-2 pt-4 mt-2 border-t border-white/5">
+            <button onclick="openTastingModal(${p.id})" class="py-2 px-3 rounded-lg border border-white/10 hover:border-gold-liquid/50 text-xs text-[#A3A3B2] hover:text-white transition text-center">
+              Notas de Cata
+            </button>
+            <button onclick="quickAddToCart(${p.id})" class="py-2 px-3 rounded-lg bg-gold-liquid/20 hover:bg-gold-liquid text-gold-champagne hover:text-black font-semibold text-xs transition text-center tracking-wide">
+              + Añadir
+            </button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // Category Filter
+    function filterCategory(cat) {
+      document.querySelectorAll('.cat-pill').forEach(b => {
+        if (b.dataset.cat === cat) {
+          b.className = "cat-pill px-4 py-1.5 rounded-full text-xs font-medium tracking-wide transition border border-gold-liquid bg-gold-liquid text-black";
+        } else {
+          b.className = "cat-pill px-4 py-1.5 rounded-full text-xs font-medium tracking-wide transition border border-white/10 bg-obsidian-surface text-[#A3A3B2] hover:text-white";
+        }
+      });
+
+      if (cat === 'all') {
+        renderProducts(products);
+      } else {
+        const filtered = products.filter(p => p.category === cat);
+        renderProducts(filtered);
+      }
+    }
+
+    // Live Search
+    function handleSearch(query) {
+      const q = query.toLowerCase().trim();
+      const filtered = products.filter(p => 
+        p.title.toLowerCase().includes(q) || 
+        p.subtitle.toLowerCase().includes(q) ||
+        p.country.toLowerCase().includes(q) ||
+        p.category.toLowerCase().includes(q)
+      );
+      renderProducts(filtered);
+    }
+
+    // Sommelier AI Interactive Logic
+    function openSommelierModal() {
+      document.getElementById('sommelierModal').classList.remove('hidden');
+    }
+
+    function closeSommelierModal() {
+      document.getElementById('sommelierModal').classList.add('hidden');
+      resetSommelier();
+    }
+
+    function runSommelier(occasion) {
+      let chosen;
+      if (occasion === 'gala') chosen = products.find(p => p.id === 2); // Diplomático Ambassador
+      else if (occasion === 'gift') chosen = products.find(p => p.id === 4); // Clase Azul
+      else if (occasion === 'cask') chosen = products.find(p => p.id === 1); // Macallan 25
+      else chosen = products.find(p => p.id === 3); // Dom Pérignon
+
+      const card = document.getElementById('recommendedCard');
+      card.innerHTML = `
+        <div class="space-y-1">
+          <span class="text-[10px] text-gold-champagne uppercase tracking-widest block font-semibold">${chosen.badge}</span>
+          <h4 class="font-serif text-lg font-bold text-white">${chosen.title}</h4>
+          <p class="text-xs text-[#A3A3B2]">${chosen.notes.pairing}</p>
+          <span class="font-mono text-sm text-gold-champagne font-bold block pt-1">${formatMoney(chosen.priceUSD)}</span>
+        </div>
+        <button onclick="quickAddToCart(${chosen.id}); closeSommelierModal(); toggleCartDrawer();" class="px-4 py-2.5 rounded-xl bg-gold-liquid text-black font-bold text-xs uppercase tracking-wider hover:brightness-110 whitespace-nowrap">
+          Añadir a Mi Cava
+        </button>
+      `;
+
+      document.getElementById('sommelierResult').classList.remove('hidden');
+    }
+
+    function resetSommelier() {
+      document.getElementById('sommelierResult').classList.add('hidden');
+    }
+
+    // Product Tasting Modal
+    function openTastingModal(id) {
+      const p = products.find(i => i.id === id);
+      if (!p) return;
+
+      const container = document.getElementById('tastingModalContent');
+      container.innerHTML = `
+        <div class="md:col-span-5 flex flex-col items-center justify-center p-6 bg-obsidian-deep/80 rounded-2xl border border-white/5">
+          <div class="w-28 h-60 rounded-t-3xl rounded-b-xl bg-gradient-to-b ${p.imageGrad} border border-gold-liquid/40 shadow-2xl flex items-center justify-center p-3 mb-4">
+            <span class="font-serif text-xs text-white text-center font-bold">${p.title}</span>
+          </div>
+          <span class="text-xs text-gold-champagne font-mono">${p.abv} ABV • 700ml</span>
+          <span class="text-xs text-gray-400 mt-1">${p.country}</span>
+        </div>
+
+        <div class="md:col-span-7 space-y-4">
+          <div>
+            <span class="text-[10px] text-gold-champagne uppercase tracking-widest block font-semibold">${p.badge}</span>
+            <h3 class="font-serif text-2xl font-bold text-white">${p.title}</h3>
+            <p class="text-xs text-[#A3A3B2]">${p.subtitle}</p>
+          </div>
+
+          <div class="space-y-2.5 text-xs border-y border-white/5 py-4">
+            <div>
+              <strong class="text-gold-champagne uppercase tracking-wider block text-[11px]">Nariz (Aromas):</strong>
+              <p class="text-[#A3A3B2]">${p.notes.nose}</p>
+            </div>
+            <div>
+              <strong class="text-gold-champagne uppercase tracking-wider block text-[11px]">Boca (Textura & Ataque):</strong>
+              <p class="text-[#A3A3B2]">${p.notes.palate}</p>
+            </div>
+            <div>
+              <strong class="text-gold-champagne uppercase tracking-wider block text-[11px]">Final (Persistencia):</strong>
+              <p class="text-[#A3A3B2]">${p.notes.finish}</p>
+            </div>
+            <div>
+              <strong class="text-gold-champagne uppercase tracking-wider block text-[11px]">Maridaje de Sommelier:</strong>
+              <p class="text-[#A3A3B2]">${p.notes.pairing}</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between pt-2">
+            <span class="font-mono text-xl font-bold text-gold-champagne">${formatMoney(p.priceUSD)}</span>
+            <button onclick="quickAddToCart(${p.id}); closeTastingModal();" class="px-6 py-2.5 rounded-full bg-gold-liquid text-black font-semibold text-xs uppercase tracking-wider hover:bg-gold-champagne transition shadow-md">
+              Añadir a la Cava
+            </button>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('tastingModal').classList.remove('hidden');
+    }
+
+    function closeTastingModal() {
+      document.getElementById('tastingModal').classList.add('hidden');
+    }
+
+    // Cart Operations
+    function quickAddToCart(id) {
+      const item = products.find(p => p.id === id);
+      if (!item) return;
+
+      const existing = cart.find(c => c.id === id);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ ...item, qty: 1 });
+      }
+
+      updateCartBadge();
+      updateCartDrawerUI();
+      showToast(`"${item.title}" añadido a su cava.`);
+    }
+
+    function updateCartBadge() {
+      const totalItems = cart.reduce((acc, curr) => acc + curr.qty, 0);
+      document.getElementById('cartCountBadge').innerText = totalItems;
+      document.getElementById('drawerCount').innerText = `${totalItems} ítems`;
+    }
+
+    function toggleCartDrawer() {
+      const drawer = document.getElementById('cartDrawer');
+      const backdrop = document.getElementById('cartDrawerBackdrop');
+      
+      if (drawer.classList.contains('translate-x-full')) {
+        drawer.classList.remove('translate-x-full');
+        backdrop.classList.remove('hidden');
+      } else {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.add('hidden');
+      }
+    }
+
+    function updateCartDrawerUI() {
+      const list = document.getElementById('cartItemsList');
+      
+      if (cart.length === 0) {
+        list.innerHTML = `
+          <div class="text-center py-12 text-[#6B6B7B] space-y-2">
+            <p class="text-sm">Su cesta de alta cava se encuentra vacía.</p>
+          </div>
+        `;
+        updateCartTotals();
+        return;
+      }
+
+      list.innerHTML = '';
+      cart.forEach(item => {
+        const row = document.createElement('div');
+        row.className = "flex items-center justify-between p-3 rounded-xl bg-obsidian-deep/80 border border-white/5 gap-3";
+        row.innerHTML = `
+          <div class="flex-1 space-y-0.5">
+            <h5 class="font-serif text-sm font-semibold text-white">${item.title}</h5>
+            <span class="text-[11px] text-gold-champagne font-mono">${formatMoney(item.priceUSD)} c/u</span>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button onclick="changeQty(${item.id}, -1)" class="w-6 h-6 rounded bg-obsidian-surface border border-white/10 text-white flex items-center justify-center hover:border-gold-liquid">-</button>
+            <span class="font-mono text-xs text-white">${item.qty}</span>
+            <button onclick="changeQty(${item.id}, 1)" class="w-6 h-6 rounded bg-obsidian-surface border border-white/10 text-white flex items-center justify-center hover:border-gold-liquid">+</button>
+          </div>
+
+          <button onclick="removeFromCart(${item.id})" class="text-gray-500 hover:text-red-400 p-1">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"/></svg>
+          </button>
+        `;
+        list.appendChild(row);
+      });
+
+      updateCartTotals();
+    }
+
+    function changeQty(id, delta) {
+      const item = cart.find(i => i.id === id);
+      if (!item) return;
+
+      item.qty += delta;
+      if (item.qty <= 0) {
+        cart = cart.filter(i => i.id !== id);
+      }
+      updateCartBadge();
+      updateCartDrawerUI();
+    }
+
+    function removeFromCart(id) {
+      cart = cart.filter(i => i.id !== id);
+      updateCartBadge();
+      updateCartDrawerUI();
+    }
+
+    function updateCartTotals() {
+      const subtotalUSD = cart.reduce((acc, curr) => acc + (curr.priceUSD * curr.qty), 0);
+      const deliveryMethod = document.querySelector('input[name="deliveryMethod"]:checked')?.value || 'valet';
+      const shippingUSD = (deliveryMethod === 'valet' && subtotalUSD > 0) ? 5.00 : 0.00;
+      const totalUSD = subtotalUSD + shippingUSD;
+
+      document.getElementById('cartSubtotal').innerText = formatMoney(subtotalUSD);
+      document.getElementById('cartShipping').innerText = formatMoney(shippingUSD);
+      document.getElementById('cartTotal').innerText = formatMoney(totalUSD);
+    }
+
+    function processCheckout() {
+      if (cart.length === 0) {
+        showToast("Su cava personal está vacía");
+        return;
+      }
+      showToast("Conectando con pasarela segura... ¡Reserva confirmada!");
+      cart = [];
+      updateCartBadge();
+      updateCartDrawerUI();
+      toggleCartDrawer();
+    }
+
+    // Toast Helper
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMsg').innerText = msg;
+      toast.classList.remove('opacity-0', 'translate-y-20', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-20', 'pointer-events-none');
+      }, 3500);
+    }
+
+    // Init Page
+    window.addEventListener('DOMContentLoaded', () => {
+      renderProducts(products);
+      updateCartBadge();
+    });
+  </script>
+
+</body>
+</html>

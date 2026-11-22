@@ -1,0 +1,46 @@
+{
+  "global": {
+    "color": {
+      "obsidian": {
+        "deep": { "value": "#0B0B0D", "type": "color", "description": "Fondo principal de ultra-lujo" },
+        "surface": { "value": "#141418", "type": "color", "description": "Superficie de tarjetas y contenedores" },
+        "elevated": { "value": "#1B1B22", "type": "color", "description": "Modales y menú desplegable" }
+      },
+      "gold": {
+        "liquid": { "value": "#D4AF37", "type": "color", "description": "Dorado metálico primario" },
+        "champagne": { "value": "#EED9A4", "type": "color", "description": "Dorado claro para acentos y textos" },
+        "antique": { "value": "#997D29", "type": "color", "description": "Dorado envejecido para estados hover" },
+        "glow": { "value": "rgba(212, 175, 55, 0.18)", "type": "color", "description": "Resplandor ambiental" }
+      },
+      "text": {
+        "highest": { "value": "#FBFBFC", "type": "color", "description": "Títulos y contrastes altos" },
+        "medium": { "value": "#A3A3B2", "type": "color", "description": "Párrafos y notas de cata" },
+        "muted": { "value": "#6B6B7B", "type": "color", "description": "Metadatos y leyendas" }
+      },
+      "border": {
+        "glass": { "value": "rgba(255, 255, 255, 0.08)", "type": "color" },
+        "gold": { "value": "rgba(212, 175, 55, 0.35)", "type": "color" }
+      }
+    },
+    "fontFamilies": {
+      "display": { "value": "Cormorant Garamond, serif", "type": "fontFamilies" },
+      "body": { "value": "Plus Jakarta Sans, sans-serif", "type": "fontFamilies" }
+    },
+    "borderRadius": {
+      "sm": { "value": "6px", "type": "borderRadius" },
+      "md": { "value": "12px", "type": "borderRadius" },
+      "lg": { "value": "20px", "type": "borderRadius" },
+      "full": { "value": "9999px", "type": "borderRadius" }
+    },
+    "boxShadow": {
+      "cardHover": {
+        "value": "0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 25px -5px rgba(212, 175, 55, 0.2)",
+        "type": "boxShadow"
+      },
+      "goldGlow": {
+        "value": "0 0 30px rgba(212, 175, 55, 0.25)",
+        "type": "boxShadow"
+      }
+    }
+  }
+}
