@@ -16,11 +16,28 @@ Este repositorio contiene la **propuesta tecnológica y mockup interactivo de al
 
 ---
 
-## 🌐 Enlaces del Proyecto
+## 🌐 Enlaces del Proyecto y Vistas Desarrolladas
 
-- **Mockup Web Interactivo en Vivo:** [https://jeralthc.github.io/bodegon-marques-ecommerce/](https://jeralthc.github.io/bodegon-marques-ecommerce/)
+- **Mockup Web Principal (Inicio & Catálogo):** [https://jeralthc.github.io/bodegon-marques-ecommerce/](https://jeralthc.github.io/bodegon-marques-ecommerce/)
+- **Cava de Rones D.O.C. & Whiskies:** [https://jeralthc.github.io/bodegon-marques-ecommerce/destilados.html](https://jeralthc.github.io/bodegon-marques-ecommerce/destilados.html)
+- **Humidor Habanos Point Oficial:** [https://jeralthc.github.io/bodegon-marques-ecommerce/habanos.html](https://jeralthc.github.io/bodegon-marques-ecommerce/habanos.html)
+- **Delicatessen & Snacks Gourmet:** [https://jeralthc.github.io/bodegon-marques-ecommerce/delicatessen.html](https://jeralthc.github.io/bodegon-marques-ecommerce/delicatessen.html)
 - **Repositorio en GitHub:** [https://github.com/Jeralthc/bodegon-marques-ecommerce](https://github.com/Jeralthc/bodegon-marques-ecommerce)
 - **Directorio Local en este equipo:** [`/home/jeralthc/Proyectos/bodegon-marques-ecommerce/`](file:///home/jeralthc/Proyectos/bodegon-marques-ecommerce/)
+
+---
+
+## 💼 Propuesta Comercial & Técnica Formal (Mérida, Venezuela)
+
+Se incluyen los documentos formales listos para presentar o enviar al cliente en formatos editables e imprimibles:
+- [`Propuesta_Comercial_Bodegon_Marques.docx`](file:///home/jeralthc/Proyectos/bodegon-marques-ecommerce/Propuesta_Comercial_Bodegon_Marques.docx) (Microsoft Word)
+- [`Propuesta_Comercial_Bodegon_Marques.odt`](file:///home/jeralthc/Proyectos/bodegon-marques-ecommerce/Propuesta_Comercial_Bodegon_Marques.odt) (OpenDocument / LibreOffice)
+
+**Esquema de Inversión Realista y Accesible:**
+- **Precio Único Cerrado Todo Incluido:** **$450 USD**
+- **Esquema de Pago 50/50:** 50% anticipo al iniciar ($225 USD) + 50% contra entrega formal y puesta en marcha ($225 USD).
+- **Mantenimiento Mensual Opcional:** $15 USD / mes (servidores cloud, respaldos automáticos y soporte continuo).
+- **Tiempo de Entrega:** 15 a 21 días (2 a 3 semanas).
 
 ---
 

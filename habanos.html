@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Humidor & Habanos Certificados • Bodegón Marqués | Punto Oficial Habanos Point Mérida</title>
+  
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            marques: {
+              black: '#09090C',
+              surface: '#121217',
+              elevated: '#1A1A22',
+              highlight: '#242430',
+              accent: '#C5A059'
+            },
+            gold: {
+              imperial: '#C5A059',
+              light: '#E8CF96',
+              amber: '#D97706',
+              bronze: '#8C6F31'
+            },
+            habano: {
+              dark: '#0E2419',
+              green: '#1E5E41',
+              leaf: '#2A7A57',
+              emerald: '#10B981',
+              tobacco: '#5A3825'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'gold-glow': '0 0 35px -5px rgba(197, 160, 89, 0.3)',
+            'habano-glow': '0 0 35px -5px rgba(30, 94, 65, 0.4)',
+            'card-marques': '0 20px 40px -15px rgba(0,0,0,0.85), 0 0 20px -8px rgba(197, 160, 89, 0.15)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #09090C; }
+    ::-webkit-scrollbar-thumb { background: #1E5E41; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #C5A059; }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFF8E6 0%, #C5A059 50%, #8C6F31 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .habano-gradient-text {
+      background: linear-gradient(135deg, #A7F3D0 0%, #34D399 50%, #059669 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .marques-gradient-bg {
+      background: linear-gradient(135deg, #C5A059 0%, #B38C44 50%, #7A5B20 100%);
+    }
+
+    .habano-gradient-bg {
+      background: linear-gradient(135deg, #1E5E41 0%, #164E34 50%, #0E2419 100%);
+    }
+
+    .ambient-habano {
+      background: radial-gradient(circle at 50% 12%, rgba(30, 94, 65, 0.22) 0%, rgba(197, 160, 89, 0.08) 35%, rgba(9, 9, 12, 1) 75%);
+    }
+
+    .glass-marques {
+      background: rgba(18, 18, 23, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .glass-marques:hover {
+      border-color: rgba(30, 94, 65, 0.5);
+    }
+  </style>
+</head>
+
+<body class="bg-marques-black text-[#FBFBFC] font-sans antialiased selection:bg-emerald-600 selection:text-white min-h-screen flex flex-col relative overflow-x-hidden">
+
+  <!-- ==================== TOP ANNOUNCEMENT BAR ==================== -->
+  <aside aria-label="Información y Servicios Bodegón Marqués" class="bg-gradient-to-r from-marques-black via-marques-surface to-marques-black border-b border-habano-green/40 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-[#B4B4C4]">
+      <div class="flex items-center gap-2 text-center sm:text-left">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>
+          <strong class="text-white font-medium">Punto Oficial Habanos Point Mérida:</strong> C.C. Terracota, PB, Local 4 • Humidor Climatizado • Garantía Kukenan Tobacco S.A.
+        </span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="https://www.instagram.com/bodegonmarques" target="_blank" rel="noopener noreferrer" class="hover:text-gold-light transition flex items-center gap-1.5 text-pink-400 font-medium">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span>@bodegonmarques</span>
+        </a>
+        <div class="flex items-center gap-1 bg-marques-black/80 px-2 py-0.5 rounded border border-white/10">
+          <span class="text-gold-light font-medium">Moneda:</span>
+          <select id="currencySelector" onchange="changeCurrency(this.value)" class="bg-transparent text-white font-medium cursor-pointer focus:outline-none">
+            <option value="USD" class="bg-marques-surface text-white">USD ($)</option>
+            <option value="VES" class="bg-marques-surface text-white">VES (Bs.)</option>
+            <option value="EUR" class="bg-marques-surface text-white">EUR (€)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==================== MAIN STICKY HEADER ==================== -->
+  <header class="sticky top-0 z-40 glass-marques border-b border-habano-green/30 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo Bodegón Marqués -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-emerald-600/15 border border-emerald-500/40 flex items-center justify-center text-emerald-400 group-hover:scale-105 transition shadow-sm shrink-0">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 18h18M3 18l1.5-9 4.5 4.5L12 5l3 8.5 4.5-4.5L21 18M5 9a1 1 0 100-2 1 1 0 000 2zm7-4a1 1 0 100-2 1 1 0 000 2zm7 4a1 1 0 100-2 1 1 0 000 2z"/>
+          </svg>
+        </div>
+
+        <div class="flex flex-col justify-center shrink-0">
+          <span class="font-serif text-lg sm:text-2xl tracking-[0.14em] gold-gradient-text font-bold uppercase leading-none whitespace-nowrap">
+            BODEGÓN MARQUÉS
+          </span>
+          <span class="text-[9px] sm:text-[10px] tracking-[0.2em] text-[#B4B4C4] uppercase font-light leading-none mt-1.5 whitespace-nowrap group-hover:text-gold-light transition">
+            Casa de Licores &bull; C.C. Terracota
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-4 xl:gap-7 text-[11px] xl:text-xs font-semibold tracking-wider text-[#B4B4C4] uppercase shrink">
+        <a href="index.html" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial whitespace-nowrap">Inicio</a>
+        <a href="destilados.html" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial whitespace-nowrap">Rones & Destilados</a>
+        <a href="habanos.html" class="text-emerald-400 font-bold transition py-1 border-b-2 border-emerald-400 flex items-center gap-1.5 whitespace-nowrap">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Habanos Point</span>
+        </a>
+        <a href="delicatessen.html" class="hover:text-amber-400 transition py-1 border-b-2 border-transparent hover:border-amber-400 whitespace-nowrap">Delicatessen</a>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        
+        <!-- Sommelier Modal Trigger -->
+        <button onclick="openSommelierModal()" class="relative group flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 rounded-full border border-emerald-500/40 bg-emerald-600/10 hover:bg-emerald-600/20 text-emerald-300 text-xs font-medium tracking-wide transition shadow-sm hover:shadow-habano-glow shrink-0">
+          <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/>
+          </svg>
+          <span class="hidden sm:inline whitespace-nowrap">Sommelier de Puros</span>
+          <span class="sm:hidden whitespace-nowrap">Sommelier</span>
+        </button>
+
+        <!-- WhatsApp Direct Concierge -->
+        <a href="https://wa.me/584122702505?text=Hola%20Bodeg%C3%B3n%20Marqu%C3%A9s,%20deseo%20consultar%20disponibilidad%20en%20el%20Humidor%20Habanos%20Point" target="_blank" rel="noopener noreferrer" title="Consultar Humidor por WhatsApp" class="p-2.5 rounded-full bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/40 text-emerald-400 transition">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        </a>
+
+        <!-- Shopping Cart Trigger -->
+        <button onclick="toggleCartDrawer()" class="relative p-2.5 rounded-full bg-marques-surface hover:bg-marques-highlight border border-white/10 hover:border-emerald-500/40 transition">
+          <svg class="w-5 h-5 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
+          </svg>
+          <span id="cartCountBadge" class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-emerald-500 text-black font-bold text-[10px] flex items-center justify-center border-2 border-marques-black">0</span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION (HUMIDOR HABANOS POINT) ==================== -->
+  <section class="relative pt-12 pb-16 ambient-habano border-b border-habano-green/20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Copy -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-emerald-500/40 bg-emerald-950/60 text-xs text-emerald-300 tracking-widest uppercase">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Certificación Oficial Kukenan Tobacco Trading • Habanos S.A.
+          </div>
+          
+          <h1 class="font-serif text-4xl sm:text-6xl font-bold tracking-tight leading-[1.08] text-white">
+            El Humidor de Habanos <br class="hidden sm:block"/>
+            <span class="habano-gradient-text italic font-normal">de Bodegón Marqués</span>
+          </h1>
+          
+          <p class="text-base sm:text-lg text-[#B4B4C4] font-light max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            Vitolas cubanas legítimas preservadas en cedro español con condiciones higrométricas óptimas. Cohiba, Montecristo, Partagás y Romeo y Julieta custodiados en el C.C. Terracota, Mérida.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#vitolas" class="w-full sm:w-auto px-8 py-3.5 rounded-full habano-gradient-bg text-white font-bold text-xs tracking-wider uppercase transition transform hover:scale-[1.02] shadow-habano-glow flex items-center justify-center gap-2">
+              <span>Explorar Vitolas en Stock</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+
+            <a href="https://wa.me/584122702505?text=Hola%20Bodeg%C3%B3n%20Marqu%C3%A9s,%20deseo%20reservar%20vitolas%20del%20Humidor" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-3.5 rounded-full border border-white/20 bg-marques-surface/80 hover:bg-marques-elevated text-gold-light font-medium text-xs tracking-wide transition flex items-center justify-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              <span>Atención Humidor WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Humidor Metrology Badges -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 text-center lg:text-left">
+            <div>
+              <span class="block font-serif text-2xl text-emerald-400 font-bold">68% - 72%</span>
+              <span class="text-[11px] text-[#717182] uppercase tracking-wider">Humedad Relativa</span>
+            </div>
+            <div>
+              <span class="block font-serif text-2xl text-white font-bold">18°C - 20°C</span>
+              <span class="text-[11px] text-[#717182] uppercase tracking-wider">Temperatura Fiel</span>
+            </div>
+            <div>
+              <span class="block font-serif text-2xl text-gold-light font-bold">100% Cuba</span>
+              <span class="text-[11px] text-[#717182] uppercase tracking-wider">Tabaco Auténtico</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Visual Showcase -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="relative w-72 sm:w-80 rounded-2xl glass-marques p-6 shadow-card-marques flex flex-col justify-between overflow-hidden border border-emerald-500/40 group">
+            
+            <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-48 h-48 bg-emerald-600/20 rounded-full blur-3xl group-hover:bg-emerald-600/30 transition duration-700"></div>
+            
+            <div class="relative z-10 flex justify-between items-start">
+              <span class="px-2.5 py-1 rounded bg-black/70 border border-emerald-500/40 text-[10px] tracking-widest uppercase text-emerald-300 font-semibold">Puro del Mes</span>
+              <span class="text-xs text-gold-light font-mono">C.C. Terracota</span>
+            </div>
+
+            <!-- Cigar Cylinder Visual -->
+            <div class="relative z-10 flex flex-col items-center my-6 transition duration-500 group-hover:scale-105">
+              <div class="w-20 h-56 bg-gradient-to-r from-amber-950 via-stone-800 to-amber-950 rounded-full border border-habano-tobacco shadow-2xl relative flex flex-col items-center justify-between p-2">
+                <!-- Anilla Cohiba -->
+                <div class="w-full h-12 bg-black border-y-2 border-yellow-400 flex flex-col items-center justify-center p-0.5 shadow-md">
+                  <div class="w-full h-2 bg-yellow-400 grid grid-cols-6 gap-0.5 px-0.5">
+                    <span class="w-1 h-1 bg-black"></span><span class="w-1 h-1 bg-black"></span><span class="w-1 h-1 bg-black"></span>
+                  </div>
+                  <span class="font-serif text-[9px] font-bold text-white tracking-widest mt-0.5">COHIBA</span>
+                  <span class="text-[6px] text-yellow-300 tracking-wider">HABANA, CUBA</span>
+                </div>
+                <!-- Capote and Texture -->
+                <div class="text-[8px] text-amber-200/50 font-mono tracking-widest my-auto rotate-90">SIGLO II</div>
+                <div class="w-4 h-4 rounded-full bg-amber-900 border border-amber-950"></div>
+              </div>
+            </div>
+
+            <div class="relative z-10 bg-marques-black/85 p-3 rounded-xl border border-white/5 space-y-1">
+              <div class="flex justify-between items-baseline">
+                <h4 class="font-serif text-sm font-bold text-white">Cohiba Siglo II</h4>
+                <span class="text-emerald-400 font-semibold text-sm" id="heroHabanosPrice">$45.00</span>
+              </div>
+              <p class="text-[11px] text-[#B4B4C4] line-clamp-1">Vitola Mareva • Cepo 42 • Notas a cedro, café y cacao.</p>
+              <button onclick="quickAddToCart(101)" class="w-full mt-2 py-2 rounded-lg habano-gradient-bg text-white text-xs font-bold uppercase tracking-wider transition hover:brightness-110">
+                Añadir al Carrito
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VITOLAS & CATALOG SECTION ==================== -->
+  <section id="vitolas" class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    
+    <!-- Title and Filters -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-white/5">
+      <div>
+        <span class="text-emerald-400 text-xs font-semibold tracking-widest uppercase block mb-1">Catálogo Exclusivo Habanos Point</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
+          Vitolas Cubanas & Accesorios de Humidor
+        </h2>
+      </div>
+
+      <!-- Filter Pills -->
+      <div class="flex flex-wrap gap-2">
+        <button onclick="filterHabanos('all')" class="habano-pill active px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition border border-emerald-500 bg-emerald-600 text-white" data-cat="all">
+          Todos (<span id="countHabanosAll">12</span>)
+        </button>
+        <button onclick="filterHabanos('robusto')" class="habano-pill px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition border border-white/10 bg-marques-surface text-[#B4B4C4] hover:text-white" data-cat="robusto">
+          Robustos (Cepo 50+)
+        </button>
+        <button onclick="filterHabanos('mareva')" class="habano-pill px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition border border-white/10 bg-marques-surface text-[#B4B4C4] hover:text-white" data-cat="mareva">
+          Coronas & Marevas
+        </button>
+        <button onclick="filterHabanos('churchill')" class="habano-pill px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition border border-white/10 bg-marques-surface text-[#B4B4C4] hover:text-white" data-cat="churchill">
+          Grandes Calibres
+        </button>
+        <button onclick="filterHabanos('accesorios')" class="habano-pill px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition border border-white/10 bg-marques-surface text-[#B4B4C4] hover:text-white" data-cat="accesorios">
+          Cortapuros & Fuego
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div id="habanosGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-8">
+      <!-- Injected dynamically by JS -->
+    </div>
+
+  </section>
+
+  <!-- ==================== CULTURA DEL TABACO CUBANO ==================== -->
+  <section class="py-14 bg-marques-surface/40 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-gold-light text-xs font-semibold tracking-widest uppercase">Protocolo del Fumador</span>
+        <h3 class="font-serif text-3xl font-bold text-white mt-1">El Ritual Sagrado del Habano</h3>
+        <p class="text-xs sm:text-sm text-[#B4B4C4] mt-2">
+          En Bodegón Marqués no solo adquieres una vitola, recibes la asesoría experta para disfrutar cada tercio de la fumada.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="glass-marques p-6 rounded-2xl border border-white/10 space-y-3">
+          <div class="w-10 h-10 rounded-full bg-emerald-600/20 text-emerald-400 flex items-center justify-center font-serif text-lg font-bold">1</div>
+          <h4 class="font-serif text-lg font-bold text-white">El Corte Limpio</h4>
+          <p class="text-xs text-[#B4B4C4] leading-relaxed">
+            Se realiza exactamente sobre la línea de la perilla con guillotina de doble hoja de acero. Un corte recto preserva la capa sin desflecar la ligada y garantiza un tiro uniforme.
+          </p>
+        </div>
+
+        <div class="glass-marques p-6 rounded-2xl border border-white/10 space-y-3">
+          <div class="w-10 h-10 rounded-full bg-emerald-600/20 text-emerald-400 flex items-center justify-center font-serif text-lg font-bold">2</div>
+          <h4 class="font-serif text-lg font-bold text-white">El Encendido Indirecto</h4>
+          <p class="text-xs text-[#B4B4C4] leading-relaxed">
+            Nunca toques el tabaco con la llama directa. Utiliza madera de cedro o gas butano sin olor (triple filtrado), rotando el pie a 45 grados hasta crear una brasa homogénea en todo el perímetro.
+          </p>
+        </div>
+
+        <div class="glass-marques p-6 rounded-2xl border border-white/10 space-y-3">
+          <div class="w-10 h-10 rounded-full bg-emerald-600/20 text-emerald-400 flex items-center justify-center font-serif text-lg font-bold">3</div>
+          <h4 class="font-serif text-lg font-bold text-white">El Maridaje con Ron D.O.C.</h4>
+          <p class="text-xs text-[#B4B4C4] leading-relaxed">
+            La melaza y el roble de nuestros rones venezolanos (Santa Teresa 1796, Carúpano 21) abrazan las notas terrosas y tostadas de los habanos, limpiando el paladar entre caladas pausadas.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="mt-auto border-t border-white/5 bg-marques-black py-12 text-[#717182] text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+      
+      <div class="space-y-3">
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 18h18M3 18l1.5-9 4.5 4.5L12 5l3 8.5 4.5-4.5L21 18M5 9a1 1 0 100-2 1 1 0 000 2zm7-4a1 1 0 100-2 1 1 0 000 2zm7 4a1 1 0 100-2 1 1 0 000 2z"/>
+          </svg>
+          <span class="font-serif text-lg tracking-[0.15em] text-white font-bold block">BODEGÓN MARQUÉS</span>
+        </div>
+        <p class="text-[11px] leading-relaxed text-[#B4B4C4]">
+          Punto Oficial Autorizado Habanos Point en Mérida. Distribución certificada de puros cubanos, accesorios y licores de alta gama.
+        </p>
+        <p class="text-[10px] text-gray-500">C.C. Terracota, Mérida • @bodegonmarques</p>
+      </div>
+
+      <div>
+        <h4 class="text-white uppercase tracking-wider font-semibold mb-3">Navegación Rápida</h4>
+        <ul class="space-y-1.5 text-[11px]">
+          <li><a href="index.html" class="hover:text-gold-light transition">• Inicio & Catálogo Principal</a></li>
+          <li><a href="destilados.html" class="hover:text-gold-light transition">• Rones D.O.C. & Whiskies</a></li>
+          <li><a href="habanos.html" class="text-emerald-400 font-semibold">• Humidor Habanos Point</a></li>
+          <li><a href="delicatessen.html" class="hover:text-amber-400 transition">• Delicatessen & Snacks</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white uppercase tracking-wider font-semibold mb-3">Sede C.C. Terracota</h4>
+        <p class="text-[11px] leading-relaxed text-[#B4B4C4] mb-2">
+          Planta Baja, Local 4, Av. Las Américas (cruce con Av. Urdaneta), Mérida, Venezuela.
+        </p>
+        <p class="text-[10px] text-emerald-400">
+          WhatsApp Humidor: +58 412-2702505<br>
+          Retiro Inmediato Pick-Up en tienda.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-white uppercase tracking-wider font-semibold mb-3">Garantía Habanos</h4>
+        <p class="text-[11px] leading-relaxed mb-2 text-[#B4B4C4]">
+          Cada vitola cuenta con el sello de garantía nacional de Habanos S.A., código de verificación de origen y conservación bajo estricto control higrométrico.
+        </p>
+        <div class="inline-block px-2.5 py-1 rounded bg-emerald-950/80 border border-emerald-500/40 text-[10px] text-emerald-300 font-semibold">
+          Kukenan Tobacco Trading Oficial
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== TASTING MODAL ==================== -->
+  <div id="tastingModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+    <div class="relative w-full max-w-3xl glass-marques rounded-3xl p-6 sm:p-8 border border-emerald-500/40 shadow-habano-glow max-h-[90vh] overflow-y-auto">
+      <button onclick="closeTastingModal()" class="absolute top-5 right-5 text-gray-400 hover:text-white p-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center" id="tastingModalContent"></div>
+    </div>
+  </div>
+
+  <!-- ==================== SOMMELIER MODAL ==================== -->
+  <div id="sommelierModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md transition-opacity">
+    <div class="relative w-full max-w-xl glass-marques rounded-3xl p-6 sm:p-8 border border-emerald-500/40 shadow-habano-glow animate-fade-in">
+      <button onclick="closeSommelierModal()" class="absolute top-5 right-5 text-gray-400 hover:text-white p-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-full bg-emerald-600/20 border border-emerald-500 flex items-center justify-center text-emerald-400">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>
+        </div>
+        <div>
+          <h3 class="font-serif text-xl font-bold text-white">Sommelier de Habanos</h3>
+          <span class="text-xs text-emerald-300">Asesoría de tiro, fortaleza y maridaje con rones</span>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <p class="text-xs text-[#B4B4C4]">¿Qué experiencia buscas para tu momento de fumada?</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <button onclick="recommendHabano('suave')" class="p-3.5 rounded-xl border border-white/10 hover:border-emerald-500 bg-marques-black hover:bg-marques-surface text-left transition space-y-1">
+            <span class="block text-xs font-semibold text-white">Fumada Suave & Aromática</span>
+            <span class="block text-[11px] text-[#B4B4C4]">Para tardes o iniciación (Hoyo de Monterrey)</span>
+          </button>
+          <button onclick="recommendHabano('media')" class="p-3.5 rounded-xl border border-white/10 hover:border-emerald-500 bg-marques-black hover:bg-marques-surface text-left transition space-y-1">
+            <span class="block text-xs font-semibold text-white">Equilibrio & Carácter</span>
+            <span class="block text-[11px] text-[#B4B4C4]">El clásico indiscutible (Cohiba / Romeo)</span>
+          </button>
+          <button onclick="recommendHabano('fuerte')" class="p-3.5 rounded-xl border border-white/10 hover:border-emerald-500 bg-marques-black hover:bg-marques-surface text-left transition space-y-1">
+            <span class="block text-xs font-semibold text-white">Cuerpo Pleno & Especiado</span>
+            <span class="block text-[11px] text-[#B4B4C4]">Para sobremesa con ron añejo (Partagás D4)</span>
+          </button>
+          <button onclick="recommendHabano('regalo')" class="p-3.5 rounded-xl border border-white/10 hover:border-emerald-500 bg-marques-black hover:bg-marques-surface text-left transition space-y-1">
+            <span class="block text-xs font-semibold text-white">Obsequio de Alto Impacto</span>
+            <span class="block text-[11px] text-[#B4B4C4]">Caja o pack maridaje con accesorios</span>
+          </button>
+        </div>
+
+        <div id="sommelierHabanoResult" class="hidden mt-4 pt-4 border-t border-white/10 space-y-3"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== CART DRAWER ==================== -->
+  <div id="cartDrawerBackdrop" onclick="toggleCartDrawer()" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden transition-opacity"></div>
+  
+  <div id="cartDrawer" class="fixed top-0 right-0 h-full w-full sm:w-[440px] z-50 glass-marques border-l border-emerald-500/40 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300">
+    <div class="flex items-center justify-between pb-4 border-b border-white/10">
+      <div class="flex items-center gap-2">
+        <h3 class="font-serif text-xl font-bold text-white">Su Pedido Marqués</h3>
+        <span id="drawerCount" class="text-xs px-2 py-0.5 rounded-full bg-emerald-600/20 text-emerald-300 font-mono">0 ítems</span>
+      </div>
+      <button onclick="toggleCartDrawer()" class="p-1.5 text-gray-400 hover:text-white">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div id="cartItemsList" class="flex-1 overflow-y-auto py-4 space-y-4">
+      <div class="text-center py-12 text-[#717182] space-y-2">
+        <p class="text-sm">Su cesta se encuentra vacía.</p>
+        <p class="text-xs text-gray-500">Seleccione vitolas del humidor o accesorios.</p>
+      </div>
+    </div>
+
+    <div class="pt-4 border-t border-white/10 space-y-3">
+      <div class="space-y-1">
+        <label class="text-[11px] text-[#B4B4C4] uppercase tracking-wider block">Modalidad de Entrega en Mérida:</label>
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <label class="flex items-center gap-2 p-2 rounded-lg bg-marques-black border border-white/10 cursor-pointer hover:border-emerald-500">
+            <input type="radio" name="deliveryMethod" value="valet" checked onchange="updateCartTotals()" class="accent-emerald-500">
+            <span>Delivery Mérida ($3)</span>
+          </label>
+          <label class="flex items-center gap-2 p-2 rounded-lg bg-marques-black border border-white/10 cursor-pointer hover:border-emerald-500">
+            <input type="radio" name="deliveryMethod" value="pickup" onchange="updateCartTotals()" class="accent-emerald-500">
+            <span>Retiro Terracota ($0)</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="space-y-1 text-xs">
+        <div class="flex justify-between text-[#B4B4C4]">
+          <span>Subtotal:</span>
+          <span id="cartSubtotal" class="font-mono text-white">$0.00</span>
+        </div>
+        <div class="flex justify-between text-[#B4B4C4]">
+          <span>Despacho:</span>
+          <span id="cartShipping" class="font-mono text-white">$3.00</span>
+        </div>
+        <div class="flex justify-between text-base font-bold text-white pt-2 border-t border-white/5">
+          <span>Total a Pagar:</span>
+          <span id="cartTotal" class="font-mono text-emerald-400">$3.00</span>
+        </div>
+      </div>
+
+      <button onclick="processCheckout()" class="w-full py-3.5 rounded-full habano-gradient-bg text-white font-bold text-xs tracking-widest uppercase hover:brightness-110 transition shadow-habano-glow flex items-center justify-center gap-2">
+        <svg class="w-4 h-4 text-emerald-300" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <span>Confirmar Pedido vía WhatsApp</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="glass-marques border border-emerald-500/40 px-4 py-3 rounded-2xl shadow-habano-glow flex items-center gap-3">
+      <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+      <span id="toastMsg" class="text-xs text-white font-medium">Vitola añadida</span>
+    </div>
+  </div>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    let currentCurrency = localStorage.getItem('bodegon_marques_currency') || 'USD';
+    const exchangeRates = { USD: 1.0, VES: 54.50, EUR: 0.92 };
+    let cart = JSON.parse(localStorage.getItem('bodegon_marques_cart') || '[]');
+
+    const habanosCatalog = [
+      {
+        id: 101,
+        title: "Cohiba Siglo II",
+        subtitle: "Línea 1492 • Cepo 42 • Longitud 129 mm (Mareva)",
+        category: "mareva",
+        brand: "Cohiba",
+        strength: "Media",
+        priceUSD: 45.00,
+        badge: "Emblema Habanos",
+        imageGrad: "from-amber-950 via-stone-900 to-black",
+        notes: {
+          nose: "Aroma herbal fino, cedro envejecido, toques de vainilla y grano de café.",
+          palate: "Tiro impecable, humo cremoso, cacao amargo, pimienta suave y miel ligera.",
+          finish: "Largo, sedoso y elegante con persistencia amaderada.",
+          pairing: "Ron Carúpano 21 o Whisky The Macallan 12 Años."
+        }
+      },
+      {
+        id: 102,
+        title: "Montecristo No. 4",
+        subtitle: "El Habano Más Vendido del Mundo • Cepo 42 • 129 mm",
+        category: "mareva",
+        brand: "Montecristo",
+        strength: "Media a Fuerte",
+        priceUSD: 28.00,
+        badge: "Clásico Universal",
+        imageGrad: "from-amber-900 via-stone-900 to-stone-950",
+        notes: {
+          nose: "Cuero curtido, café tostado y notas terrosas de Vuelta Abajo.",
+          palate: "Sabor especiado consistente, toques de nuez moscada y chocolate negro.",
+          finish: "Retrogusto envolvente y limpio.",
+          pairing: "Ron Santa Teresa 1796 o café espresso doble."
+        }
+      },
+      {
+        id: 103,
+        title: "Partagás Serie D No. 4",
+        subtitle: "El Robusto de Referencia • Cepo 50 • Longitud 124 mm",
+        category: "robusto",
+        brand: "Partagás",
+        strength: "Fuerte",
+        priceUSD: 35.00,
+        badge: "Cuerpo Pleno",
+        imageGrad: "from-red-950 via-stone-900 to-black",
+        notes: {
+          nose: "Intensa fragancia amaderada, tierra húmeda y toques de cuero.",
+          palate: "Potencia controlada, pimienta negra, canela, cedro y cacao profundo.",
+          finish: "Muy persistente, cálido y memorable.",
+          pairing: "Ron Carúpano Legendario o Glenfiddich 15 Años."
+        }
+      },
+      {
+        id: 104,
+        title: "Romeo y Julieta Wide Churchills",
+        subtitle: "Cepo Grueso Moderno • Cepo 55 • Longitud 130 mm",
+        category: "churchill",
+        brand: "Romeo y Julieta",
+        strength: "Media",
+        priceUSD: 38.00,
+        badge: "Gran Cepo 55",
+        imageGrad: "from-rose-950 via-stone-900 to-black",
+        notes: {
+          nose: "Hojas secas de tabaco, toques florales sutiles y cedro blanco.",
+          palate: "Gran volumen de humo fresco, notas de avellana, caramelo suave y madera dulce.",
+          finish: "Sedoso y equilibrado durante los tres tercios.",
+          pairing: "Ron Diplomático Ambassador o vino tinto estructurado."
+        }
+      },
+      {
+        id: 105,
+        title: "Hoyo de Monterrey Epicure No. 2",
+        subtitle: "El Robusto Suave • Cepo 50 • Longitud 124 mm",
+        category: "robusto",
+        brand: "Hoyo de Monterrey",
+        strength: "Suave a Media",
+        priceUSD: 32.00,
+        badge: "Delicadeza & Aroma",
+        imageGrad: "from-emerald-950 via-stone-900 to-black",
+        notes: {
+          nose: "Flores silvestres, vainilla sutil y madera joven.",
+          palate: "Extremadamente cremoso, almendras dulces, canela suave y notas minerales.",
+          finish: "Fresco, sin asperezas, ideal para cualquier momento.",
+          pairing: "Champagne Brut, Ron Cacique Antiguo o cóctel Highball."
+        }
+      },
+      {
+        id: 106,
+        title: "Trinidad Reyes",
+        subtitle: "Exclusividad & Elegancia • Cepo 40 • Longitud 110 mm",
+        category: "mareva",
+        brand: "Trinidad",
+        strength: "Media",
+        priceUSD: 29.00,
+        badge: "Gourmet Secreto",
+        imageGrad: "from-yellow-950 via-stone-900 to-black",
+        notes: {
+          nose: "Rabo de cochino característico, cedro, tierra seca y especias.",
+          palate: "Concentración de sabores en formato corto: avellana, café moka y nueces.",
+          finish: "Intenso y sofisticado.",
+          pairing: "Café bombón criollo o Ron Añejo en copa balón."
+        }
+      },
+      {
+        id: 107,
+        title: "H. Upmann Magnum 54",
+        subtitle: "Vitola de Gran Anilla • Cepo 54 • Longitud 120 mm",
+        category: "churchill",
+        brand: "H. Upmann",
+        strength: "Suave a Media",
+        priceUSD: 36.00,
+        badge: "Magnum Line",
+        imageGrad: "from-amber-950 via-stone-900 to-black",
+        notes: {
+          nose: "Galleta horneada, notas tostadas y roble.",
+          palate: "Sabor untuoso con fondo dulce, frutos secos y cacao con leche.",
+          finish: "Redondo y placentero.",
+          pairing: "Whisky Johnnie Walker Blue Label o Ron Diplomático."
+        }
+      },
+      {
+        id: 108,
+        title: "Ramón Allones Specially Selected",
+        subtitle: "Tradición Centenaria • Cepo 50 • Longitud 124 mm",
+        category: "robusto",
+        brand: "Ramón Allones",
+        strength: "Fuerte",
+        priceUSD: 34.00,
+        badge: "Carácter Intenso",
+        imageGrad: "from-stone-900 via-amber-950 to-black",
+        notes: {
+          nose: "Madera oscura, cuero aceitado y frutos del bosque secos.",
+          palate: "Golpe potente desde el inicio, especias vivas, café expreso y chocolate negro.",
+          finish: "Potente y prolongado.",
+          pairing: "Ron Carúpano Legendario o destilados de alta graduación."
+        }
+      },
+      {
+        id: 109,
+        title: "Cortapuros Marqués Doble Guillotina",
+        subtitle: "Acero Inoxidable Quirúrgico • Calibres hasta Cepo 60",
+        category: "accesorios",
+        brand: "Bodegón Marqués",
+        strength: "Accesorio",
+        priceUSD: 18.00,
+        badge: "Corte Quirúrgico",
+        imageGrad: "from-slate-800 to-stone-950",
+        notes: {
+          nose: "Diseño ergonómico en negro mate y detalles dorados.",
+          palate: "Corte milimétrico limpio que no daña la perilla ni desmenuza el tabaco.",
+          finish: "Mecanismo autoafilable de por vida.",
+          pairing: "Acompañante esencial para cualquier vitola del humidor."
+        }
+      },
+      {
+        id: 110,
+        title: "Encendedor Triple Antorcha Marqués",
+        subtitle: "Llama Jet Windproof con Perforador de Puro Integrado",
+        category: "accesorios",
+        brand: "Bodegón Marqués",
+        strength: "Accesorio",
+        priceUSD: 35.00,
+        badge: "Triple Llama",
+        imageGrad: "from-amber-700/80 to-stone-950",
+        notes: {
+          nose: "Cuerpo metálico blindado recargable con butano sin impurezas.",
+          palate: "Potencia regulable para encendidos homogéneos incluso con brisa de montaña.",
+          finish: "Incluye puncher retráctil de 8mm en la base.",
+          pairing: "El instrumento ideal para robustos y grandes calibres."
+        }
+      },
+      {
+        id: 111,
+        title: "Cenicero de Porcelana Clásica Habanos",
+        subtitle: "Edición Coleccionista • 2 Apoyos para Vitolas",
+        category: "accesorios",
+        brand: "Habanos Collection",
+        strength: "Accesorio",
+        priceUSD: 45.00,
+        badge: "Porcelana",
+        imageGrad: "from-yellow-900 to-stone-950",
+        notes: {
+          nose: "Porcelana vitrificada de alta resistencia con detalles en pan de oro.",
+          palate: "Canales amplios diseñados para sostener habanos de cepos 40 a 60 sin riesgo de caída.",
+          finish: "Fondo profundo para ceniza compacta.",
+          pairing: "Para el salón o terraza de degustación."
+        }
+      },
+      {
+        id: 112,
+        title: "Pack Experiencia Humidor & Ron Solera",
+        subtitle: "Partagás Serie D No. 4 + Santa Teresa 1796 + Cortapuros",
+        category: "churchill",
+        brand: "Selección Marqués",
+        strength: "Pack Maridaje",
+        priceUSD: 95.00,
+        badge: "Pack Exclusivo",
+        imageGrad: "from-emerald-950 via-amber-950 to-black",
+        notes: {
+          nose: "La armonía perfecta entre el mejor tabaco de Cuba y el ron solera de Venezuela.",
+          palate: "Incluye caja de presentación rígida, cortapuros doble guillotina y ficha de cata.",
+          finish: "El regalo de negocios definitivo en Mérida.",
+          pairing: "Listo para degustar en C.C. Terracota o envío a domicilio."
+        }
+      }
+    ];
+
+    function formatMoney(amountUSD) {
+      if (currentCurrency === 'USD') return `$${amountUSD.toFixed(2)}`;
+      if (currentCurrency === 'VES') {
+        const val = amountUSD * exchangeRates.VES;
+        return `Bs. ${val.toLocaleString('es-VE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+      }
+      if (currentCurrency === 'EUR') {
+        const val = amountUSD * exchangeRates.EUR;
+        return `€${val.toFixed(2)}`;
+      }
+      return `$${amountUSD.toFixed(2)}`;
+    }
+
+    function changeCurrency(curr) {
+      currentCurrency = curr;
+      localStorage.setItem('bodegon_marques_currency', curr);
+      const sel = document.getElementById('currencySelector');
+      if (sel) sel.value = curr;
+      renderHabanos(habanosCatalog);
+      updateCartTotals();
+      const heroP = document.getElementById('heroHabanosPrice');
+      if (heroP) heroP.innerText = formatMoney(45.00);
+    }
+
+    function renderHabanos(list) {
+      const grid = document.getElementById('habanosGrid');
+      grid.innerHTML = '';
+
+      list.forEach(p => {
+        const card = document.createElement('div');
+        card.className = "glass-marques rounded-2xl p-5 border border-white/10 flex flex-col justify-between group transition hover:-translate-y-1 hover:shadow-habano-glow duration-300 relative overflow-hidden";
+        
+        card.innerHTML = `
+          <div class="relative z-10 space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-[10px] tracking-widest uppercase px-2 py-0.5 rounded bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 font-semibold">${p.badge}</span>
+              <span class="text-[11px] text-[#B4B4C4] font-medium">${p.strength}</span>
+            </div>
+
+            <!-- Visual representation -->
+            <div class="h-44 rounded-xl bg-gradient-to-b ${p.imageGrad} border border-white/5 flex items-center justify-center p-3 relative overflow-hidden group-hover:border-emerald-500/30 transition">
+              <div class="text-center space-y-1">
+                <span class="font-serif text-sm text-white font-bold block">${p.title}</span>
+                <span class="text-[10px] text-emerald-300 font-mono block">${p.brand}</span>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="font-serif text-lg font-bold text-white group-hover:text-emerald-300 transition">${p.title}</h4>
+              <p class="text-xs text-[#B4B4C4] line-clamp-1 mt-0.5">${p.subtitle}</p>
+            </div>
+          </div>
+
+          <div class="relative z-10 pt-4 mt-4 border-t border-white/5 space-y-3">
+            <div class="flex items-baseline justify-between">
+              <span class="text-xs text-[#717182] uppercase">Precio:</span>
+              <span class="font-mono text-base font-bold text-white">${formatMoney(p.priceUSD)}</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="openTastingModal(${p.id})" class="w-full py-2 rounded-lg border border-white/20 bg-marques-surface hover:bg-marques-elevated text-[11px] text-[#FBFBFC] font-medium transition text-center">
+                Detalles
+              </button>
+              <button onclick="quickAddToCart(${p.id})" class="w-full py-2 rounded-lg habano-gradient-bg text-white text-[11px] font-bold uppercase tracking-wider transition hover:brightness-110 text-center">
+                + Añadir
+              </button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterHabanos(category) {
+      document.querySelectorAll('.habano-pill').forEach(btn => {
+        if (btn.getAttribute('data-cat') === category) {
+          btn.classList.add('border-emerald-500', 'bg-emerald-600', 'text-white');
+          btn.classList.remove('border-white/10', 'bg-marques-surface', 'text-[#B4B4C4]');
+        } else {
+          btn.classList.remove('border-emerald-500', 'bg-emerald-600', 'text-white');
+          btn.classList.add('border-white/10', 'bg-marques-surface', 'text-[#B4B4C4]');
+        }
+      });
+
+      if (category === 'all') {
+        renderHabanos(habanosCatalog);
+      } else {
+        const filtered = habanosCatalog.filter(p => p.category === category);
+        renderHabanos(filtered);
+      }
+    }
+
+    function openTastingModal(id) {
+      const p = habanosCatalog.find(item => item.id === id);
+      if (!p) return;
+
+      const container = document.getElementById('tastingModalContent');
+      container.innerHTML = `
+        <div class="md:col-span-5 h-64 md:h-full rounded-2xl bg-gradient-to-b ${p.imageGrad} border border-emerald-500/30 flex flex-col justify-center items-center p-6 text-center space-y-3">
+          <span class="text-xs uppercase tracking-widest text-emerald-300 font-mono">${p.brand}</span>
+          <h3 class="font-serif text-2xl font-bold text-white">${p.title}</h3>
+          <span class="px-3 py-1 rounded-full bg-black/60 border border-emerald-500/40 text-xs text-white">Fortaleza: ${p.strength}</span>
+          <span class="text-xl font-mono text-emerald-400 font-bold mt-4">${formatMoney(p.priceUSD)}</span>
+        </div>
+
+        <div class="md:col-span-7 space-y-4">
+          <div>
+            <h4 class="font-serif text-xl font-bold text-white">${p.title}</h4>
+            <p class="text-xs text-emerald-300">${p.subtitle}</p>
+          </div>
+
+          <div class="space-y-2 text-xs border-y border-white/10 py-3">
+            <div><strong class="text-white">Aroma en Frío:</strong> <span class="text-[#B4B4C4]">${p.notes.nose}</span></div>
+            <div><strong class="text-white">Notas de Fumada:</strong> <span class="text-[#B4B4C4]">${p.notes.palate}</span></div>
+            <div><strong class="text-white">Regusto y Evolución:</strong> <span class="text-[#B4B4C4]">${p.notes.finish}</span></div>
+            <div><strong class="text-emerald-400">Maridaje Sugerido:</strong> <span class="text-white">${p.notes.pairing}</span></div>
+          </div>
+
+          <div class="flex gap-3 pt-2">
+            <button onclick="quickAddToCart(${p.id}); closeTastingModal();" class="flex-1 py-3 rounded-full habano-gradient-bg text-white font-bold text-xs uppercase tracking-wider">
+              Añadir a mi Cesta
+            </button>
+            <a href="https://wa.me/584122702505?text=Hola%20Bodeg%C3%B3n%20Marqu%C3%A9s,%20deseo%20consultar%20sobre%20${encodeURIComponent(p.title)}" target="_blank" class="px-5 py-3 rounded-full border border-emerald-500/50 hover:bg-emerald-600/20 text-emerald-300 text-xs font-semibold flex items-center justify-center">
+              Consultar Humidor
+            </a>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('tastingModal').classList.remove('hidden');
+    }
+
+    function closeTastingModal() {
+      document.getElementById('tastingModal').classList.add('hidden');
+    }
+
+    function openSommelierModal() {
+      document.getElementById('sommelierModal').classList.remove('hidden');
+    }
+
+    function closeSommelierModal() {
+      document.getElementById('sommelierModal').classList.add('hidden');
+    }
+
+    function recommendHabano(type) {
+      const res = document.getElementById('sommelierHabanoResult');
+      let target;
+      if (type === 'suave') target = habanosCatalog.find(p => p.id === 105);
+      else if (type === 'media') target = habanosCatalog.find(p => p.id === 101);
+      else if (type === 'fuerte') target = habanosCatalog.find(p => p.id === 103);
+      else target = habanosCatalog.find(p => p.id === 112);
+
+      res.innerHTML = `
+        <div class="p-3.5 rounded-xl bg-marques-black border border-emerald-500/40 flex items-center justify-between gap-3">
+          <div>
+            <span class="text-[10px] text-emerald-400 font-bold uppercase tracking-wider block">Elección del Sommelier:</span>
+            <h5 class="font-serif text-sm font-bold text-white">${target.title}</h5>
+            <span class="text-xs text-gold-light font-mono">${formatMoney(target.priceUSD)}</span>
+          </div>
+          <button onclick="quickAddToCart(${target.id}); closeSommelierModal();" class="px-4 py-2 rounded-lg habano-gradient-bg text-white text-xs font-bold uppercase">
+            Añadir
+          </button>
+        </div>
+      `;
+      res.classList.remove('hidden');
+    }
+
+    // Cart Operations
+    function quickAddToCart(id) {
+      let item = habanosCatalog.find(p => p.id === id);
+      if (!item) {
+        // fallback
+        item = { id, title: "Ítem Especial Marqués", priceUSD: 30.00 };
+      }
+
+      const existing = cart.find(c => c.id === id);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ id: item.id, title: item.title, priceUSD: item.priceUSD, qty: 1 });
+      }
+
+      saveCart();
+      updateCartBadge();
+      updateCartDrawerUI();
+      showToast(`"${item.title}" añadido al carrito.`);
+    }
+
+    function saveCart() {
+      localStorage.setItem('bodegon_marques_cart', JSON.stringify(cart));
+    }
+
+    function updateCartBadge() {
+      const totalItems = cart.reduce((acc, curr) => acc + curr.qty, 0);
+      document.getElementById('cartCountBadge').innerText = totalItems;
+      document.getElementById('drawerCount').innerText = `${totalItems} ítems`;
+    }
+
+    function toggleCartDrawer() {
+      const drawer = document.getElementById('cartDrawer');
+      const backdrop = document.getElementById('cartDrawerBackdrop');
+      if (drawer.classList.contains('translate-x-full')) {
+        drawer.classList.remove('translate-x-full');
+        backdrop.classList.remove('hidden');
+      } else {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.add('hidden');
+      }
+    }
+
+    function updateCartDrawerUI() {
+      const list = document.getElementById('cartItemsList');
+      if (cart.length === 0) {
+        list.innerHTML = `
+          <div class="text-center py-12 text-[#717182] space-y-2">
+            <p class="text-sm">Su cesta se encuentra vacía.</p>
+            <p class="text-xs text-gray-500">Seleccione vitolas del humidor o accesorios.</p>
+          </div>
+        `;
+        updateCartTotals();
+        return;
+      }
+
+      list.innerHTML = '';
+      cart.forEach(item => {
+        const row = document.createElement('div');
+        row.className = "flex items-center justify-between p-3 rounded-xl bg-marques-black border border-white/5 gap-3";
+        row.innerHTML = `
+          <div class="flex-1 space-y-0.5">
+            <h5 class="font-serif text-sm font-semibold text-white">${item.title}</h5>
+            <span class="text-[11px] text-emerald-400 font-mono">${formatMoney(item.priceUSD)} c/u</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="changeQty(${item.id}, -1)" class="w-6 h-6 rounded bg-marques-surface border border-white/10 text-white flex items-center justify-center hover:border-emerald-500">-</button>
+            <span class="font-mono text-xs text-white">${item.qty}</span>
+            <button onclick="changeQty(${item.id}, 1)" class="w-6 h-6 rounded bg-marques-surface border border-white/10 text-white flex items-center justify-center hover:border-emerald-500">+</button>
+          </div>
+          <button onclick="removeFromCart(${item.id})" class="text-gray-500 hover:text-red-400 p-1">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"/></svg>
+          </button>
+        `;
+        list.appendChild(row);
+      });
+      updateCartTotals();
+    }
+
+    function changeQty(id, delta) {
+      const item = cart.find(i => i.id === id);
+      if (!item) return;
+      item.qty += delta;
+      if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
+      saveCart();
+      updateCartBadge();
+      updateCartDrawerUI();
+    }
+
+    function removeFromCart(id) {
+      cart = cart.filter(i => i.id !== id);
+      saveCart();
+      updateCartBadge();
+      updateCartDrawerUI();
+    }
+
+    function updateCartTotals() {
+      const subtotalUSD = cart.reduce((acc, curr) => acc + (curr.priceUSD * curr.qty), 0);
+      const deliveryMethod = document.querySelector('input[name="deliveryMethod"]:checked')?.value || 'valet';
+      const shippingUSD = (deliveryMethod === 'valet' && subtotalUSD > 0) ? 3.00 : 0.00;
+      const totalUSD = subtotalUSD + shippingUSD;
+
+      document.getElementById('cartSubtotal').innerText = formatMoney(subtotalUSD);
+      document.getElementById('cartShipping').innerText = formatMoney(shippingUSD);
+      document.getElementById('cartTotal').innerText = formatMoney(totalUSD);
+    }
+
+    function processCheckout() {
+      if (cart.length === 0) {
+        showToast("Su cesta está vacía");
+        return;
+      }
+
+      const deliveryMethod = document.querySelector('input[name="deliveryMethod"]:checked')?.value || 'valet';
+      const methodLabel = deliveryMethod === 'valet' ? 'Delivery Express Mérida' : 'Retiro Pick-Up C.C. Terracota';
+      const subtotalUSD = cart.reduce((acc, curr) => acc + (curr.priceUSD * curr.qty), 0);
+      const shippingUSD = (deliveryMethod === 'valet') ? 3.00 : 0.00;
+      const totalUSD = subtotalUSD + shippingUSD;
+
+      let msg = `*PEDIDO WEB • BODEGÓN MARQUÉS (C.C. TERRACOTA)*\n`;
+      msg += `--------------------------------------\n`;
+      cart.forEach((i, idx) => {
+        msg += `${idx + 1}. ${i.title} x${i.qty} — ${formatMoney(i.priceUSD * i.qty)}\n`;
+      });
+      msg += `--------------------------------------\n`;
+      msg += `*Modalidad:* ${methodLabel}\n`;
+      msg += `*Total a Pagar:* ${formatMoney(totalUSD)} (${currentCurrency})\n\n`;
+      msg += `Deseo coordinar el pago (Pago Móvil / Zelle / Efectivo) y la entrega. ¡Gracias!`;
+
+      const waUrl = `https://wa.me/584122702505?text=${encodeURIComponent(msg)}`;
+      window.open(waUrl, '_blank');
+      showToast("¡Redirigiendo a WhatsApp de Bodegón Marqués!");
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMsg').innerText = msg;
+      toast.classList.remove('opacity-0', 'translate-y-20', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-20', 'pointer-events-none');
+      }, 3500);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const sel = document.getElementById('currencySelector');
+      if (sel) sel.value = currentCurrency;
+      renderHabanos(habanosCatalog);
+      updateCartBadge();
+      updateCartDrawerUI();
+    });
+  </script>
+
+</body>
+</html>
