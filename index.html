@@ -122,61 +122,59 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
       
       <!-- Brand Logo Bodegón Marqués with Heraldic Crown -->
-      <a href="#" class="flex items-center gap-3 group">
+      <a href="#" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
         <!-- SVG Corona de Marqués Heráldica -->
-        <div class="w-10 h-10 rounded-full bg-gold-imperial/10 border border-gold-imperial/40 flex items-center justify-center text-gold-imperial group-hover:scale-105 transition shadow-sm">
-          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gold-imperial/10 border border-gold-imperial/40 flex items-center justify-center text-gold-imperial group-hover:scale-105 transition shadow-sm shrink-0">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <!-- Corona de Marqués con 4 florones y perlas -->
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 18h18M3 18l1.5-9 4.5 4.5L12 5l3 8.5 4.5-4.5L21 18M5 9a1 1 0 100-2 1 1 0 000 2zm7-4a1 1 0 100-2 1 1 0 000 2zm7 4a1 1 0 100-2 1 1 0 000 2z"/>
           </svg>
         </div>
 
-        <div class="flex flex-col">
-          <span class="font-serif text-2xl sm:text-3xl tracking-[0.18em] gold-gradient-text font-bold uppercase transition group-hover:opacity-90">
+        <div class="flex flex-col justify-center shrink-0">
+          <span class="font-serif text-lg sm:text-2xl tracking-[0.14em] gold-gradient-text font-bold uppercase leading-none whitespace-nowrap">
             BODEGÓN MARQUÉS
           </span>
-          <div class="flex items-center gap-2 text-[10px] tracking-[0.22em] text-[#B4B4C4] uppercase font-light -mt-1 group-hover:text-gold-light transition">
-            <span>Marqués Casa de Licores</span>
-            <span class="text-gold-imperial">•</span>
-            <span>Habanos & Delicatessen</span>
-          </div>
+          <span class="text-[9px] sm:text-[10px] tracking-[0.2em] text-[#B4B4C4] uppercase font-light leading-none mt-1.5 whitespace-nowrap group-hover:text-gold-light transition">
+            Casa de Licores &bull; C.C. Terracota
+          </span>
         </div>
       </a>
 
       <!-- Desktop Navigation Links -->
-      <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold tracking-wider text-[#B4B4C4] uppercase">
-        <button onclick="filterCategory('all')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial">Catálogo Completo</button>
-        <button onclick="filterCategory('ron')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial">Rones D.O.C.</button>
-        <button onclick="filterCategory('whisky')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial">Whiskies & Maltas</button>
-        <button onclick="filterCategory('champagne')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial">Vinos & Cavas</button>
-        <button onclick="filterCategory('agave')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial">Destilados & Ginebras</button>
-        <a href="#habanos" class="hover:text-emerald-400 transition py-1 border-b-2 border-transparent hover:border-emerald-400 text-emerald-400 flex items-center gap-1">
+      <nav class="hidden lg:flex items-center gap-3 xl:gap-6 text-[11px] xl:text-xs font-semibold tracking-wider text-[#B4B4C4] uppercase shrink">
+        <button onclick="filterCategory('all')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial whitespace-nowrap">Catálogo</button>
+        <button onclick="filterCategory('ron')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial whitespace-nowrap">Rones D.O.C.</button>
+        <button onclick="filterCategory('whisky')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial whitespace-nowrap">Whiskies</button>
+        <button onclick="filterCategory('champagne')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial whitespace-nowrap">Vinos & Cavas</button>
+        <button onclick="filterCategory('agave')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial whitespace-nowrap">Destilados</button>
+        <a href="#habanos" class="hover:text-emerald-400 transition py-1 border-b-2 border-transparent hover:border-emerald-400 text-emerald-400 flex items-center gap-1 whitespace-nowrap">
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
           <span>Habanos Point</span>
         </a>
       </nav>
 
       <!-- Right Header Actions -->
-      <div class="flex items-center gap-2 sm:gap-4">
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
         
         <!-- Sommelier Marqués AI Button -->
-        <button onclick="openSommelierModal()" class="relative group flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full border border-gold-imperial/40 bg-gold-imperial/10 hover:bg-gold-imperial/20 text-gold-light text-xs font-medium tracking-wide transition shadow-sm hover:shadow-gold-glow">
+        <button onclick="openSommelierModal()" class="relative group flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 rounded-full border border-gold-imperial/40 bg-gold-imperial/10 hover:bg-gold-imperial/20 text-gold-light text-xs font-medium tracking-wide transition shadow-sm hover:shadow-gold-glow shrink-0">
           <svg class="w-4 h-4 text-gold-imperial" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/>
           </svg>
-          <span class="hidden sm:inline">Sommelier Marqués</span>
-          <span class="sm:hidden">Sommelier</span>
+          <span class="hidden sm:inline whitespace-nowrap">Sommelier Marqués</span>
+          <span class="sm:hidden whitespace-nowrap">Sommelier</span>
           <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-gold-imperial rounded-full animate-ping"></span>
         </button>
 
         <!-- Search Input -->
-        <div class="relative hidden md:block">
+        <div class="relative hidden xl:block">
           <input 
             type="text" 
             id="searchInput" 
             onkeyup="handleSearch(this.value)"
-            placeholder="Buscar licor, cosecha, puro..." 
-            class="w-40 lg:w-52 bg-marques-surface border border-white/10 rounded-full px-4 py-1.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-gold-imperial/60 transition pl-8"
+            placeholder="Buscar botella, tabaco..." 
+            class="w-36 2xl:w-48 bg-marques-surface border border-white/10 rounded-full px-4 py-1.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-gold-imperial/60 transition pl-8"
           />
           <svg class="w-3.5 h-3.5 text-gray-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
