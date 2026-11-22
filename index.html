@@ -20,7 +20,7 @@
         extend: {
           colors: {
             marques: {
-              black: '#08080B',
+              black: '#09090C',
               surface: '#121217',
               elevated: '#1A1A22',
               highlight: '#242430',
@@ -28,9 +28,17 @@
             },
             gold: {
               imperial: '#C5A059',
-              light: '#E5C989',
+              light: '#E8CF96',
               amber: '#D97706',
               bronze: '#8C6F31'
+            },
+            wine: {
+              burgundy: '#7A1C2C',
+              burgundyDark: '#420C15'
+            },
+            habano: {
+              green: '#1E5E41',
+              leaf: '#2A7A57'
             }
           },
           fontFamily: {
@@ -49,13 +57,13 @@
   <style>
     /* Custom Scrollbar */
     ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: #08080B; }
+    ::-webkit-scrollbar-track { background: #09090C; }
     ::-webkit-scrollbar-thumb { background: #242430; border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: #C5A059; }
 
     /* Metallic Shimmer */
     .gold-gradient-text {
-      background: linear-gradient(135deg, #FFF6E0 0%, #C5A059 50%, #8C6F31 100%);
+      background: linear-gradient(135deg, #FFF8E6 0%, #C5A059 50%, #8C6F31 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -65,7 +73,7 @@
     }
 
     .ambient-marques {
-      background: radial-gradient(circle at 50% 12%, rgba(197, 160, 89, 0.12) 0%, rgba(217, 119, 6, 0.05) 35%, rgba(8, 8, 11, 1) 75%);
+      background: radial-gradient(circle at 50% 12%, rgba(197, 160, 89, 0.12) 0%, rgba(217, 119, 6, 0.05) 35%, rgba(9, 9, 12, 1) 75%);
     }
 
     .glass-marques {
@@ -83,13 +91,13 @@
 
 <body class="bg-marques-black text-[#FBFBFC] font-sans antialiased selection:bg-gold-imperial selection:text-black min-h-screen flex flex-col relative overflow-x-hidden">
 
-  <!-- ==================== TOP ANNOUNCEMENT BAR (MÉRIDA & INSTAGRAM) ==================== -->
-  <aside aria-label="Información de Bodegón Marqués" class="bg-gradient-to-r from-marques-black via-marques-surface to-marques-black border-b border-gold-imperial/30 text-xs py-2 px-4">
+  <!-- ==================== TOP ANNOUNCEMENT BAR (MÉRIDA • C.C. TERRACOTA) ==================== -->
+  <aside aria-label="Información y Servicios Bodegón Marqués" class="bg-gradient-to-r from-marques-black via-marques-surface to-marques-black border-b border-gold-imperial/30 text-xs py-2 px-4">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-[#B4B4C4]">
       <div class="flex items-center gap-2 text-center sm:text-left">
         <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
         <span>
-          <strong class="text-white font-medium">Sede C.C. Terracota:</strong> Av. Las Américas, Mérida • Delivery Express en la ciudad • Retiro Pick-Up • Punto Oficial <strong>Habanos Point</strong>
+          <strong class="text-white font-medium">Sede C.C. Terracota, PB, Local 4:</strong> Av. Las Américas, Mérida • Delivery Express • Retiro Pick-Up • Punto Oficial <strong>Habanos Point</strong>
         </span>
       </div>
       <div class="flex items-center gap-4 text-xs">
@@ -109,23 +117,29 @@
     </div>
   </aside>
 
-  <!-- ==================== MAIN STICKY HEADER ==================== -->
+  <!-- ==================== MAIN STICKY HEADER WITH MARQUÉS CROWN ==================== -->
   <header class="sticky top-0 z-40 glass-marques border-b border-gold-imperial/20 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
       
-      <!-- Brand Logo Bodegón Marqués -->
-      <a href="#" class="flex flex-col group">
-        <div class="flex items-center gap-2">
-          <span class="font-serif text-2xl sm:text-3xl tracking-[0.2em] gold-gradient-text font-bold uppercase transition group-hover:opacity-90">
+      <!-- Brand Logo Bodegón Marqués with Heraldic Crown -->
+      <a href="#" class="flex items-center gap-3 group">
+        <!-- SVG Corona de Marqués Heráldica -->
+        <div class="w-10 h-10 rounded-full bg-gold-imperial/10 border border-gold-imperial/40 flex items-center justify-center text-gold-imperial group-hover:scale-105 transition shadow-sm">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <!-- Corona de Marqués con 4 florones y perlas -->
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 18h18M3 18l1.5-9 4.5 4.5L12 5l3 8.5 4.5-4.5L21 18M5 9a1 1 0 100-2 1 1 0 000 2zm7-4a1 1 0 100-2 1 1 0 000 2zm7 4a1 1 0 100-2 1 1 0 000 2z"/>
+          </svg>
+        </div>
+
+        <div class="flex flex-col">
+          <span class="font-serif text-2xl sm:text-3xl tracking-[0.18em] gold-gradient-text font-bold uppercase transition group-hover:opacity-90">
             BODEGÓN MARQUÉS
           </span>
-        </div>
-        <div class="flex items-center gap-2 text-[10px] tracking-[0.25em] text-[#B4B4C4] uppercase font-light -mt-1 group-hover:text-gold-light transition">
-          <span>Casa de Licores</span>
-          <span class="text-gold-imperial">•</span>
-          <span>Habanos & Delicatessen</span>
-          <span class="text-gold-imperial">•</span>
-          <span>Mérida</span>
+          <div class="flex items-center gap-2 text-[10px] tracking-[0.22em] text-[#B4B4C4] uppercase font-light -mt-1 group-hover:text-gold-light transition">
+            <span>Marqués Casa de Licores</span>
+            <span class="text-gold-imperial">•</span>
+            <span>Habanos & Delicatessen</span>
+          </div>
         </div>
       </a>
 
@@ -134,9 +148,12 @@
         <button onclick="filterCategory('all')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial">Catálogo Completo</button>
         <button onclick="filterCategory('ron')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial">Rones D.O.C.</button>
         <button onclick="filterCategory('whisky')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial">Whiskies & Maltas</button>
-        <button onclick="filterCategory('champagne')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial">Vinos & Espumantes</button>
-        <button onclick="filterCategory('agave')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial">Tequilas & Gins</button>
-        <a href="#habanos" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial text-emerald-400">Habanos Point</a>
+        <button onclick="filterCategory('champagne')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial">Vinos & Cavas</button>
+        <button onclick="filterCategory('agave')" class="hover:text-gold-light transition py-1 border-b-2 border-transparent hover:border-gold-imperial">Destilados & Ginebras</button>
+        <a href="#habanos" class="hover:text-emerald-400 transition py-1 border-b-2 border-transparent hover:border-emerald-400 text-emerald-400 flex items-center gap-1">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+          <span>Habanos Point</span>
+        </a>
       </nav>
 
       <!-- Right Header Actions -->
@@ -158,16 +175,16 @@
             type="text" 
             id="searchInput" 
             onkeyup="handleSearch(this.value)"
-            placeholder="Buscar botella, cosecha, tabaco..." 
-            class="w-44 lg:w-56 bg-marques-surface border border-white/10 rounded-full px-4 py-1.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-gold-imperial/60 transition pl-8"
+            placeholder="Buscar licor, cosecha, puro..." 
+            class="w-40 lg:w-52 bg-marques-surface border border-white/10 rounded-full px-4 py-1.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-gold-imperial/60 transition pl-8"
           />
           <svg class="w-3.5 h-3.5 text-gray-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
           </svg>
         </div>
 
-        <!-- WhatsApp Direct Concierge -->
-        <a href="https://wa.me/584149999999?text=Hola,%20deseo%20atenci%C3%B3n%20personalizada%20de%20Bodeg%C3%B3n%20Marqu%C3%A9s" target="_blank" rel="noopener noreferrer" title="WhatsApp Concierge Bodegón Marqués" class="p-2.5 rounded-full bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/40 text-emerald-400 transition">
+        <!-- WhatsApp Direct Concierge with Real Number (+58 412-2702505) -->
+        <a href="https://wa.me/584122702505?text=Hola%20Bodeg%C3%B3n%20Marqu%C3%A9s,%20deseo%20atenci%C3%B3n%20personalizada" target="_blank" rel="noopener noreferrer" title="WhatsApp Directo C.C. Terracota" class="p-2.5 rounded-full bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/40 text-emerald-400 transition">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
         </a>
 
@@ -183,7 +200,7 @@
     </div>
   </header>
 
-  <!-- ==================== HERO SECTION (LA CAVA EXCLUSIVA DE MÉRIDA) ==================== -->
+  <!-- ==================== HERO SECTION (LA CAVA DEL MARQUÉS) ==================== -->
   <section class="relative pt-12 pb-20 ambient-marques border-b border-white/5 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -193,7 +210,7 @@
           
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gold-imperial/40 bg-gold-imperial/10 text-xs text-gold-light tracking-widest uppercase">
             <span class="w-1.5 h-1.5 rounded-full bg-gold-imperial"></span>
-            C.C. Terracota • Av. Las Américas • Mérida
+            C.C. Terracota, PB, Local 4 • Av. Las Américas, Mérida
           </div>
           
           <h1 class="font-serif text-4xl sm:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.08] text-white">
@@ -202,7 +219,7 @@
           </h1>
           
           <p class="text-base sm:text-lg text-[#B4B4C4] font-light max-w-xl mx-auto lg:mx-0 leading-relaxed">
-            Curaduría de alta gama en destilados finos, los mejores rones con <strong>D.O.C. Ron de Venezuela</strong>, whiskies de malta, vinos internacionales, charcutería selecta y el sello oficial de <strong>Habanos Point</strong> en Mérida.
+            Curaduría selecta de rones con <strong>D.O.C. Ron de Venezuela</strong>, whiskies de malta, vinos internacionales, delicatessen premium y el sello oficial <strong>Habanos Point</strong> en Mérida.
           </p>
 
           <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
@@ -217,19 +234,19 @@
             </button>
           </div>
 
-          <!-- Trust Badges -->
+          <!-- Trust Badges with Local Contact Details -->
           <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 text-center lg:text-left">
             <div>
-              <span class="block font-serif text-2xl text-gold-light font-bold">Terracota</span>
-              <span class="text-[11px] text-[#717182] uppercase tracking-wider">Sede Principal</span>
+              <span class="block font-serif text-2xl text-gold-light font-bold">C.C. Terracota</span>
+              <span class="text-[11px] text-[#717182] uppercase tracking-wider">PB, Local 4, Mérida</span>
             </div>
             <div>
-              <span class="block font-serif text-2xl text-gold-light font-bold">Habanos</span>
-              <span class="text-[11px] text-[#717182] uppercase tracking-wider">Point Autorizado</span>
+              <span class="block font-serif text-2xl text-emerald-400 font-bold">Habanos</span>
+              <span class="text-[11px] text-[#717182] uppercase tracking-wider">Point Certificado</span>
             </div>
             <div>
-              <span class="block font-serif text-2xl text-gold-light font-bold">Express</span>
-              <span class="text-[11px] text-[#717182] uppercase tracking-wider">Delivery en Mérida</span>
+              <span class="block font-serif text-2xl text-gold-light font-bold">WhatsApp</span>
+              <span class="text-[11px] text-[#717182] uppercase tracking-wider">0412-270.25.05</span>
             </div>
           </div>
 
@@ -246,7 +263,7 @@
               <span class="text-xs text-emerald-400 font-mono">D.O.C. Venezuela</span>
             </div>
 
-            <!-- Bottle Graphic Representation -->
+            <!-- Bottle Graphic Centerpiece -->
             <div class="relative z-10 flex flex-col items-center my-auto transition duration-500 group-hover:scale-105">
               <div class="w-32 h-64 bg-gradient-to-b from-yellow-700/80 via-amber-800/80 to-stone-950 rounded-t-3xl rounded-b-xl border border-gold-imperial/40 shadow-2xl relative flex items-center justify-center p-3">
                 <div class="w-full h-full border border-gold-imperial/20 rounded-t-2xl p-2 flex flex-col justify-between items-center text-center">
@@ -279,50 +296,53 @@
     </div>
   </section>
 
-  <!-- ==================== PILARES DE EXPERIENCIA BODERÓN MARQUÉS ==================== -->
+  <!-- ==================== HABANOS POINT & EXPERIENCIAS BODEGÓN MARQUÉS ==================== -->
   <section id="habanos" class="py-14 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full border-b border-white/5">
     <div class="text-center max-w-2xl mx-auto mb-10">
-      <span class="text-gold-light text-xs font-semibold tracking-widest uppercase block mb-1">Tradición & Distinción en Mérida</span>
-      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">La Experiencia Bodegón Marqués</h2>
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-600/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold mb-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <span>Certificación Kukenan Tobacco • Habanos S.A.</span>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Punto Oficial Habanos Point en Mérida</h2>
       <p class="text-xs sm:text-sm text-[#B4B4C4] mt-2">
-        Encuentra en el C.C. Terracota todo lo que necesitas para elevar tus celebraciones y momentos de sobremesa.
+        Humidor climatizado con tabacos legítimos de las marcas más prestigiosas de Cuba, junto a destilados nobles y delicatessen para maridaje.
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       
-      <!-- Experience 1: Habanos Point Oficial -->
+      <!-- Feature 1: Habanos Point -->
       <div class="glass-marques rounded-2xl p-6 space-y-3 border border-white/10 relative overflow-hidden group">
         <div class="w-10 h-10 rounded-full bg-emerald-600/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/></svg>
         </div>
-        <h3 class="font-serif text-xl font-bold text-white group-hover:text-gold-light transition">Habanos Point Autorizado</h3>
+        <h3 class="font-serif text-xl font-bold text-white group-hover:text-gold-light transition">Humidor & Habanos Certificados</h3>
         <p class="text-xs text-[#B4B4C4] leading-relaxed">
-          Puros y tabacos cubanos certificados con humidor climatizado. Asesoría en corte, encendido y maridaje con rones añejos y maltas escocesas.
+          Cohiba, Montecristo, Partagás y Romeo y Julieta custodiados bajo humedad y temperatura controlada. Asesoría de corte, encendido y maridaje.
         </p>
-        <span class="inline-block text-[11px] text-emerald-400 font-semibold uppercase tracking-wider">Explorar Humidor →</span>
+        <span class="inline-block text-[11px] text-emerald-400 font-semibold uppercase tracking-wider">Consultar Humidor C.C. Terracota →</span>
       </div>
 
-      <!-- Experience 2: Cava de Importación -->
+      <!-- Feature 2: Licores Selectos -->
       <div class="glass-marques rounded-2xl p-6 space-y-3 border border-white/10 relative overflow-hidden group">
         <div class="w-10 h-10 rounded-full bg-gold-imperial/20 border border-gold-imperial/40 flex items-center justify-center text-gold-light">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
         </div>
-        <h3 class="font-serif text-xl font-bold text-white group-hover:text-gold-light transition">Licores Nacionales & Importados</h3>
+        <h3 class="font-serif text-xl font-bold text-white group-hover:text-gold-light transition">Rones D.O.C. & Whiskies de Malta</h3>
         <p class="text-xs text-[#B4B4C4] leading-relaxed">
-          Catálogo completo de whiskies escoceses, rones venezolanos con Denominación de Origen, ginebras, tequilas reposados y champagnes de prestigio.
+          Selección completa de destilados nacionales con D.O.C. Ron de Venezuela y maltas escocesas para los paladares más exigentes de la ciudad.
         </p>
-        <span class="inline-block text-[11px] text-gold-light font-semibold uppercase tracking-wider">Ver Destilados →</span>
+        <span class="inline-block text-[11px] text-gold-light font-semibold uppercase tracking-wider">Ver Destilados en Stock →</span>
       </div>
 
-      <!-- Experience 3: Delicatessen & Snacks -->
+      <!-- Feature 3: Delicatessen & Maridaje -->
       <div class="glass-marques rounded-2xl p-6 space-y-3 border border-white/10 relative overflow-hidden group">
         <div class="w-10 h-10 rounded-full bg-amber-600/20 border border-amber-500/40 flex items-center justify-center text-amber-400">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/></svg>
         </div>
-        <h3 class="font-serif text-xl font-bold text-white group-hover:text-gold-light transition">Delicatessen & Maridaje</h3>
+        <h3 class="font-serif text-xl font-bold text-white group-hover:text-gold-light transition">Delicatessen & Snacks Gourmet</h3>
         <p class="text-xs text-[#B4B4C4] leading-relaxed">
-          Quesos madurados, charcutería fina, chocolates oscuros y snacks importados para acompañar tus brindis o armar canastillas de regalo.
+          Crocanti Mix de frutos secos, charcutería importada, chocolates oscuros y quesos madurados para armonizar con tus vinos y licores.
         </p>
         <span class="inline-block text-[11px] text-amber-400 font-semibold uppercase tracking-wider">Ver Delicatessen →</span>
       </div>
@@ -336,7 +356,7 @@
     <!-- Section Title & Filters -->
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-white/5">
       <div>
-        <span class="text-gold-light text-xs font-semibold tracking-widest uppercase block mb-1">Catálogo Bodegón Marqués</span>
+        <span class="text-gold-light text-xs font-semibold tracking-widest uppercase block mb-1">Cava de Bodegón Marqués</span>
         <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
           Licores Selectos en C.C. Terracota
         </h2>
@@ -369,7 +389,7 @@
 
   </section>
 
-  <!-- ==================== INSTAGRAM CALLOUT @BODEGONMARQUES ==================== -->
+  <!-- ==================== INSTAGRAM FEED & COMMUNITY CALLOUT ==================== -->
   <section class="py-12 bg-marques-surface/60 border-y border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold">
@@ -378,7 +398,7 @@
       </div>
       <h3 class="font-serif text-3xl font-bold text-white">Sigue a Bodegón Marqués en Redes</h3>
       <p class="text-xs sm:text-sm text-[#B4B4C4] max-w-xl mx-auto">
-        Entérate de las promociones del fin de semana, nuevos arribos de licores importados, catas en Mérida y combos especiales.
+        Promociones del fin de semana, nuevos arribos de licores importados, cavas de tabaco en Mérida y combos de celebración.
       </p>
       <div class="pt-2">
         <a href="https://www.instagram.com/bodegonmarques" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-pink-500/40 hover:bg-pink-500/10 text-white text-xs font-semibold uppercase tracking-wider transition">
@@ -394,7 +414,12 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
       
       <div class="space-y-3">
-        <span class="font-serif text-xl tracking-[0.18em] gold-gradient-text font-bold block">BODEGÓN MARQUÉS</span>
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-gold-imperial" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 18h18M3 18l1.5-9 4.5 4.5L12 5l3 8.5 4.5-4.5L21 18M5 9a1 1 0 100-2 1 1 0 000 2zm7-4a1 1 0 100-2 1 1 0 000 2zm7 4a1 1 0 100-2 1 1 0 000 2z"/>
+          </svg>
+          <span class="font-serif text-lg tracking-[0.15em] text-white font-bold block">BODEGÓN MARQUÉS</span>
+        </div>
         <p class="text-[11px] leading-relaxed text-[#B4B4C4]">
           Marqués Casa de Licores. Referencia de alta gama en Mérida para vinos, destilados, habanos certificados y delicatessen.
         </p>
@@ -402,34 +427,34 @@
       </div>
 
       <div>
-        <h4 class="text-white uppercase tracking-wider font-semibold mb-3">Sede Principal</h4>
+        <h4 class="text-white uppercase tracking-wider font-semibold mb-3">Sede Principal Mérida</h4>
         <p class="text-[11px] leading-relaxed text-[#B4B4C4] mb-2">
-          Centro Comercial Terracota, Av. Las Américas, Mérida, Edo. Mérida.
+          Centro Comercial Terracota, Planta Baja, Local 4, Av. Las Américas (cruce con Av. Urdaneta), Mérida.
         </p>
         <p class="text-[10px] text-gold-light">
-          Horario de Atención: Lunes a Sábado de 10:00 AM a 9:00 PM<br>
+          Teléfono / WhatsApp: +58 412-2702505<br>
           Pick-Up disponible en tienda.
         </p>
       </div>
 
       <div>
-        <h4 class="text-white uppercase tracking-wider font-semibold mb-3">Formas de Pago</h4>
+        <h4 class="text-white uppercase tracking-wider font-semibold mb-3">Formas de Pago Aceptadas</h4>
         <ul class="space-y-1.5 text-[11px]">
-          <li><span class="text-gray-300">• Pago Móvil C2P / P2P</span></li>
-          <li><span class="text-gray-300">• Zelle Inmediato</span></li>
-          <li><span class="text-gray-300">• Tarjetas Internacionales</span></li>
+          <li><span class="text-gray-300">• Pago Móvil C2P / P2P Instantáneo</span></li>
+          <li><span class="text-gray-300">• Zelle (Conciliación Directa)</span></li>
+          <li><span class="text-gray-300">• Tarjetas de Débito y Crédito Internacional</span></li>
           <li><span class="text-gray-300">• Transferencias Bancarias Nacionales</span></li>
           <li><span class="text-gray-300">• Efectivo en Divisas y Bolívares</span></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="text-white uppercase tracking-wider font-semibold mb-3">Marco Legal</h4>
+        <h4 class="text-white uppercase tracking-wider font-semibold mb-3">Marco Legal & Sanitario</h4>
         <p class="text-[11px] leading-relaxed mb-2">
           El consumo de bebidas alcohólicas en exceso es perjudicial para la salud. Venta exclusiva para mayores de 18 años según la legislación venezolana.
         </p>
         <div class="inline-block px-2 py-1 rounded border border-white/10 text-[10px] text-emerald-400">
-          Distribuidor Autorizado Habanos Point
+          Distribuidor Oficial Habanos Point
         </div>
       </div>
 
@@ -608,11 +633,11 @@
     let currentCurrency = 'USD';
     const exchangeRates = {
       USD: 1.0,
-      VES: 54.50, // Realistic rate
+      VES: 54.50, // Realistic conversion rate for Venezuela
       EUR: 0.92
     };
 
-    // Authentic curated products matching Bodegón Marqués catalog
+    // Curated products matching Bodegón Marqués catalog
     const products = [
       {
         id: 1,
@@ -662,7 +687,7 @@
           nose: "Jerez oloroso, jengibre fresco, pasas sultanas y canela.",
           palate: "Rico y especiado, clavo de olor, naranja confitada y roble maduro.",
           finish: "Largo, cálido, persistente con frutos secos.",
-          pairing: "Habanos Montecristo No. 2 o frutos secos tostados."
+          pairing: "Habanos Montecristo No. 4 o frutos secos tostados."
         }
       },
       {
@@ -872,7 +897,7 @@
     function runSommelier(occasion) {
       let chosen;
       if (occasion === 'gala') chosen = products.find(p => p.id === 7); // Vega Sicilia Único
-      else if (occasion === 'habano') chosen = products.find(p => p.id === 1); // Ron Carúpano Legendario (Perfect for Habanos)
+      else if (occasion === 'habano') chosen = products.find(p => p.id === 1); // Ron Carúpano Legendario (Ideal para Habanos)
       else if (occasion === 'gift') chosen = products.find(p => p.id === 3); // The Macallan 18
       else chosen = products.find(p => p.id === 5); // Dom Pérignon
 
@@ -932,7 +957,7 @@
               <p class="text-[#B4B4C4]">${p.notes.finish}</p>
             </div>
             <div>
-              <strong class="text-gold-light uppercase tracking-wider block text-[11px]">Armonía & Maridaje Recomendado:</strong>
+              <strong class="text-gold-light uppercase tracking-wider block text-[11px]">Armonía con Habanos o Delicatessen:</strong>
               <p class="text-[#B4B4C4]">${p.notes.pairing}</p>
             </div>
           </div>
@@ -1062,7 +1087,7 @@
         showToast("Su pedido está vacío");
         return;
       }
-      showToast("Conectando con pasarela segura... ¡Orden Bodegón Marqués procesada!");
+      showToast("Conectando con pasarela segura... ¡Orden Bodegón Marqués procesada con éxito!");
       cart = [];
       updateCartBadge();
       updateCartDrawerUI();

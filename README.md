@@ -1,21 +1,22 @@
 # 🥃 BODEGÓN MARQUÉS • Plataforma E-Commerce Next-Gen
-> **"Licores Selectos, Habanos & Delicatessen" • Instagram: [@bodegonmarques](https://www.instagram.com/bodegonmarques)**  
-> **Sede Insignia:** C.C. Terracota, Av. Las Américas, Mérida, Venezuela.
+> **"Marqués Casa de Licores • Habanos & Delicatessen" • Instagram: [@bodegonmarques](https://www.instagram.com/bodegonmarques)**  
+> **Sede Insignia:** C.C. Terracota, Planta Baja, Local 4, Av. Las Américas, Mérida, Venezuela.  
+> **Contacto Oficial:** +58 412-2702505
 
 [![Cliente](https://img.shields.io/badge/Cliente-Bodeg%C3%B3n%20Marqu%C3%A9s-C5A059.svg)](#)
 [![Instagram](https://img.shields.io/badge/Instagram-%40bodegonmarques-E4405F.svg)](https://www.instagram.com/bodegonmarques)
 [![Sede](https://img.shields.io/badge/Sede-C.C.%20Terracota%2C%20M%C3%A9rida-10B981.svg)](#)
-[![Status](https://img.shields.io/badge/Status-Mockup%20Completado-success.svg)](#)
+[![Habanos Point](https://img.shields.io/badge/Certificaci%C3%B3n-Habanos%20Point%20Oficial-1E5E41.svg)](#)
 
 ---
 
 ## 📌 Presentación del Proyecto
 
-Este repositorio contiene la **propuesta integral de modernización digital, arquitectura e-commerce y Mockup Web Interactivo** diseñado exclusivamente para **Bodegón Marqués** (*Marqués Casa de Licores*), tomando como referencia competitiva el modelo de e-commerce de *Licores Mundiales*, pero superándolo ampliamente con una estética boutique de lujo, velocidad de carga instantánea y herramientas interactivas de fidelización.
+Este repositorio contiene la **propuesta tecnológica y mockup interactivo de alta gama** creado a la medida de **Bodegón Marqués** (*Marqués Casa de Licores*), incorporando su branding oficial con la corona heráldica, sus colores oro imperial y pizarra, su sede en el C.C. Terracota, su certificación oficial como **Habanos Point**, su oferta de delicatessen y su comunidad en Instagram (`@bodegonmarques`).
 
 ---
 
-## 🌐 Enlaces Clave del Proyecto
+## 🌐 Enlaces del Proyecto
 
 - **Mockup Web Interactivo en Vivo:** [https://jeralthc.github.io/bodegon-marques-ecommerce/](https://jeralthc.github.io/bodegon-marques-ecommerce/)
 - **Repositorio en GitHub:** [https://github.com/Jeralthc/bodegon-marques-ecommerce](https://github.com/Jeralthc/bodegon-marques-ecommerce)
@@ -23,41 +24,30 @@ Este repositorio contiene la **propuesta integral de modernización digital, arq
 
 ---
 
-## 🚀 Lo que Incluye el Mockup para Presentar a Bodegón Marqués
+## 🚀 Características del Mockup Web para Mostrar al Cliente
 
-1. **Identidad Visual Oficial de Bodegón Marqués:**
-   - Paleta de colores noble: **Oro Imperial Marqués (`#C5A059`)**, **Pizarra Nocturna (`#0A0A0D`)**, destellos de **Ámbar Destilado** y tipografía *Cormorant Garamond*.
-   - Mención y vinculación directa a su cuenta oficial de Instagram: **[@bodegonmarques](https://www.instagram.com/bodegonmarques)**.
-   - Presencia de su sede en el **C.C. Terracota, Av. Las Américas (Mérida)**.
-2. **Sommelier Marqués Virtual:**
-   - Asistente inteligente de cata y maridaje que recomienda etiquetas según ocasión (Cena de gala, Regalo distinguido, Tarde de Habanos y Ron, Brindis festivo).
-3. **Fichas Sensoriales y Notas de Cata:**
-   - Desglose de cada producto con notas de **Nariz, Boca, Final y Maridaje Sugerido**.
-4. **Espacio Habanos Point Oficial:**
-   - Reconocimiento como centro autorizado de puros de colección y tabacos finos.
-5. **Logística y Pagos Adaptados:**
-   - Opciones de **Delivery Express en Mérida** y **Pick-up en C.C. Terracota**.
-   - Integración visual de pasarelas: Pago Móvil C2P, Zelle, Transferencias en Bs., Tarjetas Internacionales y Efectivo.
-   - Enlace directo a **WhatsApp Concierge** para atención humana inmediata.
+1. **Branding de Bodegón Marqués:**
+   - Logotipo con la **Corona Heráldica del Marqués** en oro noble y tipografía clásica *Cormorant Garamond*.
+   - Datos reales: Sede en C.C. Terracota, Planta Baja, Local 4, y WhatsApp directo `+58 412-2702505`.
+   - Enlace directo a la cuenta oficial de Instagram **[@bodegonmarques](https://www.instagram.com/bodegonmarques)**.
+2. **Espacio Habanos Point Oficial:**
+   - Puros cubanos certificados (Cohiba, Montecristo, Partagás) con maridaje recomendado para rones de solera.
+3. **Sommelier Marqués Virtual:**
+   - Asesor inteligente que sugiere destilados y armonías para cenas especiales, tardes de habanos, regalos ejecutivos o brindis familiares.
+4. **Fichas Sensoriales y Notas de Cata:**
+   - Desglose organoléptico: **Nariz, Boca, Final y Armonía Sugerida con Delicatessen**.
+5. **Logística y Pagos en Mérida:**
+   - Despacho express en Mérida ($3 o gratis en compras mayores) y Retiro Pick-Up en C.C. Terracota.
+   - Pagos locales: Pago Móvil C2P, Zelle, Transferencia en Bs., Tarjetas Internacionales y Efectivo.
 
 ---
 
 ## 🎨 Cómo Mostrar en Figma
 
-1. Abre Figma e instala el plugin **[html.to.design](https://www.figma.com/community/plugin/1159128335372329272)**.
+1. Abre Figma e instala el plugin gratuito **[html.to.design](https://www.figma.com/community/plugin/1159128335372329272)**.
 2. Pega la URL en vivo:
    ```
    https://jeralthc.github.io/bodegon-marques-ecommerce/
    ```
-3. El plugin convertirá automáticamente el sitio en **pantallas vectoriales con Auto Layout** para Desktop y Mobile.
-4. Para cargar la biblioteca de estilos y variables de color en Figma, utiliza el archivo [`figma-tokens.json`](file:///home/jeralthc/.gemini/antigravity/scratch/bodegon-marques-ecommerce/figma-tokens.json) con el plugin **Tokens Studio for Figma**.
-
----
-
-## 📁 Documentos del Repositorio
-
-- [**`index.html`**](file:///home/jeralthc/.gemini/antigravity/scratch/bodegon-marques-ecommerce/index.html): Aplicación web interactiva completa.
-- [**`docs/propuesta-arquitectura-nextgen.md`**](file:///home/jeralthc/.gemini/antigravity/scratch/bodegon-marques-ecommerce/docs/propuesta-arquitectura-nextgen.md): Arquitectura de software Composable Headless para Bodegón Marqués.
-- [**`docs/analisis-licoresmundiales.md`**](file:///home/jeralthc/.gemini/antigravity/scratch/bodegon-marques-ecommerce/docs/analisis-licoresmundiales.md): Estudio de ingeniería inversa del competidor benchmark (Licores Mundiales).
-- [**`docs/figma-design-specs.md`**](file:///home/jeralthc/.gemini/antigravity/scratch/bodegon-marques-ecommerce/docs/figma-design-specs.md): Manual de identidad y tokens para Figma.
-- [**`figma-tokens.json`**](file:///home/jeralthc/.gemini/antigravity/scratch/bodegon-marques-ecommerce/figma-tokens.json): Variables y tokens de diseño W3C para Figma.
+3. El plugin convertirá la web en pantallas vectoriales completas con Auto Layout para Desktop y Mobile.
+4. Carga el archivo [`figma-tokens.json`](file:///home/jeralthc/.gemini/antigravity/scratch/bodegon-marques-ecommerce/figma-tokens.json) en **Tokens Studio for Figma** para sincronizar los estilos.

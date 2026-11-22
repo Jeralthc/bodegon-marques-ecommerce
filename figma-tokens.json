@@ -2,31 +2,38 @@
   "global": {
     "brand": {
       "name": { "value": "Bodegón Marqués", "type": "string" },
-      "alternateName": { "value": "Marqués Casa de Licores", "type": "string" },
-      "slogan": { "value": "Licores Selectos, Habanos & Delicatessen", "type": "string" },
+      "tradeName": { "value": "Marqués Casa de Licores", "type": "string" },
+      "slogan": { "value": "Casa de Licores, Habanos & Delicatessen", "type": "string" },
+      "location": { "value": "C.C. Terracota, Planta Baja, Local 4, Av. Las Américas, Mérida", "type": "string" },
+      "phone": { "value": "+58 412-2702505", "type": "string" },
       "instagram": { "value": "@bodegonmarques", "type": "string" },
-      "flagship": { "value": "C.C. Terracota, Av. Las Américas, Mérida", "type": "string" }
+      "certifications": { "value": "Habanos Point Oficial (Kukenan Tobacco / Habanos S.A.)", "type": "string" }
     },
     "color": {
       "marques": {
-        "black": { "value": "#0A0A0D", "type": "color", "description": "Fondo principal de cava nocturna" },
-        "surface": { "value": "#131318", "type": "color", "description": "Superficies de estantería y tarjetas" },
-        "elevated": { "value": "#1C1C24", "type": "color", "description": "Modales y drawer del carrito" }
+        "black": { "value": "#09090C", "type": "color", "description": "Fondo principal de cava nocturna" },
+        "surface": { "value": "#121217", "type": "color", "description": "Superficies de estantería y tarjetas" },
+        "elevated": { "value": "#1A1A22", "type": "color", "description": "Modales y menú desplegable" },
+        "border": { "value": "rgba(255, 255, 255, 0.08)", "type": "color" }
       },
       "gold": {
-        "imperial": { "value": "#C5A059", "type": "color", "description": "Dorado heráldico noble de Bodegón Marqués" },
-        "light": { "value": "#E2C889", "type": "color", "description": "Dorado claro para acentos y textos" },
-        "amber": { "value": "#D97706", "type": "color", "description": "Tono ámbar de destilados de barrica" },
-        "glow": { "value": "rgba(197, 160, 89, 0.22)", "type": "color", "description": "Resplandor cálido de cava" }
+        "imperial": { "value": "#C5A059", "type": "color", "description": "Dorado heráldico de la Corona del Marqués" },
+        "light": { "value": "#E8CF96", "type": "color", "description": "Dorado champagne claro para textos y brillos" },
+        "amber": { "value": "#D97706", "type": "color", "description": "Ámbar cálido de barrica de ron y whisky" },
+        "glow": { "value": "rgba(197, 160, 89, 0.25)", "type": "color", "description": "Resplandor de iluminación de cava" }
+      },
+      "wine": {
+        "burgundy": { "value": "#7A1C2C", "type": "color", "description": "Borgoña vino noble para acentos de alta gama" },
+        "burgundyDark": { "value": "#420C15", "type": "color", "description": "Fondo sutil de contraste" }
+      },
+      "habanos": {
+        "green": { "value": "#1E5E41", "type": "color", "description": "Verde vitola característico del sello Habanos Point" },
+        "emeraldLight": { "value": "#34D399", "type": "color", "description": "Acento de stock garantizado" }
       },
       "text": {
-        "highest": { "value": "#FFFFFF", "type": "color", "description": "Títulos y titulares" },
-        "medium": { "value": "#B4B4C4", "type": "color", "description": "Textos de cuerpo y notas de cata" },
-        "muted": { "value": "#717182", "type": "color", "description": "Metadatos y leyendas" }
-      },
-      "border": {
-        "glass": { "value": "rgba(255, 255, 255, 0.08)", "type": "color" },
-        "gold": { "value": "rgba(197, 160, 89, 0.35)", "type": "color" }
+        "highest": { "value": "#FFFFFF", "type": "color", "description": "Títulos y titulares principales" },
+        "medium": { "value": "#B4B4C4", "type": "color", "description": "Cuerpo de texto y notas de cata" },
+        "muted": { "value": "#717182", "type": "color", "description": "Metadatos, leyendas y teléfonos" }
       }
     },
     "fontFamilies": {
