@@ -1,56 +1,58 @@
 # 🎨 Manual de Marca y Design System Figma • Bodegón Marqués
 ## "Marqués Casa de Licores • Habanos & Delicatessen" • Instagram: @bodegonmarques
 
-Este manual establece la identidad visual oficial, los tokens cromáticos y las pautas de accesibilidad tipográfica para el equipo de UI/UX en Figma de **Bodegón Marqués** (C.C. Terracota, Mérida):
+Este manual establece la identidad visual oficial, los tokens cromáticos y las pautas de accesibilidad tipográfica para el equipo de UI/UX en Figma de **Bodegón Marqués** (C.C. Terracota, Mérida), optimizado según el feedback de experiencia de usuario y el benchmark de la aplicación de **Licores Mundiales**:
 
 ---
 
 ## 1. Fundamentos y Arquetipo de Marca
 
 - **Nombre Comercial:** **Bodegón Marqués** (Marqués Casa de Licores).
-- **Heráldica:** Inspirado en la nobleza y la distinción que confiere el título de "Marqués", representado con una **corona nobiliaria de 4 florones heráldica**.
+- **Heráldica:** Inspirado en la nobleza y distinción del título de "Marqués", representado con una corona heráldica nobiliaria.
 - **Canal Oficial de Redes:** **[@bodegonmarques](https://www.instagram.com/bodegonmarques)**.
-- **Sede Física Real:** **Centro Comercial Terracota, Planta Baja, Local 4, Av. Las Américas (cruce con Av. Urdaneta), Mérida, Estado Mérida**.
+- **Sede Física:** **Centro Comercial Terracota, Planta Baja, Local 4, Av. Las Américas, Mérida, Estado Mérida**.
 - **Atención Directa WhatsApp:** **+58 412-2702505**.
 - **Distintivo Oficial:** Punto de venta autorizado **Habanos Point** (puros cubanos certificados por Kukenan Tobacco / Habanos S.A.).
 
 ---
 
-## 2. Paleta Cromática Institucional & Accesibilidad (WCAG AAA)
+## 2. Paleta Cromática Institucional & Arquitectura de Contraste
 
-| Token | Código HEX | RGB | HSL | Ratio de Contraste | Uso y Aplicación en el Diseño |
-|---|---|---|---|---|---|
-| **Blanco Puro** | `#FFFFFF` | `rgb(255, 255, 255)` | `hsl(0, 0%, 100%)` | **18.5:1 (AAA)** | Tipografía principal, títulos H1/H2/H3/H4, precios y logo de máxima legibilidad. |
-| **Rosa Arena Claro** | `#F5EBE8` | `rgb(245, 235, 232)` | `hsl(12, 42%, 94%)` | **14.2:1 (AAA)** | Cuerpo de texto, descripciones, notas de cata y enlaces de acción para lectura sin fatiga. |
-| **Rosa Arena** | `#D8ABA2` | `rgb(216, 171, 162)` | `hsl(10, 41%, 74%)` | **8.5:1 (AA)** | Acentos de marca, etiquetas secundarias, micro-bordes y detalles gráficos. |
-| **Vinotinto Claro** | `#831226` | `rgb(131, 18, 38)` | `hsl(349, 76%, 29%)` | - | Botones primarios, llamadas a la acción (CTA) y acentos vivos. |
-| **Vinotinto Base** | `#66091C` | `rgb(102, 9, 28)` | `hsl(348, 84%, 22%)` | - | Tono medio dominante y corazón de la identidad corporativa. |
-| **Vinotinto Profundo** | `#510215` | `rgb(81, 2, 21)` | `hsl(346, 95%, 16%)` | - | Sombras, degradados profundos y atmósfera nocturna de cava. |
-| **Negro Cálido Cava** | `#0D0306` | `rgb(13, 3, 6)` | `hsl(342, 62%, 3%)` | - | Fondo base que sustituye al negro frío anterior, aportando calidez y confort visual. |
-| **Superficie Cálida** | `#1A070E` | `rgb(26, 7, 14)` | - | - | Superficie para tarjetas de catálogo (`glass-marques`), modales y cajón de compras. |
+Para evitar que los licores oscuros (rones añejos, whiskies, tequilas reposados y cajas de puros) se pierdan en fondos oscuros, el diseño implementa un **lienzo cálido luminoso** con acentos nobiliarios en **vinotinto corporativo**:
 
----
-
-## 3. Escala y Reglas Tipográficas para Máxima Claridad
-
-- **Títulos y Display:** *Cormorant Garamond* (romana de serif refinado, con peso `font-bold` para trazos nítidos).
-- **Lectura e Interfaz:** *Plus Jakarta Sans* (claridad en listas de precios en bolívares/dólares, notas organolépticas y checkout).
-- **Regla de Legibilidad Mínima:** 
-  - Ningún texto informativo es menor a `12px` (`text-xs`).
-  - Textos de lectura general y notas de cata se configuran en `14px` (`text-sm`) con `leading-relaxed` (1.6) y peso normal/medio (nunca `font-light`).
-  - Títulos de tarjeta en `text-xl` (`20px`) en Blanco Puro `#FFFFFF`.
+| Token Figma | Código HEX | Ratio de Contraste | Aplicación en el Diseño |
+|---|---|---|---|
+| **Canvas Luminoso** | `#F8F6F6` | Fondo general | Lienzo cálido y suave que realza el contorno de las botellas de licor. |
+| **Tarjeta Blanca Pura** | `#FFFFFF` | Base de producto | Tarjeta con sombra suave (`#FFFFFF`) donde el vidrio ámbar y etiquetas destacan con nitidez total. |
+| **Superficie Sutil** | `#F0ECEB` | Secundario | Barra de búsqueda, fondo de selector de moneda y contenedor de precios. |
+| **Borde Limpio** | `#E8E2E1` | Divisor sutil | Delimitador de tarjetas, separadores de sección e inputs. |
+| **Vinotinto Claro** | `#831226` | Acento primario | Botones "Añadir a la Cesta", insignias destacadas y badges de llamada a la acción. |
+| **Vinotinto Base** | `#66091C` | Identidad central | Logotipo corporativo, corona heráldica, títulos activos y barra superior de Mérida. |
+| **Vinotinto Profundo** | `#510215` | Prestigio institucional | Footer nobiliario de la marca. |
+| **Rosa Arena** | `#D8ABA2` | Acento gráfico | Indicadores pulsantes, ribbons finos y bordes ornamentales. |
+| **Rosa Arena Claro** | `#F5EBE8` | Micro-badges | Fondos de etiquetas de cepo, origen y notas de solera. |
+| **Texto Títulos** | `#1A070E` | **16.8:1 (AAA)** | Tipografía de títulos en contraste vinotinto oscuro nítido. |
+| **Texto Cuerpo** | `#3A2E32` | **11.2:1 (AAA)** | Párrafos, notas de cata y descripciones para lectura descansada. |
+| **Texto Muted** | `#6E6266` | **6.5:1 (AA)** | Metadatos, orígenes, añejamiento y referencias de moneda. |
 
 ---
 
-## 4. Cómo Importar y Diseñar en Figma
+## 3. Pautas de Experiencia de Usuario Móvil (Benchmark Licores Mundiales)
 
-1. **Importación con Plugin "html.to.design":**
-   - En Figma, crea un lienzo nuevo.
-   - Ejecuta el plugin **html.to.design**.
-   - Coloca la URL pública:
-     ```
-     https://jeralthc.github.io/bodegon-marques-ecommerce/
-     ```
-   - Obtendrás todos los frames, componentes vectoriales y Auto Layout listos para Desktop y Mobile con la tipografía de alto contraste.
-2. **Carga de Tokens en Figma:**
-   - Carga el archivo [`figma-tokens.json`](file:///home/jeralthc/Proyectos/bodegon-marques-ecommerce/figma-tokens.json) mediante el plugin **Tokens Studio for Figma** para tener los estilos de color y tipografía vinculados.
+1. **Retícula Móvil a 2 Columnas (`grid-cols-2`):**
+   - En dispositivos móviles, los productos se presentan en una cuadrícula compacta de 2 columnas. Esto permite que el usuario visualice entre 4 y 6 botellas al mismo tiempo sin necesidad de un scroll infinito por producto individual.
+2. **Retícula Desktop a 4 Columnas (`lg:grid-cols-4`):**
+   - Distribución equilibrada para pantallas de escritorio y tablets, manteniendo consistencia visual.
+3. **Fotografía de Botellas Reales:**
+   - Prohibido el uso de placeholders planos o siluetas vectoriales. Cada producto se muestra con su fotografía real en PNG transparente, con proporciones de 750 ml y sombra difusa inferior.
+4. **Selector Multimoneda Dinámico:**
+   - Conversión instantánea entre USD ($), VES (Bs. con tasa oficial referencial) y EUR (€) sincronizada con el carrito de compras.
+5. **Checkout Directo Concierge por WhatsApp:**
+   - La cesta de compra genera el detalle formateado del pedido para enviarlo directamente al WhatsApp oficial **+58 412-2702505**, indicando si el cliente requiere **Delivery Express en Mérida** o **Retiro en el C.C. Terracota**.
+
+---
+
+## 4. Tipografía Oficial
+
+- **Display & Títulos:** *Cormorant Garamond* (romana con floritura nobiliaria).
+- **Lectura & Números:** *Plus Jakarta Sans* (claridad en listas de precios en bolívares/dólares, notas organolépticas y checkout).

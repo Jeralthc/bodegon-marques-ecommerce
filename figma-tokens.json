@@ -10,26 +10,27 @@
       "certifications": { "value": "Habanos Point Oficial (Kukenan Tobacco / Habanos S.A.)", "type": "string" }
     },
     "color": {
-      "marques": {
-        "black": { "value": "#0D0306", "type": "color", "description": "Negro cálido vinotinto de fondo de cava" },
-        "surface": { "value": "#1A070E", "type": "color", "description": "Superficie de estantería y tarjetas cálidas" },
-        "elevated": { "value": "#260A14", "type": "color", "description": "Modales, cajón de compras y dropdowns" },
-        "highlight": { "value": "#360E1C", "type": "color", "description": "Resalte en hover de componentes" },
-        "border": { "value": "rgba(216, 171, 162, 0.25)", "type": "color", "description": "Bordes con tono Rosa Arena cálido" }
+      "canvas": {
+        "bg": { "value": "#F8F6F6", "type": "color", "description": "Lienzo general luminoso, suave y cálido (blanco/gris suave) para que las botellas oscuras destaquen con nitidez absoluta" },
+        "card": { "value": "#FFFFFF", "type": "color", "description": "Superficie de tarjeta blanca pura con alto contraste fotográfico" },
+        "subtle": { "value": "#F0ECEB", "type": "color", "description": "Superficie secundaria para inputs de búsqueda, filtros y contenedores de precio" },
+        "border": { "value": "#E8E2E1", "type": "color", "description": "Bordes sutiles y limpios de tarjetas y divisores" }
       },
       "vinotinto": {
-        "claro": { "value": "#831226", "type": "color", "description": "Luz superior del fondo, highlights, botones primarios y acentos vivos" },
-        "base": { "value": "#66091C", "type": "color", "description": "Tono medio dominante y corazón de la identidad corporativa" },
-        "profundo": { "value": "#510215", "type": "color", "description": "Sombras, viñetas inferiores y profundidad de cava" }
+        "claro": { "value": "#831226", "type": "color", "description": "Luz superior, botones primarios de compra, badges destacados y degradados activos" },
+        "base": { "value": "#66091C", "type": "color", "description": "Tono corporativo medio dominante, logotipo, heráldica y acentos principales" },
+        "profundo": { "value": "#510215", "type": "color", "description": "Footer nobiliario y áreas de máxima jerarquía institucional" }
       },
       "sand": {
-        "rose": { "value": "#D8ABA2", "type": "color", "description": "Rosa Arena oficial: acentos, micro-bordes y detalles gráficos" },
-        "light": { "value": "#F5EBE8", "type": "color", "description": "Rosa Arena Claro de alto contraste (14:1 AAA) para lectura óptima de textos y descripciones" }
+        "rose": { "value": "#D8ABA2", "type": "color", "description": "Rosa Arena para acentos, ribbons y detalles finos" },
+        "light": { "value": "#F5EBE8", "type": "color", "description": "Rosa Arena Claro para fondos de badges y etiquetas de categoría" },
+        "dark": { "value": "#8C5A52", "type": "color", "description": "Tono arena oscuro para leyendas y notas secundarias" }
       },
-      "text": {
-        "white": { "value": "#FFFFFF", "type": "color", "description": "Blanco puro de máximo contraste para títulos H1-H4, precios y logo" },
-        "readable": { "value": "#F5EBE8", "type": "color", "description": "Rosa Arena Claro de alta legibilidad para cuerpo de texto" },
-        "accent": { "value": "#D8ABA2", "type": "color", "description": "Rosa Arena para etiquetas, metadatos y enlaces" }
+      "typography": {
+        "heading": { "value": "#1A070E", "type": "color", "description": "Negro vinotinto de máximo contraste para títulos H1-H4" },
+        "body": { "value": "#3A2E32", "type": "color", "description": "Gris cálido profundo para lectura descansada de descripciones" },
+        "muted": { "value": "#6E6266", "type": "color", "description": "Metadatos, orígenes, notas técnicas y etiquetas secundarias" },
+        "inverse": { "value": "#FFFFFF", "type": "color", "description": "Blanco puro sobre botones vinotinto y barra superior" }
       }
     },
     "fontFamilies": {
@@ -37,10 +38,21 @@
       "body": { "value": "Plus Jakarta Sans, sans-serif" }
     },
     "borderRadius": {
-      "sm": { "value": "6px", "type": "borderRadius" },
+      "sm": { "value": "8px", "type": "borderRadius" },
       "md": { "value": "12px", "type": "borderRadius" },
-      "lg": { "value": "20px", "type": "borderRadius" },
+      "lg": { "value": "16px", "type": "borderRadius" },
+      "xl": { "value": "24px", "type": "borderRadius" },
       "full": { "value": "9999px", "type": "borderRadius" }
+    },
+    "boxShadow": {
+      "soft": { "value": "0 4px 20px -2px rgba(26, 7, 14, 0.06), 0 2px 6px -1px rgba(26, 7, 14, 0.04)" },
+      "hover": { "value": "0 12px 30px -4px rgba(102, 9, 28, 0.12), 0 4px 10px -2px rgba(26, 7, 14, 0.06)" },
+      "vinoGlow": { "value": "0 0 25px -3px rgba(131, 18, 38, 0.45)" }
+    },
+    "layout": {
+      "mobileGrid": { "value": "2 columnas (grid-cols-2) para visualización simultánea de múltiples botellas", "type": "layout" },
+      "desktopGrid": { "value": "4 columnas (lg:grid-cols-4) para catálogo amplio estilo boutique", "type": "layout" },
+      "photography": { "value": "Botellas reales en PNG transparente centradas sobre tarjetas blancas #FFFFFF", "type": "assetGuidelines" }
     }
   }
 }
