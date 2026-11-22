@@ -1,25 +1,38 @@
 {
   "global": {
+    "brand": {
+      "name": { "value": "Licores Mundiales", "type": "string" },
+      "slogan": { "value": "El Arte de Celebrar", "type": "string" },
+      "foundation": { "value": "1973", "type": "string" },
+      "flagship": { "value": "Las Mercedes, Av. Río de Janeiro, Caracas", "type": "string" },
+      "instagram": { "value": "@licoresmundiales", "type": "string" }
+    },
     "color": {
-      "obsidian": {
-        "deep": { "value": "#0B0B0D", "type": "color", "description": "Fondo principal de ultra-lujo" },
-        "surface": { "value": "#141418", "type": "color", "description": "Superficie de tarjetas y contenedores" },
-        "elevated": { "value": "#1B1B22", "type": "color", "description": "Modales y menú desplegable" }
+      "charcoal": {
+        "deep": { "value": "#09090C", "type": "color", "description": "Fondo principal de cava nocturna" },
+        "surface": { "value": "#14141A", "type": "color", "description": "Superficie de tarjetas y estanterías" },
+        "elevated": { "value": "#1D1D26", "type": "color", "description": "Modales y menú desplegable" }
+      },
+      "burgundy": {
+        "primary": { "value": "#6B1728", "type": "color", "description": "Rojo tinto / Borgoña institucional de alta gama" },
+        "vibrant": { "value": "#8E1D36", "type": "color", "description": "Acento de vino para botones y badges" },
+        "dark": { "value": "#3D0C16", "type": "color", "description": "Sombra y fondos de contraste" }
       },
       "gold": {
-        "liquid": { "value": "#D4AF37", "type": "color", "description": "Dorado metálico primario" },
+        "liquid": { "value": "#D4AF37", "type": "color", "description": "Dorado noble para destilados y detalles" },
         "champagne": { "value": "#EED9A4", "type": "color", "description": "Dorado claro para acentos y textos" },
         "antique": { "value": "#997D29", "type": "color", "description": "Dorado envejecido para estados hover" },
-        "glow": { "value": "rgba(212, 175, 55, 0.18)", "type": "color", "description": "Resplandor ambiental" }
+        "glow": { "value": "rgba(212, 175, 55, 0.2)", "type": "color", "description": "Resplandor cálido de cava" }
       },
       "text": {
-        "highest": { "value": "#FBFBFC", "type": "color", "description": "Títulos y contrastes altos" },
-        "medium": { "value": "#A3A3B2", "type": "color", "description": "Párrafos y notas de cata" },
-        "muted": { "value": "#6B6B7B", "type": "color", "description": "Metadatos y leyendas" }
+        "highest": { "value": "#FFFFFF", "type": "color", "description": "Títulos principales y logos" },
+        "medium": { "value": "#B2B2C2", "type": "color", "description": "Párrafos y notas de cata" },
+        "muted": { "value": "#727284", "type": "color", "description": "Metadatos y leyendas" }
       },
       "border": {
         "glass": { "value": "rgba(255, 255, 255, 0.08)", "type": "color" },
-        "gold": { "value": "rgba(212, 175, 55, 0.35)", "type": "color" }
+        "gold": { "value": "rgba(212, 175, 55, 0.35)", "type": "color" },
+        "burgundy": { "value": "rgba(142, 29, 54, 0.4)", "type": "color" }
       }
     },
     "fontFamilies": {
@@ -31,16 +44,6 @@
       "md": { "value": "12px", "type": "borderRadius" },
       "lg": { "value": "20px", "type": "borderRadius" },
       "full": { "value": "9999px", "type": "borderRadius" }
-    },
-    "boxShadow": {
-      "cardHover": {
-        "value": "0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 25px -5px rgba(212, 175, 55, 0.2)",
-        "type": "boxShadow"
-      },
-      "goldGlow": {
-        "value": "0 0 30px rgba(212, 175, 55, 0.25)",
-        "type": "boxShadow"
-      }
     }
   }
 }
