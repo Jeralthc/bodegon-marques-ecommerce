@@ -20,7 +20,7 @@ Este repositorio contiene la **propuesta tecnológica y mockup interactivo de al
 
 - **Mockup Web Interactivo en Vivo:** [https://jeralthc.github.io/bodegon-marques-ecommerce/](https://jeralthc.github.io/bodegon-marques-ecommerce/)
 - **Repositorio en GitHub:** [https://github.com/Jeralthc/bodegon-marques-ecommerce](https://github.com/Jeralthc/bodegon-marques-ecommerce)
-- **Directorio Local en este equipo:** [`/home/jeralthc/.gemini/antigravity/scratch/bodegon-marques-ecommerce/`](file:///home/jeralthc/.gemini/antigravity/scratch/bodegon-marques-ecommerce/)
+- **Directorio Local en este equipo:** [`/home/jeralthc/Proyectos/bodegon-marques-ecommerce/`](file:///home/jeralthc/Proyectos/bodegon-marques-ecommerce/)
 
 ---
 
@@ -50,4 +50,4 @@ Este repositorio contiene la **propuesta tecnológica y mockup interactivo de al
    https://jeralthc.github.io/bodegon-marques-ecommerce/
    ```
 3. El plugin convertirá la web en pantallas vectoriales completas con Auto Layout para Desktop y Mobile.
-4. Carga el archivo [`figma-tokens.json`](file:///home/jeralthc/.gemini/antigravity/scratch/bodegon-marques-ecommerce/figma-tokens.json) en **Tokens Studio for Figma** para sincronizar los estilos.
+4. Carga el archivo [`figma-tokens.json`](file:///home/jeralthc/Proyectos/bodegon-marques-ecommerce/figma-tokens.json) en **Tokens Studio for Figma** para sincronizar los estilos.

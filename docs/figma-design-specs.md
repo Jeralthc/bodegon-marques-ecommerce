@@ -48,4 +48,4 @@ Este manual establece la identidad visual oficial, los tokens cromáticos y las 
      ```
    - Obtendrás todos los frames, componentes vectoriales y Auto Layout listos para Desktop y Mobile.
 2. **Carga de Tokens en Figma:**
-   - Carga el archivo [`figma-tokens.json`](file:///home/jeralthc/.gemini/antigravity/scratch/bodegon-marques-ecommerce/figma-tokens.json) mediante el plugin **Tokens Studio for Figma** para tener los estilos de color y tipografía vinculados.
+   - Carga el archivo [`figma-tokens.json`](file:///home/jeralthc/Proyectos/bodegon-marques-ecommerce/figma-tokens.json) mediante el plugin **Tokens Studio for Figma** para tener los estilos de color y tipografía vinculados.
